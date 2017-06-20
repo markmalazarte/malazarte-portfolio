@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dow Jones - Web App Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/less/styles/reset.min.css">
+    <link rel="stylesheet" href="build/global.css">
+    <link rel="stylesheet" type="text/css" href="assets/less/styles/monokai-sublime.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="assets/js/highlight.pack.js"></script>
+  </head>
+  <body>
+    <!-- POWERED BY DOW JONES -->
+    <header class="powered-by__container">
+      <svg class="powered-by__logo" title="Powered by Dow Jones">
+        <use xlink:href="assets/images/powered-by-dj.svg#Powered-By-Logo"></use>
+      </svg>
+      <div class="powered-by__mask" title="Powered by Dow Jones">
+        <svg class="powered-by__text">
+          <use xlink:href="assets/images/powered-by-dj.svg#Powered-By-Text"></use>
+        </svg>
+      </div>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span>
+      </label>
+      <!-- USER INFO  -->
+      <ul class="user-info">
+        <li>Welcome, Mark!</li>
+      </ul>
+      <!-- PRODUCT MENU -->
+      <ul class="menu">
+        <li>
+          <ul class="product-section">
+            <li class="label">Knowledge and Insight</li>
+            <li><a href="#">Factiva</a></li>
+            <li><a href="#">Venturesource</a></li>
+            <li><a href="#">LP Source</a></li>
+            <li><a href="#">DJX</a></li>
+            <li><a href="#">Dow Jones Direct</a></li>
+          </ul>
+          <ul class="product-section">
+            <li class="label">Risk and Compliance</li>
+            <li><a href="#">Riskcenter</a></li>
+            <li><a href="#">Riskreports</a></li>
+            <li><a href="#">Risksearch</a></li>
+            <li><a href="#">Riskdata</a></li>
+            <li><a href="#">Riskaverter</a></li>
+          </ul>
+          <ul class="product-section">
+            <li class="label">News and Information</li>
+            <li><a href="#"><img src="assets/images/logos/WSJ.svg" alt="The Wall Street Journal" title="The Wall Street Journal" /></a></li>
+            <li><a href="#"><img src="assets/images/logos/WSJ-PRO.svg" alt="The Wall Street Journal Pro" title="The Wall Street Journal Pro" /></a></li>
+            <li><a href="#"><img src="assets/images/logos/Barrons.svg" alt="Barron's" title="Barron's" /></a></li>
+            <li><a href="#"><img src="assets/images/logos/BarronsNEXT.svg" alt="Barron's NEXT" title="Barron's NEXT" /></a></li>
+            <li><a href="#"><img src="assets/images/logos/MarketWatch.svg" alt="MarketWatch" title="MarketWatch" /></a></li>
+          <li><a href="#"><img src="assets/images/logos/FN.svg" alt="Financial News" title="Financial News" /></a></li>
+          </ul>
+          <ul class="product-section">
+            <li class="label">Integrated Solutions</li>
+            <li><a href="#">Factiva</a></li>
+            <li><a href="#">Integrated Solutions</a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+
+    <!-- PRODUCT HEADER -->
+    <header class="product-header">
+      <h2 class="product-name"><a href="#/">Product Name</a></h2>
+    </header>
+
+    <!-- CONTENT -->
+    <div class="content-container">
+      <!-- Intro -->
+      <section id="intro">
+        <h6 class="label section-label">Introduction</h6>
+        <h2>Dow Jones Web App Style Guide</h2>
+        <p>This is a very early version of a Dow Jones web app template created with HTML and LESS. No framework was used to create this and is only for referencing UI patterns and styles.</p>
+      </section>
+      <!-- Typography -->
+      <section id="typography">
+        <h6 class="label section-label">Typography</h6>
+        <article>
+        <!-- Webfonts -->
+        <h6 class="label pattern-label">Webfonts:</h6>
+        <!-- Simplon - Regular -->
+        <input class="font font-reg charc-dark" type="text" name="simplon-regular" placeholder="Simplon - Regular">
+        <!-- Simplon - Regular Italic -->
+        <input class="font font-reg charc-dark italic" type="text" name="simplon-regular" placeholder="Simplon - Regular Italic">
+        <!-- Simplon - Bold -->
+        <input class="font font-reg charc-dark bold" type="text" name="simplon-regular" placeholder="Simplon - Bold">
+        <!-- Simplon - Bold Italic -->
+        <input class="font font-reg charc-dark bold italic" type="text" name="simplon-regular" placeholder="Simplon - Bold Italic">
+        <!-- Simplon - Light -->
+        <input class="font font-reg charc-dark light" type="text" name="simplon-regular" placeholder="Simplon - Light">
+        <!-- Simplon - Light Italic -->
+        <input class="font font-reg charc-dark light italic" type="text" name="simplon-regular" placeholder="Simplon - Light Italic">
+        <!-- Simplon - Medium -->
+        <input class="font font-reg charc-dark med" type="text" name="simplon-regular" placeholder="Simplon - Medium">
+        <!-- Simplon - Medium Italic -->
+        <input class="font font-reg charc-dark med italic" type="text" name="simplon-regular" placeholder="Simplon - Medium Italic">
+        </article>
+        <article>
+        <!-- Headings -->
+        <h6 class="label section-label">Headings</h6>
+        <h6 class="label pattern-label">H1 - size: 2em <span class="berg-blue">/</span> line-height: 1.15em <span class="berg-blue">/</span> weight: 100 <span class="berg-blue">/</span> color: Berg Blue</h6>
+        <textarea class="font font-light h1" type="text" name="h1" placeholder="Morbi lorem mauris, pharetra a finibus viverra, porta vel sem."></textarea>
+        <h6 class="label pattern-label">H2 - 1.5em / 1.15em / Light / Grey Mid</h6>
+        <input class="font font-light h2" type="text" name="h1" placeholder="Morbi lorem mauris, pharetra a finibus viverra, porta vel sem.">
+        <h6 class="label pattern-label">H3</h6>
+        <h3>Header Level 3</h3>
+        <h6 class="label pattern-label">H4</h6>
+        <h4>Header Level 4</h4>
+        <h6 class="label pattern-label">H5</h6>
+        <h5>Header Level 5</h5>
+        <h6 class="label pattern-label">H6 - size: .80em <span class="berg-blue">/</span> line-height: 1.15em <span class="berg-blue">/</span> weight: Bold <span class="berg-blue">/</span> text-transform: Uppercase</h6>
+        <h6>This is label text</h6>
+        </article>
+        <article>
+        <!-- Body Text -->
+        <h6 class="label section-label">Body Text</h6>
+        <h6 class="label pattern-label">P - size: 14px <span class="berg-blue">/</span> line-height: 16px <span class="berg-blue">/</span> family: Roboto <span class="berg-blue">/</span> weight: 300</h6>
+        <p>We bring together world-leading data, media, membership and intelligence solutions. Our diversity of products and audiences means we deliver what leaders and enterprises need to tackle the business challenges that define their future.</p>
+        <p>We all have our part to play. These guidelines are designed to help you play yours by being consistent and purposeful in your communications design.</p>
+        </article>
+      </section>
+      <!-- Article -->
+      <section id="article">
+        <h6 class="label section-label">Example Factiva Article
+        <h6 class="label pattern-label">Family: Roboto <span class="berg-blue">/</span> Weight: 300</h6>
+        <article class="dj-article">
+          <div class="dj-article__source-logo">
+            <img src="assets/images/wsj-logo.svg" alt="The Wall Street Journal" />
+          </div>
+          <h1>Apple's Price Is Right for iPhone</h1>
+          <ul class="dj-article__article-meta">
+            <li><span class="dj-article__article-meta__by-line">By Dan Gallagher</span></li>
+            <li class="dj-article__article-meta__pub-details">432 words</li>
+            <li class="dj-article__article-meta__pub-details">05 October 2016</li>
+            <li class="dj-article__article-meta__pub-details">The Wall Street Journal</li>
+            <li class="dj-article__article-meta__pub-details">J</li>
+            <li class="dj-article__article-meta__pub-details--article-pages">C12</li>
+            <li class="dj-article__article-meta__pub-details--article-edition">English</li>
+            <li class="dj-article__article-meta__pub-details--article-copyright">Copyright 2016 Dow Jones &amp; Company, Inc. All Rights Reserved.</li>
+          </ul>
+          <p>[Financial Analysis and Commentary]</p>
+          <p>It really would be nice if Apple sold more iPhones in the year ahead, but the company has other ways to give its flagship business a boost.</p>
+          <p>The iPhone 7 went on sale a little more than two weeks ago. Apple is no longer giving out early sales figures. Still, some signs are pointing to decent demand. Those same signs also suggest Apple may see an uptick in the average selling price of the iPhone, which benefits both the company's top and bottom lines.</p>
+          <p>Apple needs both. The company wrapped its latest fiscal year on Sept. 24.</p>
+          <p>While final results won't be reported for a few more weeks, it will be the first time Apple has seen fiscal-year drops in both revenue and net income since 2001. That is mostly because last year's iPhone 6s generated weaker demand. So the company needs this year's offering to do better.</p>
+          <p>Hopes are currently modest. Wall Street expects iPhone unit sales to grow 5% for the current fiscal year. But Apple made some changes that also could lift the smartphone's average selling price. The company raised prices on all versions of the larger iPhone 7 Plus by $20. And a glossy new color called Jet Black is available only in higher-memory configurations.</p>
+          <p>Those models all seem to be in demand. In a survey of Apple Stores on Friday, Gene Munster of Piper Jaffray noted that only about 8% had availability of the larger iPhone 7 Plus models compared with 61% for the smaller-screen versions. Supply is likely still very limited, though analysts at both Pacific Crest and Cowen &amp; Co . on Monday noted a "slight uptick" in production activity for the iPhone -- which doesn't suggest weak demand.</p>
+          <p>In any case, higher average selling prices tend to pay off for Apple. The iPhone 6 boosted Apple's average iPhone selling price by 11% in fiscal 2015. Revenue and net income jumped 28% and 35% for the year, respectively.</p>
+          <p>There is room for another surprise here. Analysts are currently projecting the iPhone's average selling price to decline by 1% for the current fiscal year.</p>
+          <p>Toni Sacconaghi of Bernstein estimates that if iPhone's average selling price came in 3% higher than Wall Street's current target, that would make up for a six million unit shortfall in iPhone sales.</p>
+          <p>Enough, in other words, to help Apple dial up a better year.</p>
+          <p>Document article_J000000020161005eca50001r</p>
+        </article>
+      </section>
+      <!-- Buttons -->
+      <section id="buttons">
+        <h6 class="label section-label">Buttons</h6>
+        <div class="column">
+          <h6 class="label pattern-label">Primary</h6>
+          <button class="btn-primary">Save</button>
+        </div>
+        <div class="column">
+          <h6 class="label pattern-label">Secondary</h6>
+          <button class="btn-secondary">Save</button>
+        </div>
+        <div class="column">
+          <h6 class="label pattern-label">Secondary - Cancel</h6>
+          <button class="btn-secondary cancel">Cancel</button>
+        </div>
+        <div class="column">
+          <h6 class="label pattern-label">Primary - Disabled</h6>
+          <button class="btn-primary disabled">Save</button>
+        </div>
+      </section>
+      <!-- Form Fields  -->
+      <section id="forms">
+        <h6 class="label section-label">Form Inputs</h6>
+        <!-- Form -->
+        <div class="column">
+          <h6 class="label">Input Label:</h6>
+          <form class="name">
+            <span class="input-wrapper">
+              <input type="text" name="fname" placeholder="First name">
+            </span>
+            <span class="input-wrapper">
+              <input type="text" name="lname" placeholder="Last name">
+            </span>
+            <button class="btn-primary left" type="submit" value="Submit">Submit</button>
+          </form> 
+        </div>
+        <!-- Form -->
+        <div class="column">
+          <h6 class="label">Error Handling:</h6>
+          <form class="name error">
+            <span class="input-wrapper">
+              <input class="error" type="text" name="fname" placeholder="First name">
+              <span class="error smalltext">Please enter a first name.</span>
+            </span>
+            <span class="input-wrapper">
+              <input class="error" type="text" name="lname" placeholder="Last name">
+              <span class="error smalltext">Please enter a last name.</span>
+            </span>
+            <button class="btn-primary left" type="submit" value="Submit">Submit</button>
+          </form> 
+        </div>
+      </section>
+      <!-- Icons -->
+      <section id="icons">
+        <h6 class="label section-label">SVG Icons</h6>
+        <!-- Grey Outline -->
+        <h6 class="label section-label pattern-label">Grey Outline</h6>
+        <h6 class="label pattern-label">Navigation</h6>
+        <div class="group">
+          <svg class="icon outline">
+            <use xlink:href="assets/images/dj-icons_outline.svg#home"></use>
+          </svg>
+          <svg class="icon outline">
+            <use xlink:href="assets/images/dj-icons_outline.svg#settings"></use>
+          </svg>
+          <svg class="icon outline">
+            <use xlink:href="assets/images/dj-icons_outline.svg#search"></use>
+          </svg>
+          <svg class="icon outline">
+            <use xlink:href="assets/images/dj-icons_outline.svg#arrow-up"></use>
+          </svg>
+          <svg class="icon outline">
+            <use xlink:href="assets/images/dj-icons_outline.svg#arrow-down"></use>
+          </svg>
+          <svg class="icon outline">
+            <use xlink:href="assets/images/dj-icons_outline.svg#arrow-left"></use>
+          </svg>
+          <svg class="icon outline">
+            <use xlink:href="assets/images/dj-icons_outline.svg#arrow-right"></use>
+          </svg>
+        </div>
+        <h6 class="label pattern-label">Misc.</h6>
+        <div class="group">
+          <svg class="icon outline">
+            <use xlink:href="assets/images/dj-icons_outline.svg#warning"></use>
+          </svg>
+          <svg class="icon outline">
+            <use xlink:href="assets/images/dj-icons_outline.svg#info"></use>
+          </svg>
+          <svg class="icon outline">
+            <use xlink:href="assets/images/dj-icons_outline.svg#view"></use>
+          </svg>
+          <svg class="icon outline">
+            <use xlink:href="assets/images/dj-icons_outline.svg#comment"></use>
+          </svg>
+          <svg class="icon outline">
+            <use xlink:href="assets/images/dj-icons_outline.svg#location"></use>
+          </svg>
+          <svg class="icon outline">
+            <use xlink:href="assets/images/dj-icons_outline.svg#edit"></use>
+          </svg>
+          <svg class="icon outline">
+            <use xlink:href="assets/images/dj-icons_outline.svg#check"></use>
+          </svg>
+          <svg class="icon outline">
+            <use xlink:href="assets/images/dj-icons_outline.svg#close"></use>
+          </svg>
+        </div>
+        <!-- White Outline -->
+        <h6 class="label section-label pattern-label">White Outline</h6>
+        <h6 class="label pattern-label">Navigation</h6>
+        <div class="group">
+          <svg class="icon outline white">
+            <use xlink:href="assets/images/dj-icons_outline.svg#home"></use>
+          </svg>
+          <svg class="icon outline white">
+            <use xlink:href="assets/images/dj-icons_outline.svg#settings"></use>
+          </svg>
+          <svg class="icon outline white">
+            <use xlink:href="assets/images/dj-icons_outline.svg#search"></use>
+          </svg>
+          <svg class="icon outline white">
+            <use xlink:href="assets/images/dj-icons_outline.svg#arrow-up"></use>
+          </svg>
+          <svg class="icon outline white">
+            <use xlink:href="assets/images/dj-icons_outline.svg#arrow-down"></use>
+          </svg>
+          <svg class="icon outline white">
+            <use xlink:href="assets/images/dj-icons_outline.svg#arrow-left"></use>
+          </svg>
+          <svg class="icon outline white">
+            <use xlink:href="assets/images/dj-icons_outline.svg#arrow-right"></use>
+          </svg>
+        </div>
+        <h6 class="label pattern-label">Misc.</h6>
+        <div class="group">
+          <svg class="icon outline white">
+            <use xlink:href="assets/images/dj-icons_outline.svg#warning"></use>
+          </svg>
+          <svg class="icon outline white">
+            <use xlink:href="assets/images/dj-icons_outline.svg#info"></use>
+          </svg>
+          <svg class="icon outline white">
+            <use xlink:href="assets/images/dj-icons_outline.svg#view"></use>
+          </svg>
+          <svg class="icon outline white">
+            <use xlink:href="assets/images/dj-icons_outline.svg#comment"></use>
+          </svg>
+          <svg class="icon outline white">
+            <use xlink:href="assets/images/dj-icons_outline.svg#location"></use>
+          </svg>
+          <svg class="icon outline white">
+            <use xlink:href="assets/images/dj-icons_outline.svg#edit"></use>
+          </svg>
+        </div>
+        <h6 class="label section-label pattern-label">Google Material UI</h6>
+        <h6 class="label pattern-label">Grey</h6>
+        <div class="group">
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#home"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#settings"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#search"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#view"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#comment"></use>
+          </svg>
+          <svg class="icon" style="padding: 5px; width: 22px; height: 22px;">
+            <use xlink:href="assets/images/dj-icons.svg#history"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#warning"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#alert"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#check_circle"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#info_outline"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#question_outline"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#edit"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#download"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#user"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#question"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#info"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#business"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#location"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#org"></use>
+          </svg>
+
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#building"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#close"></use>
+          </svg>
+          <svg class="icon" style="padding: 5px; width: 22px; height: 22px;">
+            <use xlink:href="assets/images/dj-icons.svg#check"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#plus"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#down-arrow"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#up-arrow"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#left-arrow"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#right-arrow"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#smiley"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#send"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#delete"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#upload"></use>
+          </svg>
+          <svg class="icon" style="padding: 5px; width: 22px; height: 22px;">
+            <use xlink:href="assets/images/dj-icons.svg#cloud"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#file"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#d_logo"></use>
+          </svg>
+          <svg class="icon" title="Calendar">
+            <use xlink:href="assets/images/dj-icons.svg#calendar"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#share"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#print"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="assets/images/dj-icons.svg#new_alert"></use>
+          </svg>
+        </div>
+        <h6 class="label pattern-label">White</h6>
+        <div class="group">
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#home"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#settings"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#search"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#view"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#comment"></use>
+          </svg>
+          <svg class="icon white" style="padding: 5px; width: 22px; height: 22px;">
+            <use xlink:href="assets/images/dj-icons.svg#history"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#warning"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#alert"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#check_circle"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#info_outline"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#question_outline"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#edit"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#download"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#user"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#question"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#info"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#business"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#location"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#org"></use>
+          </svg>
+
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#building"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#close"></use>
+          </svg>
+          <svg class="icon white" style="padding: 5px; width: 22px; height: 22px;">
+            <use xlink:href="assets/images/dj-icons.svg#check"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#plus"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#down-arrow"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#up-arrow"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#left-arrow"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#right-arrow"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#smiley"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#send"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#delete"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#upload"></use>
+          </svg>
+          <svg class="icon white" style="padding: 5px; width: 22px; height: 22px;">
+            <use xlink:href="assets/images/dj-icons.svg#cloud"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#file"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#d_logo"></use>
+          </svg>
+          <svg class="icon white" title="Calendar">
+            <use xlink:href="assets/images/dj-icons.svg#calendar"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#share"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#print"></use>
+          </svg>
+          <svg class="icon white">
+            <use xlink:href="assets/images/dj-icons.svg#new_alert"></use>
+          </svg>
+        </div>
+        <!-- Example Code Snippet -->
+        <h6 class="label section-label pattern-label">SVG Icons markup:</h6>
+        <pre>
+          <code class="html">
+  &lt;svg class="icon white"&gt;
+    &lt;use xlink:href="assets/images/assets/images/dj-icons.svg#check"&gt;&lt;/use&gt;
+  &lt;/svg&gt;
+          </code>
+        </pre>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer-container">
+      <svg class="powered-by-footer">
+        <use xlink:href="assets/images/powered-by-dj-stack_mono.svg#Powered-By-Stacked"></use>
+      </svg>
+      <p>&copy; 2016 Dow Jones &amp; Company, Inc. All Rights Reserved.</p>
+    </footer>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+  </body>
+</html>
