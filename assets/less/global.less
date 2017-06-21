@@ -68,7 +68,17 @@ input[type="submit"] {
   font-family: 'GreycliffCF-Heavy';
   cursor: pointer;
 }
-
+.example {
+  header {
+    h1 {
+      .back i {
+        &:hover {
+          color: @red;
+        }
+      }
+    }
+  }
+}
 header {
   position: relative;
   display: flex;
@@ -397,6 +407,21 @@ header {
             & h1, h3, p {
               color: @blue;
             }
+            & .dates {
+              color: @red;
+              //font-weight: bold;
+              font-family: 'GreycliffCF-ExtraBold';
+              position: absolute;
+              bottom: 10px;
+              //margin-bottom: 12px;
+              font-size: 1.15em;
+              letter-spacing: .05px;
+              text-align: right;
+              right: 10px;
+              & strong {
+                color: @blue;
+              }
+            }
           }
           &:after {
             background: @blue;
@@ -404,18 +429,6 @@ header {
           & strong {
             color: @red;
             font-weight: normal;
-          }
-          & .dates {
-            color: @red !important;
-            //font-weight: bold;
-            font-family: 'GreycliffCF-ExtraBold';
-            position: absolute;
-            bottom: 10px;
-            //margin-bottom: 12px;
-            font-size: 1.15em;
-            letter-spacing: .05px;
-            text-align: right;
-            right: 10px;
           }
         }
       }
