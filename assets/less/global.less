@@ -205,6 +205,10 @@ header {
     padding: 30px 65px 50px 65px;
     position: relative;
 
+    &.sm {
+      width: 972px;
+    }
+
     .view-btn {
       position: absolute;
       background: @blue;
@@ -342,8 +346,23 @@ header {
             color: @blue;
             font-family: 'GreycliffCF-ExtraBold'
           }
+          & .dates {
+              color: @red;
+              //font-weight: bold;
+              font-family: 'GreycliffCF-ExtraBold';
+              position: absolute;
+              bottom: 10px;
+              //margin-bottom: 12px;
+              font-size: 1.15em;
+              letter-spacing: .05px;
+              text-align: right;
+              right: 10px;
+              & strong {
+                color: @blue;
+              }
+            }
           &:hover {
-            & h3 {
+            & h1 {
               color: @red;
             }
           }
@@ -351,6 +370,21 @@ header {
         & div.content-block--text {
           background-color: @white;
           color: @blue;
+          & .dates {
+              color: @red;
+              //font-weight: bold;
+              font-family: 'GreycliffCF-ExtraBold';
+              position: absolute;
+              bottom: 10px;
+              //margin-bottom: 12px;
+              font-size: 1.15em;
+              letter-spacing: .05px;
+              text-align: right;
+              right: 10px;
+              & strong {
+                color: @blue;
+              }
+            }
           &:hover {
             cursor: text;
           }
@@ -434,7 +468,7 @@ header {
       }
       h1 {
         font-size: 2.65em;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         padding: 10px 20px 0 20px;
         font-weight: 100;
         line-height: 1.20em;
