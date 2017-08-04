@@ -373,6 +373,7 @@ header {
               background: @blue;
               border-color: @blue;
               transition: all 0.25s ease-in-out;
+              opacity: 1.0;
               & svg g, & svg path {
                 fill: @white;
               }
@@ -383,11 +384,12 @@ header {
           }
           & .content-cover {
             height: 75px;
-            background: #e4e4e4;
-            //border: 2px solid #ddd;
+            opacity: 0.35;
+            //background: #e2e2e2;
+            border: 2px solid #ccc;
             transition: all 0.25s ease-in-out;
             //background: rgba(0,0,0,0.035);
-            width: 100%;
+            //width: calc(100% - 4px);
             display: block;
             margin: 5px 0 15px;
             display: flex;
