@@ -4,9 +4,8 @@
 
 /* GENERAL */
 
-html{
+html {
   background-color: @red;
-  zoom: .9;
 }
 
 body {
@@ -22,6 +21,26 @@ body {
   //transition: all 0.25s ease-in-out;
   background: transparent;
   //height: 100%;
+}
+
+svg, img {
+  animation: 1.5s fadeIn;
+}
+
+#throbber-light {
+    background-color:transparent;
+    width:100%;
+    height:100%;
+    /*width:800px;
+    height:500px;*/
+    display:block;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+    margin: auto;
+    & svg path, & svg g g {
+      //fill: @blue;
+      stroke: @blue;
+    }
 }
 
 a {
@@ -190,10 +209,12 @@ header {
   -o-transition: all 0.5s ease-out;
 }
 .content {
-  //display: table-cell;
+  display: flex;
+  flex-wrap: wrap;
   vertical-align: middle;
+  align-items: stretch;
   padding: 30px 50px 50px 50px;
-  max-width: 1173px;
+  //max-width: 1370px;
   //max-width: 785px;
   margin: 0 auto;
   transition: all 0.25s ease-out;
@@ -203,6 +224,7 @@ header {
   //border: 200px solid white;
   &.page {
     max-width: 1167px;
+    display: block;
     padding: 30px 65px 50px 65px;
     position: relative;
 
@@ -266,7 +288,7 @@ header {
         bottom: -10px;
       }
       & h1 {
-        font-size: 1.1em;
+        font-size: 1.05em;
         margin-bottom: 10px;
         //line-height: .95em;
         line-height: 14px;
@@ -282,9 +304,9 @@ header {
   }
   .content-block {
     width: 120px;
-    height: 120px;
+    height: 240px;
     padding: 10px 15px;
-    margin: 0 21px 40px 21px; 
+    margin: 0 20px 40px 20px; 
     display: inline-block;
     //background: linear-gradient(25deg, #0025FF, #0025FF, #F3112C, #F3112C, #0025FF, #0025FF);
     //-webkit-animation: gradient 30s ease infinite;
@@ -302,11 +324,10 @@ header {
     -webkit-transition: all 0.45s ease-in-out;
     -moz-transition: all 0.45s ease-in-out;
     -o-transition: all 0.45s ease-in-out;
-
     & .content-block--text {
       width: calc(~"100% - 30px");
       height: calc(~"100% - 20px");
-      background: @red;
+      //background: @red;
       z-index: 80;
       position: absolute;
       bottom: 0;
@@ -332,20 +353,61 @@ header {
     &.white {
         position: relative;
         &:hover {
-          //cursor: text;
+          transition: all 0.05s ease-in-out;
+          &:after {
+              //left: -6px;
+              //bottom: -6px;
+              //border-color: white;
+              transition: all 0.25s ease-in-out;
+            }
         }
         & a.content-block--text {
           background-color: @white;
           color: @blue;
           &:hover {
             cursor: pointer;
+            & h1 {
+              color: @red;
+            }
+            & .content-cover {
+              background: @blue;
+              border-color: @blue;
+              transition: all 0.25s ease-in-out;
+              & svg g, & svg path {
+                fill: @white;
+              }
+              & .svg-stroke g {
+                stroke: @white;
+              }
+            }
+          }
+          & .content-cover {
+            height: 75px;
+            background: #e4e4e4;
+            //border: 2px solid #ddd;
+            transition: all 0.25s ease-in-out;
+            //background: rgba(0,0,0,0.035);
+            width: 100%;
+            display: block;
+            margin: 5px 0 15px;
+            display: flex;
+            align-items: center;
+            & svg g, & img, & svg {
+              width: 80%;
+              max-height: 60px;
+              margin: 0 auto;
+              fill: #ccc;
+            }
+            & .svg-stroke g {
+              stroke: #ccc;
+            }
           }
           & h1, p {
             color: @blue;
           }
           & h3 {
             color: @blue;
-            font-family: 'GreycliffCF-ExtraBold'
+            //font-family: 'GreycliffCF-ExtraBold'
           }
           & .dates {
               color: @red;
@@ -362,11 +424,6 @@ header {
                 color: @blue;
               }
             }
-          &:hover {
-            & h1 {
-              color: @red;
-            }
-          }
         }
         & div.content-block--text {
           background-color: @white;
@@ -406,7 +463,7 @@ header {
         }
       }
     &.double {
-      width: 316px;
+      width: 310px;
     }
     &.full {
       width: 512px;
@@ -422,6 +479,11 @@ header {
       display: block;
       //color: lighten(@red, 10%);
       //background-color: @white;
+      &:hover {
+        &:after {
+          border-color: @blue;
+        }
+      }
       &.full {
         width: 92%;
         max-width: 785px;
@@ -555,7 +617,7 @@ header {
     h1 {
       //font-family: 'kulturista-web';
       font-family: 'GreycliffCF-ExtraBold';
-      font-size: 1.20em;
+      font-size: 1.1em;
       letter-spacing: -0.5px;
       text-align: left;
       overflow-wrap: break-word;
