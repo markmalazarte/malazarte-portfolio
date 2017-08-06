@@ -16,7 +16,6 @@ body {
   background-color: @red;
   color: @text;
   //padding: 5%;
-  transition: 0s;
   line-height: 1em;
   //transition: all 0.25s ease-in-out;
   background: transparent;
@@ -24,7 +23,24 @@ body {
 }
 
 svg, img {
-  animation: 1.5s fadeIn;
+  //animation: 1.25s expandOpen ease-out;
+}
+
+/* Shadow Fill */
+@-webkit-keyframes blue {
+    0%{background-position:0% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 0%}
+}
+@-moz-keyframes blue {
+    0%{background-position:0% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 0%}
+}
+@keyframes blue { 
+    0%{background-position:0% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 0%}
 }
 
 #throbber-light {
@@ -90,10 +106,15 @@ input[type="submit"] {
 }
 .example {
   header {
-    h1 {
-      .back i {
+    h1, a, a:visited {
+      color: @red;
+      &:hover {
+          color: @blue;
+        }
+      & .back i {
+        color: @red;
         &:hover {
-          color: @red;
+          color: @blue;
         }
       }
     }
@@ -106,12 +127,12 @@ header {
   //left: 0;
   //top: 0;
   height: 30px;
-  padding: 20px 0;
+  padding: 20px 0 0;
   //max-width: 795px;
   margin: 0 auto;
   //text-align: center;
   //background-color: @red;
-  color: @light-grey;
+  color: @white;
   //width: 100%;
   h1 {
     //color: @light-grey;
@@ -119,7 +140,7 @@ header {
     padding: 0;
     .back i {
       font-size: 3.5em !important;
-      color: @blue;
+      color: @white;
       margin-top: -5px;
       display: static !important;
       transition: all 0.15s ease-in-out;
@@ -127,7 +148,7 @@ header {
       -moz-transition: all 0.15s ease-in-out;
       -o-transition: all 0.15s ease-in-out;
       &:hover {
-        color: @white;
+        color: @blue;
       }
     }
     &.smile {
@@ -215,7 +236,7 @@ header {
   align-items: stretch;
   padding: 30px 50px 50px 50px;
   //max-width: 1370px;
-  //max-width: 785px;
+  max-width: 810px;
   margin: 0 auto;
   transition: all 0.25s ease-out;
   -webkit-transition: all 0.25s ease-out;
@@ -239,8 +260,8 @@ header {
       border-radius: 0;
       padding: 10px 15px;
       text-transform: uppercase;
-      font-size: .9em;
-      letter-spacing: 1px;
+      font-size: 1em;
+      letter-spacing: .5px;
       font-family: 'GreycliffCF-ExtraBold';
       color: @white;
       //transform: rotate(90deg);
@@ -259,52 +280,57 @@ header {
     }
     
     .content-block {
-      width: 140px;
-      margin: 0 10px 30px 10px;
+      width: 130px;
+      margin: 0 15px 30px 15px;
       height: 90px;
       & .content-block--text {
-        width: calc(~"100% - 30px");
-        height: calc(~"100% - 20px");
+        //width: calc(~"100% - 30px");
+        //height: calc(~"100% - 20px");
         background: @red;
         z-index: 80;
         position: absolute;
         bottom: 0;
         left: 0;
-        padding: 10px 15px;
-        transition: all 0.15s ease-in-out;
-        -webkit-transition: all 0.15s ease-in-out;
-        -moz-transition: all 0.15s ease-in-out;
-        -o-transition: all 0.15s ease-in-out;
+        //padding: 10px 15px;
+        -webkit-transition: background-color .25s ease-out;
+  -moz-transition: background-color .25s ease-out;
+  -o-transition: background-color .25s ease-out;
+  transition: background-color .25s ease-out;
+        &:hover {
+          h1 {
+            color: @red;
+            animation: 0.5s jiggle ease-out;
+          }
+        }
       }
       &:after {
         content: '';
-        width: calc(~"100% - 30px");
-        height: calc(~"100% - 20px");
-        padding: 12px 15px;
+        //width: calc(~"100% - 30px");
+        //height: calc(~"100% - 20px");
+        //padding: 12px 15px;
         display: inline-block;
         border: 2px solid @blue;
         position: absolute;
-        left: -10px;
-        bottom: -10px;
+        left: -13px;
+        bottom: -13px;
       }
       & h1 {
-        font-size: 1.05em;
-        margin-bottom: 10px;
+        font-size: 1.15em;
+        margin-bottom: 7px;
         //line-height: .95em;
-        line-height: 14px;
       }
       & h3 {
-        font-size: .90em;
+        font-size: .95em;
       }
       & p {
-        font-size: .90em;
+        font-size: .95em;
         //margin-bottom: 10px !important;
       }
     }
   }
   .content-block {
-    width: 120px;
-    height: 240px;
+    width: 190px;
+    height: 190px;
     padding: 10px 15px;
     margin: 0 20px 40px 20px; 
     display: inline-block;
@@ -341,24 +367,29 @@ header {
     }
     &:after {
       content: '';
-      width: calc(~"100% - 30px");
-      height: calc(~"100% - 20px");
-      padding: 10px 15px;
+      width: 100%;
+      height: 100%;
+      //width: calc(~"100% - 30px");
+      //height: calc(~"100% - 20px");
+      //padding: 10px 15px;
       display: inline-block;
       border: 2px solid @blue;
       position: absolute;
-      left: -12px;
-      bottom: -12px;
+      left: -13px;
+      bottom: -13px;
     }
     &.white {
         position: relative;
         &:hover {
-          transition: all 0.05s ease-in-out;
+          -webkit-transition: background-color .25s ease-out;
+  -moz-transition: background-color .25s ease-out;
+  -o-transition: background-color .25s ease-out;
+  transition: background-color .25s ease-out;
           &:after {
               //left: -6px;
               //bottom: -6px;
               //border-color: white;
-              transition: all 0.25s ease-in-out;
+              //transition: all 0.15s ease-out;
             }
         }
         & a.content-block--text {
@@ -367,37 +398,40 @@ header {
           &:hover {
             cursor: pointer;
             & h1 {
-              color: @red;
+              //color: @red;
             }
             & .content-cover {
-              background: @blue;
-              border-color: @blue;
+              //background: @blue;
+              //border-color: @blue;
               transition: all 0.25s ease-in-out;
-              opacity: 1.0;
+              //opacity: 1.0;
+              //margin-bottom: 8px;
+              animation: 0.5s jiggle ease-out;
               & svg g, & svg path {
-                fill: @white;
+                fill: @red;
               }
               & .svg-stroke g {
-                stroke: @white;
+                stroke: @red;
               }
             }
           }
           & .content-cover {
-            height: 75px;
+            //height: 75px;
             //opacity: 0.35;
             //background: #e2e2e2;
-            border: 2px solid @blue;
+            //border: 2px solid @blue;
             transition: all 0.25s ease-in-out;
             //background: rgba(0,0,0,0.035);
             //width: calc(100% - 4px);
             display: block;
-            margin: 5px 0 15px;
-            display: flex;
-            align-items: center;
+            margin: 5px 0 10px;
+            //display: flex;
+            //align-items: center;
             & svg g, & img, & svg {
-              width: 80%;
-              max-height: 60px;
-              margin: 0 auto;
+              width: auto;
+              height: 35px;
+              max-width: 75px;
+              //margin: 0 auto;
               fill: @blue;
             }
             & .svg-stroke g {
@@ -418,7 +452,7 @@ header {
               position: absolute;
               bottom: 10px;
               //margin-bottom: 12px;
-              font-size: 1.15em;
+              font-size: 1.25em;
               letter-spacing: .05px;
               text-align: right;
               right: 10px;
@@ -437,7 +471,7 @@ header {
               position: absolute;
               bottom: 10px;
               //margin-bottom: 12px;
-              font-size: 1.15em;
+              font-size: 1.25em;
               letter-spacing: .05px;
               text-align: right;
               right: 10px;
@@ -458,6 +492,10 @@ header {
         }
         &:after {
           background: @white;
+          -webkit-transition: background-color .5s ease-out;
+  -moz-transition: background-color .5s ease-out;
+  -o-transition: background-color .5s ease-out;
+  transition: background-color .5s ease-out;
         }
         & strong {
           color: @red;
@@ -481,7 +519,14 @@ header {
       display: block;
       //color: lighten(@red, 10%);
       //background-color: @white;
+      &:after {
+        background: @blue;
+      }
       &:hover {
+        & h1 {
+          color: @blue !important;
+          animation: none !important;
+        }
         &:after {
           border-color: @blue;
         }
@@ -540,7 +585,7 @@ header {
         color: @white;
       }
       h3 {
-        //font-family: 'AddingtonCF-DemiBoldItalic';
+        font-family: 'GreycliffCF-DemiBold';
         font-size: 1.15em;
         margin: 0 0 15px 0;
         font-style: normal;
@@ -594,22 +639,29 @@ header {
         //height: calc(~"100% - 22px");
         //margin: 50px;
         //height: 145px;
-        transition: all 0.25s ease-in-out;
-        -webkit-transition: all 0.25s ease-in-out;
-        -moz-transition: all 0.25s ease-in-out;
-        -o-transition: all 0.25s ease-in-out;
+        -webkit-transition: background-color .25s ease-out;
+  -moz-transition: background-color .25s ease-out;
+  -o-transition: background-color .25s ease-out;
+  transition: background-color .25s ease-out;
       }
       &:after {
         content: '';
         //width: calc(~"100% - 30px");
         //height: calc(~"100% - 22px");
         //padding: 11px 16px;
-        display: inline-block;
+        //display: inline-block;
         background: @blue;
         //border: 2px solid @blue;
-        position: absolute;
+        //position: absolute;
         //left: -15px;
         //bottom: -15px;
+        //background: linear-gradient(0deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+        //background-size: 100% 100%;
+        //background-position: bottom center;
+        -webkit-transition: background-color .25s ease-out;
+  -moz-transition: background-color .25s ease-out;
+  -o-transition: background-color .25s ease-out;
+  transition: background-color .25s ease-out;
         }
 
         & h1, h3, p, a {
@@ -619,7 +671,7 @@ header {
     h1 {
       //font-family: 'kulturista-web';
       font-family: 'GreycliffCF-ExtraBold';
-      font-size: 1.1em;
+      font-size: 1.25em;
       letter-spacing: -0.5px;
       text-align: left;
       overflow-wrap: break-word;
@@ -628,20 +680,24 @@ header {
       color: @white;
     }
     h3 {
-      font-size: .85em;
+      font-size: 1em;
+      line-height: 1.1em;
       font-style: normal;
       letter-spacing: 0px;
+      margin-top: 5px;
+      font-family: 'GreycliffCF-DemiBold';
       //font-family: 'AddingtonCF-DemiBoldItalic';
       color: @blue;
       //opacity: 0.5;
     }
     p {
+      font-family: 'GreycliffCF-DemiBold';
       //opacity: 1.0;
       color: @blue;
       position: absolute;
       bottom: 2px;
       margin-bottom: 12px;
-      font-size: .85em;
+      font-size: 1em;
       letter-spacing: -.125px;
       text-align: right;
       right: 15px;
@@ -652,6 +708,7 @@ header {
     }
   }
 }
+
 footer {
   clear: both;
   width: 100%;
