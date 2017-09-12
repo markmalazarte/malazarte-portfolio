@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+ * Flama-BasicItalic.otf     FlamaCondensed-Extrabold.otf  FlamaSemicondBasic.otf             FlamaUltraCondBlack.otf
+ * Flama-Basic.otf           FlamaCondensed-Light.otf      FlamaSemicondBold.otf              FlamaUltraCondBold.otf
+ * FlamaBasic.otf            FlamaCondensed-Medium.otf     FlamaSemicondBook.otf              FlamaUltraCondBook.otf
+ * Flama-BlackItalic.otf     FlamaCondensed-Semibold.otf   FlamaSemicondensed-Basic.otf       FlamaUltracondensed-Basic.otf
+ * Flama-Black.otf           FlamaCondExtrabold.otf        FlamaSemicondensed-Black.otf       FlamaUltracondensed-Black.otf
+ * FlamaBlack.otf            FlamaCondLight.otf            FlamaSemicondensed-Bold.otf        FlamaUltracondensed-Bold.otf
+ * Flama-BoldItalic.otf      FlamaCondMedium.otf           FlamaSemicondensed-Book.otf        FlamaUltracondensed-Book.otf
+ * Flama-Bold.otf            FlamaCondSemibold.otf         FlamaSemicondensed-Extrabold.otf   FlamaUltracondensed-Extrabold.otf
+ * FlamaBold.otf             Flama-ExtraboldItalic.otf     FlamaSemicondensed-Light.otf       FlamaUltracondensed-Light.otf
+ * Flama-BookItalic.otf      Flama-Extrabold.otf           FlamaSemicondensed-Medium.otf      FlamaUltracondensed-Medium.otf
+ * Flama-Book.otf            FlamaExtrabold.otf            FlamaSemicondensed-Semibold.otf    FlamaUltracondensed-Semibold.otf
+ * FlamaBook.otf             Flama-LightItalic.otf         FlamaSemicondensed-Ultralight.otf  FlamaUltraCondExtrabold.otf
+ * FlamaCondBasic.otf        Flama-Light.otf               FlamaSemicondExtrabold.otf         FlamaUltraCondLight.otf
+ * FlamaCondBlack.otf        FlamaLight.otf                FlamaSemicondLight.otf             FlamaUltraCondMedium.otf
+ * FlamaCondBold.otf         Flama-MediumItal.otf          FlamaSemicondSemibold.otf          FlamaUltraCondSemibold.otf
+ * FlamaCondBook.otf         Flama-Medium.otf              FlamaSemicondUltralight.otf        Flama-UltralightItalic.otf
+ * FlamaCondensed-Basic.otf  FlamaMedium.otf               Flama-ThinItalic.otf               Flama-Ultralight.otf
+ * FlamaCondensed-Black.otf  Flama-SemiboldItalic.otf      Flama-Thin.otf                     FlamaUltralight.otf
+ * FlamaCondensed-Bold.otf   Flama-Semibold.otf            FlamaThin.otf                      FlamSemicondBlack.otf
+ * FlamaCondensed-Book.otf   FlamaSemibold.otf             FlamaUltraCondBasic.otf            FlamSemicondMed.otf
+ * */
+
+@font-face {
+    font-family: FlamaBasic;
+    src: url("../fonts/FlamaBasic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FlamaBasic;
+    font-weight: bold;
+    src: url("../fonts/FlamaBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FlamaCondensedBasic;
+    /*font-weight: bold;*/
+    src: url("../fonts/FlamaCondBasic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FlamaCondSemibold;
+    /*font-weight: bold;*/
+    src: url("../fonts/FlamaCondSemibold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FlamaCondBold;
+    /*font-weight: bold;*/
+    src: url("../fonts/FlamaCondBold.otf") format("opentype");
+}
+
+
+@font-face {
+    font-family: FlamaSemibold;
+    /*font-weight: bold;*/
+    src: url("../fonts/FlamaSemibold.otf") format("opentype");
+}
+
+
+@font-face {
+    font-family: FlamaMedium;
+    /*font-weight: bold;*/
+    src: url("../fonts/FlamaMedium.otf") format("opentype");
+}
+
+
+@font-face {
+    font-family: FlamaBook;
+    /*font-weight: bold;*/
+    src: url("../fonts/FlamaBook.otf") format("opentype");
+}

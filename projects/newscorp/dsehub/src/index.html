@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+    <head>
+        <title>Dow Jones - Data Science &amp; Engineering</title>
+        <meta property="og:site_name" content="Data Science and Engineering" />
+        <meta property="og:title" content="Angular Boilerplate v0.0" />
+        <meta property="og:description" content="Boilerplate Angular Application" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" type="text/css" href="assets/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link href="assets/c3/c3.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.6/css/jquery.dataTables.css">
+        <script src="assets/jquery/dist/jquery.js"></script>
+        <script src="assets/jquery/dist/jquery.scrollex.min.js"></script>
+        <script src="assets/jquery/dist/jquery.scrolly.min.js"></script>
+        <script src="assets/misc/skel.min.js"></script>
+        <script src="assets/misc/util.js"></script>
+        <script src="assets/misc/main.js"></script>
+        <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.6/js/jquery.dataTables.js"></script>
+        <script src="assets/d3/d3.min.js"></script>
+        <script src="assets/c3/c3.min.js"></script>
+        <!--<script src="assets/lodash/lodash.min.js"></script>
+        <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>-->
+        <script src="assets/angular/angular.js"></script>
+        <script src="assets/angular-route/angular-route.min.js"></script>
+        <script src="app/app.js"></script>
+        <!--<script src="app/controllers/homeCtrl.js"></script>
+        <script src="app/controllers/searchCtrl.js"></script>-->
+  
+        <!--inject:js-->
+        <!--endinject-->
+    </head>
+    <body class="landing">
+
+        <!-- Page Wrapper -->
+            <div id="page-wrapper">
+
+                <!-- Header -->
+                    <header id="header" class="alt">
+                        <h1 style="color: #007dc3;"><a href="index.html"><img src="images/dj-logo-white.png" style="height: 17px; margin: 0px 10px -3px 0px;"/> Data Science &amp; Engineering</a></h1>
+                        <nav id="nav">
+                            <ul>
+                                <li class="special">
+                                    <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                                    <div id="menu">
+                                        <ul>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="#ourapproach">Our Approach</a></li>
+                                            <li><a href="#ourteam">Our Team</a></li>
+                                            <li><a href="#ourexpertise">Our Expertise</a></li>
+                                            <li><a href="#ourroles">Our Roles</a></li>
+                                            <li><a href="#ourwork">Our Work</a></li>
+                                            <li><a href="#newsroom">Newsroom</a></li>
+                                            <li><a href="#customers">Customers</a></li>
+                                            <li><a href="#PIB">PIB</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+
+                <!-- Banner -->
+                    <section id="banner">
+                        <div class="inner">
+                            <h2>
+                            <span>
+                                <img src="images/dj-logo-white.png" style="opacity:1.0; height: 30px;margin: .50em auto 0.50em auto; clear: both; display: block;text-align:center;"/>
+                            </span>
+                            <strong>Data Science &amp; Engineering</strong>
+                            <img src="images/DJDSE-logo.png" style="opacity:1.0; height: 50px;margin: .50em auto 0.25em auto; clear: both; display: block;text-align:center;"/></h2>
+                            <!--<ul class="actions">
+                                <li><a href="#" class="button special">Activate</a></li>
+                            </ul>-->
+                        </div>
+                        <a href="#ourapproach" class="more scrolly">Who We Are</a>
+                    </section>
+
+                <!-- One -->
+                    <section id="ourapproach" class="wrapper style1 special" style="background-color:#f8f8f8;color: #333; height: 100vh;">
+                        <div class="inner">
+                            <h2 style="color: #2f2f2f;">Our Approach</h2>
+                            <header class="major" style="display:inline-block;">
+                                <div class="left" style="width: 30%;">
+                                    <img src="images/DNA.png" style="width: 100%;"/>
+                                </div>
+                                <div class="right" style="width: 60%;">
+                                    <h5 style="color: #007dc3;">People</h5>
+                                    <ul class="alt">
+                                        <li>Building a data culture </li>
+                                        <li>A cross functional team of doers and implementers</li>
+                                        <li>Prefer investment in talented people over tools </li>
+                                    </ul>
+                                    <h5 style="color: #007dc3;">Technology</h5>
+                                    <ul class="alt">
+                                        <li>Best in class data tech stack </li>
+                                        <li>Everyone in the team should be able to code </li>
+                                        <li>Create data products in preference to static reports </li>
+                                    </ul>
+                                     <h5 style="color: #007dc3;">Values</h5>
+                                    <ul class="alt">
+                                        <li>Agile - fast moving, focused on business results</li>
+                                        <li>Collaborative engagement model with stakeholders </li>
+                                        <li>Strong design ethos - using visuals to tell stories with data </li>
+                                    </ul>
+                                </header>
+                                <!--<ul class="actions">
+                                    <li><a href="#ourteam" class="button icon fa-chevron-down scrolly" style="background: #007dc3;">Our Team</a></li>
+                                </ul>-->
+                            <!--<ul class="icons major">
+                                <li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
+                                <li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
+                                <li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
+                            </ul>-->
+                        </div>
+                    </section>
+                    <!--<section style="padding: 3em 0 2em 0; background-color: #f8f8f8;">
+                            <ul class="actions" style="margin-top: 25px;">
+                                <li style="text-align: center; width: 100%;"><a href="#ourteam" class="button icon fa-chevron-down scrolly" style="background-color: #007dc3; color: #fff;">Our Team</a></li>
+                            </ul>
+                        </section>-->
+                    <section id="ourteam" class="wrapper style1 special" style="background-color:#fff;color: #333; height: 100vh;">
+                        <div class="inner">
+                            <h2 style="color: #2f2f2f;">Our Team</h2>
+                            <header class="major" style="display:inline-block;">
+                                <img src="images/org-chart.png" style="width: 100%;"/>
+                            </header>
+                        </div>
+                        <!--<ul class="actions" style="margin-top: 25px;">
+                            <li><a href="#ourexpertise" class="button icon fa-chevron-down scrolly" style="background: #007dc3;">Our Expertise</a></li>
+                        </ul>-->
+                    </section>
+                    <!--<section style="padding: 3em 0 2em 0; background-color: #f8f8f8;">
+                            <ul class="actions" style="margin-top: 25px;">
+                                <li style="text-align: center; width: 100%;"><a href="#ourexpertise" class="button icon fa-chevron-down scrolly" style="background-color: #007dc3; color: #fff;">Our Expertise</a></li>
+                            </ul>
+                        </section>-->
+                    <section id="ourexpertise" class="wrapper style1 special" style="background-color:#f8f8f8;color: #333; height: 100vh;">
+                        <div class="inner">
+                            <h2 style="color: #2f2f2f;">Our Expertise</h2>
+                            <header class="major" style="display:inline-block;">
+                                <img src="images/expertise.png" style="width: 100%;"/>
+                            </header>
+                        </div>
+                    </section>
+                    <!--<section style="padding: 3em 0 2em 0; background-color: #f8f8f8;">
+                            <ul class="actions" style="margin-top: 25px;">
+                                <li style="text-align: center; width: 100%;"><a href="#ourroles" class="button icon fa-chevron-down scrolly" style="background-color: #007dc3; color: #fff;">Our Roles</a></li>
+                            </ul>
+                        </section>-->
+
+                <!-- Two -->
+                    <section id="ourroles" class="wrapper alt style2">
+                        <h2 style="color: #2f2f2f; text-align: center;">Our Roles</h2>
+                        <section class="spotlight">
+                            <div class="image"><img src="images/product-managers.png" alt="" /></div><div class="content">
+                                <h3>Product Managers</h3>
+                                <p>Our product managers bridge the gap between technology and the needs of the business. They coordinate the many moving parts of a project, balancing the demands of stakeholders, and organizing the workflow of the team.</p>
+                            </div>
+                        </section>
+                        <section class="spotlight">
+                            <div class="image"><img src="images/data-scientists.png" alt="" /></div><div class="content">
+                                <h3>Data Scientists</h3>
+                                <p>Our data science team draws from a wide multi-disciplinary background. They are experts in machine learning, statistics, computer science, computational biology, etc. Our diverse backgrounds allows us to find the best approach to every problem.</p>
+                            </div>
+                        </section>
+                        <section class="spotlight">
+                            <div class="image"><img src="images/data-engineers.png" alt="" /></div><div class="content">
+                                <h3>Data Engineers</h3>
+                                <p>Our data engineers are polyglots by design. They need to be able switch technology contexts quickly and are inquisitive and able to dive deep into complex data-related questions. They must be able to deal with any sort of data, small or large, structured or not.</p>
+                            </div>
+                        </section>
+                        <section class="spotlight">
+                            <div class="image"><img src="images/data-governance.png" alt="" /></div><div class="content">
+                                <h3>Data Governance</h3>
+                                <p>It is critical to look after the interest of the customer in a rapidly changing digital landscape. We define and maintain privacy policies, standardize data collection, while educating the business and ensuring they are in compliance with ethics and standards.</p>
+                            </div>
+                        </section>
+                        <section class="spotlight">
+                            <div class="image"><img src="images/design.png" alt="" /></div><div class="content">
+                                <h3>Design</h3>
+                                <p>Through design, we are able to communicate complex ideas to a broader audience. As our team builds data products, design works to enhance the user experience with interactive data visualizations, infographics, and help innovate new ideas for various digital platforms. </p>
+                            </div>
+                        </section>
+                        <!--<section style="padding: 3em 0 2em 0; background-color: #f8f8f8;">
+                            <ul class="actions" style="margin-top: 25px;">
+                                <li style="text-align: center; width: 100%;"><a href="#three" class="button icon fa-chevron-down scrolly" style="background-color: #007dc3; color: #fff;">Our Process</a></li>
+                            </ul>
+                        </section>-->
+                    </section>
+
+                <!-- Three -->
+                    <!--<section id="ourprocess" class="wrapper style3 special">
+                        <div class="inner">-->
+                            <!--<header class="major">
+                                <h2>Our Process</h2>-->
+                                <!--<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+                                fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>-->
+                            <!--</header>-->
+                            <!--<h2>Our Process</h2>
+                            <ul class="features">
+                                <li class="icon fa-list-ol">
+                                    <h3>Priorities<br/>&amp; Overviews</h3>
+                                    <p style="opacity: 0.70;">OKRs, backlogs, etc.</p>
+                                </li>
+                                <li class="icon fa-bullhorn">
+                                    <h3>Workflow<br/>Operations</h3>
+                                    <p style="opacity: 0.70;">Tasks, sprints, epics, etc.</p>
+                                </li>
+                                <li class="icon fa-sitemap">
+                                    <h3>Data Pipelines<br/>&amp; Platforms</h3>
+                                    <p style="opacity: 0.70;">Our engineers build pipelines to supply the data from disparate sources that fuel the models and experiments designed by the data scientists. They aim to build interchangeable modular solutions readily accessible through APIs, with data storage deployed into the cloud for scalability.</p>
+                                </li>
+                                <li class="icon fa-suitcase">
+                                    <h3>Stakeholder<br/>Engagement</h3>
+                                    <p style="opacity: 0.70;">It’s critical to invite stakeholders across the company into our process. The team works collaboratively to gather stakeholder requirements, create a work plan, and deliver products and models to meet stakeholder needs.</p>
+                                </li>
+                                <li class="icon fa-bolt">
+                                    <h3>Silicon Valley<br/>Mentality</h3>
+                                    <p style="opacity: 0.70;">Utilizing agile and scrum methodologies, a centralized tech team with a product manager will work with a data scientist to coordinate all steps of the project.</p>
+                                </li>
+                                <li class="icon fa-group">
+                                    <h3>Coordination<br/>Across Teams</h3>
+                                    <p style="opacity: 0.70;">Our team of engineers, statisticians, and computer scientists work with large volumes of data and use modeling to design experiments and products.</p>
+                                </li>
+                            </ul>
+                            <section id="ourstakeholders" class="wrapper">
+                                <h2>Our Stakeholders</h2>
+                                <div class="" style="clear: both;">
+                                    <div style="width: 32.5%; display: inline-block;">
+                                        <img src="images/PIB.png" style="height: 90px; text-align:center; margin:0px auto 15px auto; opacity: 1.0;"/>
+                                        <h3>PIB</h3>
+                                        <p style="opacity: 0.70;">Description.</p>
+                                    </div>
+                                    <div style="width: 32.5%; display: inline-block;">
+                                        <img src="images/customer.png" style="height: 90px; text-align:center; margin:0px auto 15px auto; opacity: 1.0;"/>
+                                        <h3>Customer</h3>
+                                        <p style="opacity: 0.70;">Description.</p>
+                                    </div>
+                                    <div style="width: 32.5%; display: inline-block;">
+                                        <img src="images/newsroom.png" style="height: 90px; text-align:center; margin:0px auto 15px auto; opacity: 1.0;"/>
+                                        <h3>Newsroom</h3>
+                                        <p style="opacity: 0.70;">Description.</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </section>-->
+                    <!--<section style="padding: 3em 0 2em 0; background-color: #f8f8f8;">
+                            <ul class="actions" style="margin-top: 25px;">
+                                <li style="text-align: center; width: 100%;"><a href="#ourwork" class="button icon fa-chevron-down scrolly" style="background-color: #007dc3; color: #fff;">Our Work</a></li>
+                            </ul>
+                        </section>-->
+                    <section id="ourwork" class="wrapper inner style1" style="padding-bottom: 0;">
+                        <h2 style="text-align: center;">Our Work</h2>
+                        <ul class="features" style="margin-bottom: 0; width: 100%;">
+                            <li class="icon fa-flask" style="width: 100%;">
+                                <h3>Experiments &amp; Bespoke Analysis</h3>
+                                <p style="opacity: 0.70;">Experiments provide the foundation for informative analysis. The team aids in the design of experiments around the business while also initiating experiments for model development. Additionally, we are able to assist with point-in-time analysis critical for Overview business decisions.</p>
+                            </li>
+                            <li class="icon fa-puzzle-piece" style="width: 100%;">
+                                <h3>Statistical &amp; Operational Modeling</h3>
+                                <p style="opacity: 0.70;">A main focus of our team is building models&mdash;mathematical representations of real world behaviors or events. They can be used for multiple purposes: gain insights, make predictions, and identify patterns, which help us understand our customers and make the business grow.</p>
+                            </li>
+                            <li class="icon fa-codepen" style="width: 100%;">
+                                <h3>Data Products</h3>
+                                <p style="opacity: 0.70;">Often our models and analyses evolve, and are developed into functional products that serve the business and its customers. We have built a real-time article analytics tool for the Newsroom and interactive network visualization tools for our Risk &amp; Compliance customers, among others.</p>
+                            </li>
+                            <li style="width: 100%; text-align: center; padding-bottom: 3em;"><a href="#newsroom" class="button icon fa-chevron-down scrolly">View Our Work</a></li>
+                        </ul>
+                    </section>
+                    <section id="newsroom" class="wrapper alt style2">
+                        <h2 style="color: #2f2f2f; text-align: center;"><i class="icon fa-newspaper-o"></i> Newsroom</h2>
+                        <section class="spotlight">
+                            <div class="image" style="padding-bottom: 0px;">
+                                <img src="images/NewsHelm.gif" alt="" style="height: 400px;" />
+                            </div>
+                            <div class="content">
+                                <h3>News Helm</h3>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>News Helm provides the Newsroom with unprecedented access to real-time analytics through a readily available, self-service web-based application.</p>
+                                <h5 style="color: #999;">Outcome</h5>
+                                <p>News Helm launched in July enabling section editors to monitor content performance within their bureaus: <a href="http://newshelm.dowjones.com" target="_blank">View Site</a></p>
+                            </div>
+                        </section>
+                        <section class="spotlight">
+                            <div class="image">
+                                <img src="images/hillary.png" alt="" style="height: 400px;" />
+                            </div>
+                            <div class="content">
+                                <h3>Large-Scale Data Analysis</h3>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>When the newsroom receives large-scale data sets, Data Science is on hand to quickly process data into analysis.</p>
+                                <p>As a preliminary text-parsing exercise that will form part of a future document processing pipeline, Data Science delivered on Hillary Clinton's private emails that were publicly released. This was published as part of a Capital Journal blog post on the Wall Street Journal website: <a href="http://blogs.wsj.com/washwire/2015/07/05/5-things-a-data-analysis-of-hillary-clintons-emails-show-about-her-work-habits/" target="_blank">View Site</a></p>
+                            </div>
+                        </section>
+                        <section class="spotlight">
+                            <div class="image" style="padding-bottom: 0px;">
+                                <img src="images/bracket.jpg" alt="" style="height: 400px;" />
+                            </div>
+                            <div class="content">
+                                <h3>Consulting for WSJ Interactive Graphics</h3>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>Dow Jones Interactive Graphics Team builds infographics to complement Wall Street Journal content. Data Science provides statistical advisement when requested, resulting in creative collaboration between the two groups.</p>
+                                <h5 style="color: #999;">Outcome</h5>
+                                <p>The NCAA Madness Machine is a recommendation tool for constructing personalized college basketball tournament brackets: <a href="http://graphics.wsj.com/ncaa-madness-machine/" target="_blank">View Site</a>
+                            </div>
+                        </section>
+                        
+                    </section>
+                    <section id="customers" class="wrapper inner style6" style="padding-bottom: 0;">
+                        <h2 style="color: #2f2f2f; text-align: center;"><i class="icon fa-users"></i> Customers</h2>
+                        <ul class="features" style="margin-bottom: 0; width: 100%;">
+                            <li class="projects-wide">
+                                <h3 class="center">Knowledge Engine</h3>
+                                <div class="image" style="display: block; width: 70%; margin: 50px auto 50px auto; text-align: center;">
+                                    <img src="images/knowledge-engine.png" alt="" style="width: 100%;" />
+                                </div>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>Several customer data models form the foundation of the Knowledge Engine (KE). The objective of the KE is to enable personalization across all customer touchpoints.</p>
+                                <p>More details can be found here: <a href="https://dl.dropboxusercontent.com/u/799363/JAKE/index.html" target="_blank">View Site</a></p>
+                            </li>
+                            <li class="projects-wide">
+                                <h3 class="center">Machine Learning to Map Subscriber Segments to Digital Reading Patterns</h3>
+                                <div class="image" style="display: block; width: 70%; margin: 50px auto 50px auto; text-align: center;">
+                                    <img src="images/machine-learning.png" alt="" style="width: 100%;" />
+                                </div>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>An independent research group (LRW) established customer personas for The Wall Street Journal readership. To use these personas in operational targeting and decision-making, a machine learning model was built to match customers to their personas.</p>
+                            </li>
+                            <li class="projects-wide">
+                                <h3 class="center">Targeting Segments Increases Conversion</h3>
+                                <div class="image" style="display: block; width: 70%; margin: 50px auto 50px auto; text-align: center;">
+                                    <img src="images/targeting-segments.png" alt="" style="width: 100%;" />
+                                </div>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>To prove the operational value of LRW segments, an experiment was designed and executed through a targeted marketing ad on WSJ.com. The experiment found that Career Driven Leaders respond to targeted advertisements at higher rates, p=0.003*.</p>
+                                <h5 style="color: #999;">Outcome</h5>
+                                <p>The positive experiment results allowed DS&amp;E to release the model into production. DS&amp;E organized, coordinated and ran the first experiment using segments and targeted ads which provided insights into structuring future experiments.</p>
+                            </li>
+                            <li class="projects-wide">
+                                <h3 class="center">SPA: Subscriber Predictive Attrition</h3>
+                                <div class="image" style="display: block; width: 60%; margin: 50px auto 50px auto; text-align: center;">
+                                    <img src="images/spa.png" alt="" style="width: 100%;" />
+                                </div>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>SPA delivers accurate, actionable, standardized measurements, and predictions of future subscriber churn across News Corp properties.</p>
+                            </li>
+                            <li class="projects-wide" style="width: 100%;">
+                                <h3 class="center">Paywall Optimization Through Experimentation</h3>
+                                <div class="image" style="display: block; width: 60%; margin: 50px auto 50px auto; text-align: center;">
+                                    <img src="images/paywall.png" alt="" style="width: 100%;" />
+                                </div>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>To infer the impact of moving WSJ.com behind a hard paywall, a controlled experiment is planned for August. The experiment will evaluate the effect on ad revenue and new subscriptions.</p>
+                                <h5 style="color: #999;">Outcome</h5>
+                                <p>Coming soon September, 2015.</p>
+                            </li>
+                            <li class="projects-wide">
+                                <h3 class="center">Operations Management with Predictive Modeling</h3>
+                                <div class="image" style="display: block; width: 90%; margin: 60px auto 40px auto; text-align: center;">
+                                    <img src="images/missed.png" alt="" style="width: 100%;" />
+                                </div>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>In an effort to determine which print delivery contractors were over and under performing, Data Science established a benchmarking model to score contractors.</p>
+                                <h5 style="color: #999;">Outcome</h5>
+                                <p>The model outputs weekly reports to teams managing paper delivery.</p>
+                            </li>
+                            <li class="projects-wide">
+                                <h3 class="center">WSJ+ Impact Analysis</h3>
+                                <div class="image" style="display: block; width: 80%; margin: 50px auto 50px auto; text-align: center;">
+                                    <img src="images/wsj-plus.png" alt="" style="width: 100%;" />
+                                </div>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>The WSJ+ Loyalty Program launched for subscribers in 2015. To assure the program's effectiveness, Data Science delivers quarterly analysis on the program's impact on retention.</p>
+                            </li>
+                            
+                            <!--<li class="projects-wide">
+                                <h3 class="center">Machine Learning Model to Predict Customer Segment Based on Usage Information</h3>
+                                <div class="image">
+                                    <img src="images/segmentation.png" alt="" style="width: 80%; margin: 1em auto; text-align: center;" />
+                                </div>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>Missed deliveries!</p>
+                            </li>-->
+                            
+                            <!--<li class="projects-wide">
+                                <h3 class="center">Target via Risk Score</h3>
+                                <div class="image" style="display: block; width: 100%; height: 360px; margin: 30px auto 40px auto; text-align: center; background-color: #e9f6fd;">
+                                </div>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>Subscriber Attributes</p>
+                                <h5 style="color: #999;">Outcome</h5>
+                                <p><span style="font-size: 3em;">&#9787;</span></p>
+                            </li>-->
+                            <!--<li class="projects-wide">
+                                <h3 class="center">Understanding Customer Churn</h3>
+                                <div class="image" style="display: block; width: 100%; height: 360px; margin: 30px auto 40px auto; text-align: center; background-color: #e9f6fd;">
+                                </div>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>Find subscriber subcategories that contribute most to churn and identify behavioral characteristics that best discriminate churners and non-churners.</p>
+                                <h5 style="color: #999;">Outcome</h5>
+                                <p>Decrease churn by:<br/>
+                                <span style="margin-top: 10px;display: block;">
+                                <span style="color:#007dc3; margin: 0px 5px 0px 30px;font-size: .85em;">&#9654;</span> Flagging acquisition subcategories that yield net losses&mdash;these should be discontinued.<br/>
+                                <span style="color:#007dc3; margin: 0px 5px 0px 30px;font-size: .85em;">&#9654;</span> For subscribers who are most at-risk: promote behavior associated with non-churners.
+                                </span>
+                                </p>
+                            </li>-->
+                            <li class="projects-wide">
+                                <h3 class="center">CAS: Customer Appraisal Score</h3>
+                                <div class="image" style="display: block; width: 80%; margin: 50px auto 50px auto; text-align: center;">
+                                    <img src="images/cas.png" alt="" style="width: 100%;" />
+                                </div>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>CAS determines the potential monetary value of WSJ subscribers utilizing both historical usage and subscription revenue data, as well as future predicted behavior.</p>
+                            </li>
+                            <li class="projects-wide">
+                                <h3 class="center">LEAP: Loyalty, Engagement, Affinity, Patterns</h3>
+                                <div class="image" style="display: block; width: 65%; margin: 50px auto 50px auto; text-align: center;">
+                                    <img src="images/leap.png" alt="" style="width: 100%;" />
+                                </div>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>LEAP is a unified, customizable and extensible framework that summarizes a large set of metrics into four consolidated customer-centric KPI's known as <strong>L</strong>oyalty, <strong>E</strong>ngagement, <strong>A</strong>ffinity and use <strong>P</strong>atterns (<strong>LEAP</strong>) scores. LEAP scores are directly actionable in audience development, customer insights, and personalization campaigns.</p> 
+                            </li>
+                    </section>
+                    <section id="PIB" class="wrapper alt style5" style="padding-bottom: 0;">
+                        <h2 style="color: #2f2f2f; text-align: center;"><i class="icon fa-suitcase"></i> Professional Information Business (PIB)</h2>
+                        <!--<section class="spotlight">
+                            <div class="image">
+                                <img src="images/hillary.jpg" alt="" style="height: 360px;" />
+                            </div>
+                            <div class="content">
+                                <h3>Increase Data Accessibility</h3>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>Data Marts allow us to quickly expand the data available in our tools and analysis without the handicap of managing an entire warehouse.</p>
+                                <h5 style="color: #999;">Outcome</h5>
+                                <p><span style="font-size: 3em;">&#9787;</span></p>
+                            </div>
+                        </section>-->
+                        <section class="spotlight">
+                            <div class="image" style="padding-bottom 0px;">
+                                <img src="images/kepler.gif" alt="" style="height: 400px;" />
+                            </div>
+                            <div class="content">
+                                <h3>KEPLER: Risk &amp; Compliance Tool</h3>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>KEPLER provides a highly visual, responsive, and interactive user experience to the R&amp;C (Risk and Compliance) dataset. This product also contains the tools and pipelines to regularly ingest R&amp;C data updates. <a href="http://kepler-prod.elasticbeanstalk.com/" target="_blank">View Site</a></p>
+                            </div>
+                        </section>
+                        <section class="spotlight">
+                            <div class="image">
+                                <img src="images/newton.png" alt="" style="height: 400px;" />
+                            </div>
+                            <div class="content">
+                                <h3>NEWTON: kNowledge Extraction Workflow from Text and News</h3>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>NEWTON is a data processing and predictive pipeline that analyzes large volumes of news and other unstructured content (> 300K articles per day). With NEWTON we can semi-automate the identification of key relationships in FACTIVA content and generate hypotheses (or leads) to help prioritize content to evaluate, keep or reject.</p>
+                            </div>
+                        </section>
+                    </section>
+                    <!--
+                        <section class="spotlight">
+                            <div class="image">
+                                <img src="images/wsjplus.jpg" alt="" style="height: 300px;" />
+                            </div>
+                            <div class="content">
+                                <h3>WSJ+ Impact Analysis</h3>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>To evaluate the impact of WSJ+ engagement on customer retention.</p>
+                                <h5 style="color: #999;">Outcome</h5>
+                                <p>We show there is a <span style="color: #007dc3;">10%-15%</span> relative increase in retention for WSJ+ users who redeem at least one offer against regular WSJ subscribers. (old data)</p>
+                            </div>
+                        </section>
+                        <section class="spotlight">
+                            <div class="image">
+                                <img src="images/paywall.png" alt="" style="height: 220px;" />
+                            </div>
+                            <div class="content">
+                                <h3>Paywall optimization through experimentation</h3>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>To determine the optimal level of free content on WSJ.com</p>
+                                <h5 style="color: #999;">Outcome</h5>
+                                <p>A controlled experiment was run to minimize risk to revenue while providing data to drive future decisions.</p>
+                            </div>
+                        </section>
+
+                        
+                        <section class="spotlight">
+                            <div class="image">
+                                <img src="images/segments.jpg" alt="" style="height: 285px;" />
+                            </div>
+                            <div class="content">
+                                <h3>Targeting segments INCREASES conversion</h3>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>To prove the operational value of LRW segments, an experiment was designed and executed through a targeted marketing ad on WSJ.com.</p>
+                                <h5 style="color: #999;">Outcome</h5>
+                                <p>The experiment found that Career Driven Leaders respond to targeted advertisements at higher rates, p=0.003*.</p>
+                                <p>DS&amp;E organized, coordinated and ran the first experiment using segments and targeted ads which provided insights into structuring future experiments.</p>
+                            </div>
+                        </section>
+                        <section style="padding: 3em 0 2em 0; background-color: #f8f8f8;">
+                            <ul class="actions" style="margin-top: 25px;">
+                                <li style="text-align: center; width: 100%;"><a href="#modeling" class="button icon fa-chevron-down scrolly" style="background-color: #007dc3; color: #fff;">View Modeling</a></li>
+                            </ul>
+                        </section>
+                    </section>
+                    <section id="modeling" class="wrapper alt style2" style="background-color: #fff; text-align: center;">
+                        <h2 style="color: #2f2f2f; text-align: center;margin: 0 0 1.5em 0;">Statistical &amp; Operational Modeling</h2>
+                        <section>
+                            <h3 style="text-align: center; width: 100%; clear: both;color: #007dc3;">Analyze operations Management with Predictive modeling</h3>
+                            <p style="clear: both; width: 100%; display: block;"><img src="images/missed.png" alt="" style="width: 80%; margin: 1em auto; text-align: center;" /></p>
+                        </section>
+                        <section style="padding: 3em 0 2em 0; background-color: #f8f8f8;">
+                            <h3 style="text-align: center; width: 100%; clear: both;color: #007dc3;">Improved segmentation model</h3>
+                            <p style="clear: both; width: 100%; display: block;"><img src="images/segmentation.png" alt="" style="width: 80%; margin: 1em auto; text-align: center;" /></p>
+                            <p class="link"><a href="http://djhub.dowjones.net/ckp-segmentation/" target="_blank">View Segments</a></p>
+                        </section>
+                        <section style="padding: 3em 0 2em 0; background-color: #fff;">
+                            <h3 style="text-align: center; width: 100%; clear: both;color: #007dc3;">Target Via Risk Score</h3>
+                            <p style="clear: both; width: 100%; display: block;"><img src="images/riskscore.png" alt="" style="width: 80%; margin: 1em auto; text-align: center;" /></p>
+                        </section>
+                        <section class="spotlight">
+                            <div class="image">
+                                <img src="images/spa.jpg" alt="" style="height: 300px;" />
+                            </div>
+                            <div class="content">
+                                <h3>SPA: Subscriber predictive attrition</h3>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>To deliver accurate, actionable, standardized measurements, and predictions of future subscriber churn across News Corp properties.</p>
+                                <h5 style="color: #999;">Outcome</h5>
+                                <p>At <span style="color: #007dc3;">Week 5</span> our performance surpassed TAIKO scores.<br/>
+                                At <span style="color: #007dc3;">Week 7</span> we completed Luigi integration and loaded SPA scores into CKE.<br/>
+                                Coming soon, further Root-Cause-Analysis tools, more sophisticated multi-state approaches, documentation.
+                                </p>
+                            </div>
+                        </section>
+                        <section class="spotlight">
+                            <div class="image">
+                                <img src="images/churn.jpg" alt="" style="height: 320px;" />
+                            </div>
+                            <div class="content">
+                                <h3>Understanding Customer Churn</h3>
+                                <h5 style="color: #999;">Overview</h5>
+                                <p>Find subscriber subcategories that contribute most to churn.<br/>Identify behavioral characteristics that best discriminate churners and non-churners.</p>
+                                <h5 style="color: #999;">Outcome</h5>
+                                <p>Decrease churn by:</p>
+                                <p style="margin: -20px 0px 0px 25px;">Flagging acquisition subcategories that yield net losses — these should be discontinued.</p>
+                                <p style="margin: 10px 0px 0px 25px">For subscribers who are most at-risk: promote behavior associated with non-churners.
+                                </p>
+                            </div>
+                        </section>
+                    </section>-->
+                <!-- CTA -->
+                    <!--<section id="cta" class="wrapper style4">
+                        <div class="inner">
+                            <header>
+                                <h3>Arcue ut vel commodo</h3>
+                                <p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+                            </header>
+                            <ul class="actions vertical">
+                                <li><a href="#" class="button fit special">Activate</a></li>
+                                <li><a href="#" class="button fit">Learn More</a></li>
+                            </ul>
+                        </div>
+                    </section>-->
+
+                <!-- Footer -->
+                    <footer id="footer">
+                        <ul class="icons">
+                            <li><img src="images/logos.png" style="height: 30px; opacity: 0.85;" /></li><!--
+                            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+                            <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>-->
+                        </ul>
+                        <ul class="copyright">
+                            <li>&copy;2015 Dow Jones Data Science &amp; Engineering. For more information, contact Taru Rana at: <a href="mailto:taru.rana@dowjones.com" target="_blank">taru.rana@dowjones.com</a></li>
+                            <!--<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
+                        </ul>
+                    </footer>
+
+            </div>
+    </body>
+</html>
