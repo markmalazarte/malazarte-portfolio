@@ -234,9 +234,9 @@ header {
   flex-wrap: wrap;
   vertical-align: middle;
   align-items: stretch;
-  padding: 30px 50px 50px 50px;
+  padding: 50px 50px 50px 50px;
   //max-width: 1370px;
-  max-width: 810px;
+  max-width: 780px;
   margin: 0 auto;
   transition: all 0.25s ease-out;
   -webkit-transition: all 0.25s ease-out;
@@ -244,19 +244,19 @@ header {
   -o-transition: all 0.25s ease-out;
   //border: 200px solid white;
   &.page {
-    max-width: 1167px;
-    display: block;
-    padding: 30px 65px 50px 65px;
+    //max-width: 1167px;
+    //display: block;
+    //padding: 50px 65px 50px 65px;
     position: relative;
 
     &.sm {
       //width: 972px;
-      width: 774px;
+      //width: 780px;
     }
 
     .view-btn {
       position: absolute;
-      background: @red;
+      background: @blue;
       border: 2px solid @blue;
       border-radius: 0;
       padding: 10px 15px;
@@ -270,9 +270,9 @@ header {
       top: 30px;
       right: -60px;
       &:hover {
-        background: @white;
-        color: @red;
-        //border-color: 
+        background: @red;
+        //color: @red;
+        border-color: @red;
       }
       & i {
         margin-right: 5px;
@@ -281,8 +281,8 @@ header {
     }
     
     .content-block {
-      width: 195px;
-      margin: 0 15px 30px 15px;
+      //width: 195px;
+      //margin: 0 15px 40px 15px;
       height: 90px;
       & .content-block--text {
         //width: calc(~"100% - 30px");
@@ -293,11 +293,12 @@ header {
         bottom: 0;
         left: 0;
         //padding: 10px 15px;
-        -webkit-transition: background-color .25s ease-out;
-  -moz-transition: background-color .25s ease-out;
-  -o-transition: background-color .25s ease-out;
-  transition: background-color .25s ease-out;
+        -webkit-transition: background-color .15s ease-out;
+  -moz-transition: background-color .15s ease-out;
+  -o-transition: background-color .15s ease-out;
+  transition: background-color .15s ease-out;
         &:hover {
+          border-color: @blue;
           h1 {
             color: @red;
             animation: 0.5s jiggle ease-out;
@@ -310,10 +311,10 @@ header {
         //height: calc(~"100% - 20px");
         //padding: 12px 15px;
         display: inline-block;
-        border: 2px solid @blue;
+        border: 2px solid @red;
         position: absolute;
-        left: -13px;
-        bottom: -13px;
+        left: -14px;
+        bottom: 14px;
       }
       & h1 {
         font-size: 1.15em;
@@ -331,7 +332,7 @@ header {
   }
   .content-block {
     width: 190px;
-    height: 260px;
+    height: 190px;
     padding: 10px 15px;
     margin: 0 20px 40px 20px; 
     display: inline-block;
@@ -347,10 +348,10 @@ header {
     vertical-align: top;
     text-align: left;
     position: relative;
-    transition: all 0.45s ease-in-out;
-    -webkit-transition: all 0.45s ease-in-out;
-    -moz-transition: all 0.45s ease-in-out;
-    -o-transition: all 0.45s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
     & .content-block--text {
       width: calc(~"100% - 30px");
       height: calc(~"100% - 20px");
@@ -359,7 +360,7 @@ header {
       position: absolute;
       bottom: 0;
       left: 0;
-      border: 2px solid @blue;
+      border: 2px solid @red;
       padding: 10px 15px;
       transition: all 0.15s ease-in-out;
       -webkit-transition: all 0.15s ease-in-out;
@@ -374,19 +375,21 @@ header {
       //height: calc(~"100% - 20px");
       //padding: 10px 15px;
       display: inline-block;
-      border: 2px solid @blue;
+      border: 2px solid @red;
       position: absolute;
-      left: -13px;
-      bottom: -13px;
+      left: -14px;
+      bottom: 14px;
     }
     &.white {
         position: relative;
         &:hover {
-          -webkit-transition: background-color .25s ease-out;
-  -moz-transition: background-color .25s ease-out;
-  -o-transition: background-color .25s ease-out;
-  transition: background-color .25s ease-out;
+          border-color: @blue;
+          -webkit-transition: background-color .15s ease-out;
+  -moz-transition: background-color .15s ease-out;
+  -o-transition: background-color .15s ease-out;
+  transition: background-color .15s ease-out;
           &:after {
+            border-color: @blue;
               //left: -6px;
               //bottom: -6px;
               //border-color: white;
@@ -397,6 +400,7 @@ header {
           background-color: @white;
           color: @blue;
           &:hover {
+            border-color: @blue;
             cursor: pointer;
             & h1 {
               //color: @red;
@@ -492,11 +496,11 @@ header {
           }
         }
         &:after {
-          background: @red;
-          -webkit-transition: background-color .5s ease-out;
-  -moz-transition: background-color .5s ease-out;
-  -o-transition: background-color .5s ease-out;
-  transition: background-color .5s ease-out;
+          background: @white;
+          -webkit-transition: background-color .25s ease-out;
+  -moz-transition: background-color .25s ease-out;
+  -o-transition: background-color .25s ease-out;
+  transition: background-color .25s ease-out;
         }
         & strong {
           color: @red;
@@ -504,32 +508,47 @@ header {
         }
       }
     &.double {
-      width: 310px;
+      width: 450px;
+    }
+    &.half {
+      width: 320px;
     }
     &.full {
-      width: 500px;
+      width: 710px;
     }
     &.project {
-      width: 722px;
-      float: left;
-      margin: 0 20px 30px 10px;
+      width: 710px;
+      //float: left;
+      //margin: 0 20px 40px 10px;
       height: auto;
-      min-height: 370px;
       //border: 2px solid @blue;
       //padding: 30px 15px;
-      display: block;
+      //display: block;
       //color: lighten(@red, 10%);
       //background-color: @white;
+      &.height-reg {
+        height: 300px;
+      }
+      &.height-med {
+        height: 340px;
+      }
+      &.height-lrg {
+        height: 370px;
+      }
       &:after {
-        background: @blue;
+        background: @white;
       }
       &:hover {
+        & .content-block--text {
+          border-color: @red;
+        }
         & h1 {
           color: @blue !important;
           animation: none !important;
         }
         &:after {
-          border-color: @blue;
+          border-color: @red;
+          background: @white;
         }
       }
       &.full {
@@ -542,12 +561,14 @@ header {
           position: relative;
           &:hover {
             cursor: text;
+            border-color: @red;
           }
           & .content-block--text {
             background-color: @white;
             color: @blue;
             &:hover {
               cursor: text;
+              border-color: @red;
             }
             & h1, h3, p {
               color: @blue;
@@ -569,7 +590,7 @@ header {
             }
           }
           &:after {
-            background: @blue;
+            background: @white;
           }
           & strong {
             color: @red;
@@ -635,15 +656,15 @@ header {
         //box-shadow: -10px 10px 0px @white;
         background-color: @white;
         //padding: 11px 16px;
-        //border-color: @blue;
+        border-color: @blue;
         //width: calc(~"100% - 30px");
         //height: calc(~"100% - 22px");
         //margin: 50px;
         //height: 145px;
-        -webkit-transition: background-color .25s ease-out;
-  -moz-transition: background-color .25s ease-out;
-  -o-transition: background-color .25s ease-out;
-  transition: background-color .25s ease-out;
+        -webkit-transition: background-color .15s ease-out;
+  -moz-transition: background-color .15s ease-out;
+  -o-transition: background-color .15s ease-out;
+  transition: background-color .15s ease-out;
       }
       &:after {
         content: '';
@@ -659,10 +680,10 @@ header {
         //background: linear-gradient(0deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
         //background-size: 100% 100%;
         //background-position: bottom center;
-        -webkit-transition: background-color .25s ease-out;
-  -moz-transition: background-color .25s ease-out;
-  -o-transition: background-color .25s ease-out;
-  transition: background-color .25s ease-out;
+        -webkit-transition: background-color .15s ease-out;
+  -moz-transition: background-color .15s ease-out;
+  -o-transition: background-color .15s ease-out;
+  transition: background-color .15s ease-out;
         }
 
         & h1, h3, p, a {
