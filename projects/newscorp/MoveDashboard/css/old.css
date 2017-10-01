@@ -1,0 +1,990 @@
+/* GENERAL STYLES */
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: #ffffff;
+    color: #222222;
+    font-family: 'Futura Std', 'Futura', 'LeagueSpartan', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+#main-container {
+    //padding: 25px 20px 10px 20px;
+    margin: 30px auto;
+    width: 100%;
+    overflow: hidden;
+    max-width: 1800px;
+    animation:fade 2s;
+    -webkit-animation:fade 2s; /* Safari and Chrome */
+}
+a, h1, h2, h3, h4, .widget, i, a, svg, span {
+    transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+}
+h3 {
+    font-family: 'antonio', Arial Narrow, sans-serif;
+    font-weight: bold;
+    margin: 0px;
+}
+.chart svg {
+    -webkit-animation:svg 1.85s ease-in-out; /* Chrome, Safari, Opera */
+    animation:svg 1.85s ease-in-out;
+    transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    //overflow: visible;
+}
+.x_grid_d3 text, .y_grid text { 
+    display: none !important;
+}
+
+@-webkit-keyframes svg
+{
+0%   {width:0%;}
+100% {width:100%;}
+}
+
+@-webkit-keyframes numbers
+{
+0%   {opacity:0;}
+25% {opacity:1.0;}
+75% {opacity:0;}
+100% {opacity:1.0;}
+}
+
+/* TYPOGRAPHY */
+
+@font-face {
+    font-family: 'antonio';
+    src: url('../fonts/antonio-bold-webfont.eot');
+    src: url('../fonts/antonio-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/antonio-bold-webfont.woff') format('woff'),
+         url('../fonts/antonio-bold-webfont.ttf') format('truetype'),
+         url('../fonts/antonio-bold-webfont.svg#antonio-bolddin') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('../fonts/LeagueSpartan.eot');
+    src: url('../fonts/LeagueSpartan.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/LeagueSpartan.woff') format('woff'),
+         url('../fonts/LeagueSpartan.ttf') format('truetype'),
+         url('../fonts/LeagueSpartan.svg#webfont') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* HEADER */
+
+#header {
+    //background-color: #da542f;
+    background: #2b3745; /* Old browsers */
+    background: -moz-linear-gradient(top,  #2b3745 0%, #4e5b6a 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2b3745), color-stop(100%,#4e5b6a)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #2b3745 0%,#4e5b6a 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #2b3745 0%,#4e5b6a 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #2b3745 0%,#4e5b6a 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #2b3745 0%,#4e5b6a 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b3745', endColorstr='#4e5b6a',GradientType=0 ); /* IE6-9 */
+    padding: 0px;
+    margin: 0px;
+    height: 75px;
+    width: 100%;
+    box-shadow: inset 0px -4px 8px rgba(0, 0, 0, 0.10);
+}
+.header-container {
+    background-image: url('../images/newscorp-logo.png');
+    background-size: 120px;
+    background-position: 97.5% 25px;
+    background-repeat: no-repeat;
+    max-width: 1800px;
+    height: 75px;
+    margin: 0px auto;
+    position: relative;
+}
+.logo {
+    float: left;
+    max-width: 500px;
+    position: absolute;
+    bottom: 17px;   
+    left: 30px;
+}
+.logo img {
+    //height: 42px;
+}
+.date-text {
+    float: right;
+    text-align: left;
+    text-transform: uppercase;
+    left: 175px;
+    bottom: 14px;
+    line-height: 12px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 20px;
+    font-family: 'LeagueSpartan', 'Futura Std', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #222222;
+}
+.date-text .date {
+    color: #ffffff;
+    text-align: left;
+    margin: 0px;
+    display: inline;
+    font-size: 12px;
+    //padding-right: 5px;
+}
+.date-text p {
+    margin: 0px 0px 5px 0px;
+    //position: absolute;
+    //top: 10px;
+    //right: 0px;
+    color: rgba(255,255,255,0.40);
+    display: block;
+}
+
+/* General Layout Styles */
+
+.left-column {
+    float: left;
+    width: 65%;
+    margin-left: 30px;
+    position: relative;
+}
+.right-column {
+    float: right;
+    width: 29.5%;
+    margin-right: 30px;
+}
+.section-container {
+    margin: 0px 30px;
+    clear: both;
+    position: relative;
+}
+h1.section-header {
+    padding: 8px 5px 5px 7px;
+    background-color: #2a3644;
+    margin: 0px 0px 20px 0px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 10px;
+    font-family: 'LeagueSpartan', 'Futura Std', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+    clear: both;
+    position: relative;
+    //left: 20px;
+    width: auto;
+}
+h1.section-header:after {
+    content: "▼";
+    float: right;
+    margin-top: -1px;
+    margin-right: 2px;
+    font-size: 9px;
+}
+h1.section-header:hover {
+    cursor: pointer;
+    background-color: #da542f;
+    color: #222222;
+}
+h1.active:after {
+    content: "▲" !important;
+}
+/* WIDGET STYLES */
+
+.widget-container {
+    //margin: 0px 0px 20px 20px;
+    //background-color: rgba(0,0,0,0.05);
+    position: relative;
+    width: 100%;
+    animation:fade 2s ease;
+    -webkit-animation:fade 2s ease; /* Safari and Chrome */
+    //margin-bottom: 20px;
+    display: inline-block;
+}
+.widget-container:first-child {
+    margin-left: 0px;    
+}
+.widget-container h2 {
+    background-color: #da542f;
+    color: #ffffff;
+    margin: 0px;
+    font-size: 8px;
+    line-height: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .5px;
+    padding: 7px 7px 3px 7px;
+    font-family: 'LeagueSpartan', 'Futura Std', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.label {
+    clear: both;
+}
+.logo-sm {
+
+}
+.logo-sm.wsj {
+    background-color: #484747;
+}
+.logo-sm.wsj img {
+    height: 50%;
+}
+.logo-sm.nypost {
+    background-color: #cc3333;
+}
+.logo-sm.marketwatch {
+    background-color: #1B4242 ;
+}
+.logo-sm.barrons {
+    background-color: #045ca9;
+}
+.logo-sm img {
+    //max-height: 30px;
+    height: 65%;
+    //vertical-align: middle;
+}
+.logo-sm.label {
+    //background-color: #333;
+    height: 30px;
+    vertical-align: middle;
+    display: table-cell;
+    width: inherit;
+}
+.widget {
+    background-color: rgba(0,0,0,0.05);
+    position: relative;
+    margin: 0px 20px 20px 0px;
+}
+.widget:last-child {
+    margin-right: 0px;
+}
+.black {
+    background-color: #222222;
+    color: #ffffff;
+}
+.black h3 {
+    color: #ffffff;
+}
+.transp {
+    background-color: transparent;
+}
+.half {
+    width: 49%;
+    -webkit-animation:dates 2s ease-in-out; /* Chrome, Safari, Opera */
+    animation:dates 2s ease-in-out;
+}
+.third .half .half {
+    width: 32%;
+}
+.one-third {
+    width: 36%;
+    clear: both;
+}
+.two-thirds {
+    width: 62.5%;
+    float: right;
+}
+.third {
+    width: 25%;
+    min-height: 200px;
+    -webkit-animation:dates 2s ease-in-out; /* Chrome, Safari, Opera */
+    animation:dates 2s ease-in-out;
+}
+.one-fifth {
+    width: 19%;
+    margin: 0px 30px 20px 0px;
+}
+.one-fifth:last-child, .one-fourth:last-child {
+    margin-right: 0px;
+}
+.one-fourth {
+    width: 23.85%;
+    margin: 0px 20px 20px 0px;
+}
+.number-square.one-fifth {
+    margin: 0px 30px 10px 0px;
+    clear: both;
+}
+.number-square .one-third {
+    width: 33.3%;
+    clear: none;
+    float: left;
+}
+.number-square .one-fourth {
+    width: 21%;
+    clear: none;
+    float: left;
+    margin: 0px;
+    padding: 0px 1.85%;
+    border-left: 1px dotted #666;
+}
+.number-square .half {
+    border-left: 1px dotted #666;
+}
+.number-square .half:nth-child(2) {
+    border: 0px;
+}
+.number-square .one-fourth:nth-child(2) {
+    border: 0px;
+}
+.number-square.one-fourth .one-fourth {
+    width: 20.75%;
+    height: 60px;
+}
+.number-square.one-fourth .one-fourth:nth-child(2) {
+    border: 0px;
+}
+.chart-container.one-fourth, .number-square.one-fourth {
+    width: 24%;
+    margin: 0px 1.3% 20px 0px;
+}
+.number-square.one-third:last-child, .chart-container.one-third:last-child,
+.number-square.one-fourth:last-child, .chart-container.one-fourth:last-child {
+    margin-right: 0px;
+}
+.number-square.one-fourth:nth-child(4) {
+    margin-right: 0px;
+}
+.number-square.one-third:nth-child(3) {
+    margin-right: 0px;
+}
+.number-square.one-third .one-third {
+    width: 18%;
+}
+.number-square.one-third .one-fourth:nth-child(2) {
+    border: 0px;
+}
+.number-square.one-third .one-fourth {
+    //width: 20.8%;
+    //height: 60px;
+}
+.chart-container.one-third, .number-square.one-third {
+    width: 32.1%;
+    margin: 0px 1.75% 20px 0px;
+    clear: none;
+}
+.one-fourth .full {
+    margin-right: 0px;
+}
+.full {
+    width: 100%;
+    clear: both;
+    position: relative;
+    //margin-bottom: 20px;
+}
+.top {
+    top: 0px !important;
+    bottom: inherit !important;
+}
+.left.bottom, .right.bottom {
+    //margin-top: 20px;
+    bottom: 0px;
+    position: relative;
+}
+.left.bottom .number-square, .right.bottom .number-square {
+    height: 100px;
+    clear: none;
+}
+.left.bottom .number-square h3, .right.bottom .number-square h3 {
+    margin-top: 20px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.middle {
+    margin: 0px auto;
+}
+
+/* CHART STYLES */
+
+.chart-container {
+    background-color: transparent;
+    position: relative;
+    margin-bottom: 20px;
+}
+.chart-container h2 {
+    color: #2A3644;
+    background-color: #dddddd;
+    display: inline;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.chart {
+    margin: 40px 0px 0px 35px;
+    height: 172px;
+    border-left: 2px solid #222222;
+    border-bottom: 2px solid #222222;
+}
+#chart_pageviews_srp_ldp,
+#chart_listings_total {
+    height: 102px !important;
+}
+.small-chart {
+    margin: 40px 0px 0px 35px;
+    height: 102px;
+    border-left: 2px solid #222222;
+    border-bottom: 2px solid #222222;
+}
+.chart-name {
+    text-align: center;
+    font-family: 'LeagueSpartan', 'Futura Std', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.35);
+    margin-top: 55px;
+    margin-left: 35px;
+}
+.rickshaw_legend {
+    color: #222222;
+    background: transparent;
+    position: absolute;
+    right: -5px;
+    top: 0px;
+    padding: 0px;
+    border-radius: 0;
+    font-family: 'LeagueSpartan', 'Futura Std', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 7.5px;
+    text-align: right;
+    //text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.rickshaw_legend:hover {
+    z-index: 10;
+}
+.rickshaw_legend .swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 80px;
+}
+.rickshaw_legend ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    padding-left: 115px;
+    float: right;
+}
+.rickshaw_legend li {
+    float: right;
+    padding: 2px 4px;
+    min-width: inherit;
+    width: auto;
+}
+.rickshaw_legend li:hover {
+    color: rgba(0,0,0,0.25);
+}
+.rickshaw_legend li:active {
+    opacity: 0.5;
+}
+.rickshaw_graph .x_tick .title, .y-container, .next-month, .current-month {
+    //-webkit-animation:dates 1.5s ease-in-out; /* Chrome, Safari, Opera */
+    //animation:dates 1.5s ease-in-out;
+    transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+}
+
+@-webkit-keyframes dates
+{
+0%    {opacity: 0;}    
+100%  {opacity:100;}
+}
+
+/* SPECIFIC WIDGET STYLES */
+
+.number-square {
+    text-align: center;
+    //min-height: 100px;
+}
+.number-square h3, .top .number-square h3, .bottom .number-square h3 {
+    margin: 20px auto 5px auto;
+    font-size: 26px;
+}
+.number-square h3:hover {
+    //color: #da542f !important;
+}
+.number-square h3:hover i {
+    color: #fff;
+}
+.number-square i {
+    color: #555;
+    padding-right: 3px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+.label i {
+    color: #2A3642;
+    padding-right: 3px;
+    font-size: 11px;
+    vertical-align: bottom;
+}
+.number-square.top {
+    margin: 0px auto 20px;
+    clear: none;
+}
+.sm h3 {
+    font-size: 19px !important;
+    margin-top: 16px !important;
+}
+.number-container {
+    text-align: center;
+    margin: 0px auto;
+    width: 75px;
+    height: 150px;
+    position: relative;
+    font-family: 'antonio', Arial Narrow, sans-serif;
+    font-weight: normal;
+}
+
+/* D3 TOOLTIP */
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  z-index: 999;
+  font-family: 'LeagueSpartan', 'Futura Std', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+/* Revenues Section - Section 1L */
+
+.revenues.digital:hover h3, .revenues.print:hover h3 {
+    font-size: 34px !important;
+    background-position: center 250px;
+}
+.revenues h3, .web h3, .number-square h3 {
+    margin: 0px;
+    font-size: 20px;
+    line-height: 26px;
+    //color: #da542f;
+    color: #ffffff;
+    //padding-left: 15px;
+    padding: 10px 0px 0px 0px;
+}
+.revenues h3:hover {
+    color: #fff !important;
+}
+.revenues h4, .web h4, .number-square h4, .revenue-title h4 {
+    text-transform: uppercase;
+    //letter-spacing: 1px;
+    margin: 0px;
+    position: relative;
+    //font-family: 'LeagueSpartan', 'Futura Std', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: -.25px;
+    //margin-top: 20px;
+    margin-bottom: 10px;
+    //padding-left: 15px;
+    font-weight: bold;
+    font-family: 'antonio', Arial Narrow, sans-serif;
+    -webkit-animation:numbers 0.85s ease-in-out; /* Chrome, Safari, Opera */
+    animation:numbers 0.85s ease-in-out;
+    transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+}
+.number-square h5 {
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    margin: 0px;
+    color: #497CBC;
+    font-family: 'LeagueSpartan', 'Futura Std', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-size: 9px;
+    margin-top: 13px;
+    margin-bottom: 1px;
+    //padding-left: 15px;
+}
+.revenues h3:last-child, .web h3:last-child {
+    margin-bottom: 17px !important;
+}
+.revenues.number-square.total {
+    width: 55%;
+    height: 80px !important;
+    min-height: 80px !important;
+}
+.revenues.number-square.total h3 {
+    font-size: 30px !important;
+    color: #497CBC;
+    //color: #fff;
+    margin: 10px auto 0px auto !important;
+}
+.revenues.number-square.total:hover h3 {
+    font-size: 34px !important;
+    color: #fff !important;
+}
+.revenues.number-square.total:hover i {
+    color: #fff !important;
+}
+.revenues h4.month-label {
+    color: #888;
+    font-size: 11px;
+}
+.revenue-title {
+    position: relative;
+    text-align: center;
+    font-size: 11px;
+    padding-top: 20px;
+    width: 48%;
+    margin: 0px auto !important;
+    bottom: inherit !important;
+    top: 0px !important;
+    cursor: text;
+}
+.revenue-title h5 {
+    text-transform: uppercase;
+    color: #497CBC;
+    text-align: center;
+    margin: 0px auto !important;
+    font-size: 10px;
+    letter-spacing: .5px;
+    cursor: text;
+    padding: 0px !important;
+    font-family: 'LeagueSpartan', 'Futura Std', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.revenue-title h4 {
+    margin: 1px 0px 0px 0px !important;
+    padding: 0px !important;
+    clear: both;
+}
+.pie-container {
+    width: 100%;
+    clear: none;
+    position: relative !important;
+    //top: 30px !important;
+    height: 320px;
+}
+.pie-container .half.left {
+    //position: absolute;
+    margin: 0px 0px 0px 3%;
+    top: 60px !important;
+    width: 43%;
+    height: 100px;
+    padding-top: 10px;
+    position: absolute;
+}
+.pie-container .half.right {
+    //position: absolute;
+    margin: 0px 3% 0px 0px;
+    top: 72px !important;
+    width: 43%;
+    height: 100px;
+    padding-top: 10px;
+    position: absolute;
+}
+.pie-container .bottom.half {
+    position: absolute !important;
+    height: 95px;
+    margin: 0px;
+    bottom: 5px;
+}
+.pie-chart {
+    width: 80px;
+    height: 80px;
+    //background-color: #ccc;
+    //border-radius: 100px;
+    vertical-align: top;
+    top: -10px;
+    //padding: 0px 20px;
+    position: relative;
+}
+#traffic_unique_users,
+#traffic_page_views {
+    width: 140px;
+    height: 140px;
+}
+.pie-chart.right {
+    left: inherit;
+    top: 0px !important;
+}
+.pie-chart text {
+    font-size: 8px;
+    font-family: 'LeagueSpartan', 'Futura Std', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    text-transform: uppercase;
+    z-index: 99999;
+    //position: absolute;
+    //top: -15px;
+    bottom: 0px;
+}
+.pie-chart svg {
+    //opacity: 0.35;
+    //position: relative;
+    fill: #888888;
+    width: 100%;
+    height: 100%;
+}
+.pie-chart svg:hover {
+    opacity: 1.0;
+}
+.pie-chart svg:hover text {
+    //display: block !important;
+    //fill: rgba(0,0,0,0.35);
+}
+.pie-chart .slice {
+    fill: #eee;
+}
+.pie-chart .slice text {
+    display: none;
+    fill: #ffffff;
+    bottom: 0px;
+}
+.pie-chart .slice text:hover {
+    fill: #ffffff !important;
+    //cursor: text;
+}
+.pie-chart .slice:hover text {
+    display: block !important;
+    font-family: 'antonio', Arial Narrow, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -.5px;
+    fill: #ffffff;
+    bottom: 0px;
+}
+.pie-chart-numbers {
+    width: 55%;
+    top: 0px;
+}
+.pie-month {
+    text-transform: uppercase;
+    margin: 0px auto;
+    font-size: 13px !important;
+    color: #ffffff;
+    letter-spacing: 1px;
+    top: 57px;
+    position: relative;
+    text-align: center;
+    width: 70px;
+    z-index: 100;
+    font-weight: bold;
+    font-family: 'LeagueSpartan', 'Futura Std', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+.pie-chart:hover {
+    cursor: pointer;
+}
+.pie-chart:hover .pie-month {
+    //color: #ffffff;
+    //text-shadow: 0px 0px 5px rgba(0,0,0,0.85);
+    cursor: text;
+    //display: none;
+    top: -3px;
+}
+
+.pie-chart-numbers h3 {
+    font-size: 15px;
+    margin: 0px 0px 8px 0px;
+    padding: 0px;
+    position: relative;
+    clear: both;
+}
+.pie-chart-numbers h3:last-child {
+    margin-bottom: 0px;
+}
+.pie-chart-numbers h4 {
+    font-size: 9px;
+    margin: 0px 0px 0px 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    font-family: 'LeagueSpartan', 'Futura Std', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.pie-chart-numbers h4.showcase {
+    color: #888;
+}
+.pie-chart-numbers.left {
+    text-align: right;
+}
+.pie-chart-numbers.right {
+    text-align: left;
+}
+.booked {
+
+}
+.booked i, #ad_rev_current_booked:hover, #ad_rev_next_booked:hover {
+    //color: #497CBC !important;
+}
+.forecasted {
+
+}
+.forecasted i, #ad_rev_next_forecasted:hover {
+    color: #da542f !important;
+}
+.ad-exchange i, #ad_rev_current_exchange:hover {
+    color: #f38a37 !important;
+}
+.target {
+
+}
+.target i, #ad_rev_current_target:hover, #ad_rev_next_target:hover {
+    color: #aaaaaa !important;
+}
+.divider-line {
+    width: 2px;
+    height: 285px;
+    border-radius: 5px;
+    margin: 20px auto 15px;
+    background-color: #DA542F;
+}
+
+/* Percentage */
+
+.percentage {
+    font-size: 10px;
+    font-family: 'LeagueSpartan', 'Futura Std', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: absolute;
+    bottom: 2px;
+    right: 0px;
+    letter-spacing: .5px;
+    margin-left: 10px;
+}
+.percentage i {
+    font-size: 13px;
+    padding-right: 3px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+.percentage.up, .percentage.up i,
+.pie-chart-numbers .percentage.up, .pie-chart-numbers .percentage.up i {
+    color: #49BC7C !important;
+}
+.percentage.down, .percentage.down i,
+.pie-chart-numbers .percentage.down, .pie-chart-numbers .percentage.down i {
+    color: #C13636 !important;
+}
+.pie-chart-numbers.right .percentage {
+    margin: 0px;
+    top: 4px;
+    right: 0px;
+    //position: relative;
+}
+.pie-chart-numbers.left .percentage {
+    margin: 0px;
+    top: 4px;
+    left: 0px;
+    right: auto;
+    //position: relative;
+}
+.pie-chart-numbers i {
+    //font-size: 14px;
+    //margin-top: -4px;
+}
+/* Current Listing Donut Chart Label Colors */
+
+.showcase {
+    color: #865CD9 !important;
+}
+.cobroke {
+    color: #31B0CD !important;
+}
+.basic {
+    color: #DABE2F !important;
+}
+
+/* Traffic Donut Chart Label Colors */
+
+.traffic-paid {
+    color: #a1dc6d !important;
+}
+.traffic-organic {
+    color: #e64e4e !important;
+}
+.traffic-direct {
+    color: #9357c5 !important;
+}
+.traffic-social {
+    color: #3b5998 !important;
+}
+.traffic-referral {
+    color: #cf9440 !important;
+}
+.traffic-other {
+    color: #888888 !important;
+}
+
+/* 8.5x11 Print Resolution */
+
+@media only screen
+and (min-width: 2500px)
+and (max-width: 2550px)
+ {
+    body {
+        zoom: 200%;
+    }
+    svg {
+        width: 100%;
+    }
+    .date-text {
+        font-size: 16px;
+        left: 175px;
+    }
+    .top-bar {
+        display: none;
+    }
+    #header {
+        height: 100px;
+        padding-top: 20px;
+    }
+    .header-container {
+        background-size: 150px;
+    }
+    .logo img {
+        //height: 47px;
+    }
+    .top-container {
+        margin: 0px auto;
+    }
+    .left-column {
+        margin-left: 0px;
+        width: 67%;
+    }
+    .right-column {
+        width: 32%;
+        margin-right: 0px;
+    }
+}

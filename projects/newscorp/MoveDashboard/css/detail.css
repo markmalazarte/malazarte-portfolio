@@ -1,0 +1,116 @@
+.rickshaw_graph .detail {
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	background: rgba(0, 0, 0, 0.5);
+	bottom: 0;
+	width: 1px;
+	margin-left: -1px;
+	transition: opacity 0.25s linear;
+	-moz-transition: opacity 0.25s linear;
+	-o-transition: opacity 0.25s linear;
+	-webkit-transition: opacity 0.25s linear;
+}
+.rickshaw_graph .detail.inactive {
+	opacity: 0;
+}
+.rickshaw_graph .detail .item.active {
+	opacity: 1;
+}
+.rickshaw_graph .detail .x_label {
+	font-family: 'LeagueSpartan';
+	text-transform: uppercase;
+	font-weight: 900;
+	padding: 2px;
+	opacity: 0.5;
+	font-size: 10px;
+	letter-spacing: 1px;
+	position: absolute;
+	white-space: nowrap;
+	bottom: auto;
+	float: none;
+}
+.rickshaw_graph .detail .x_label.left {
+	left: 0;
+}
+.rickshaw_graph .detail .x_label.right {
+	right: 0;
+}
+.rickshaw_graph .detail .item {
+	position: absolute;
+	z-index: 2;
+	border-radius: 3px;
+	padding: 6px;
+	font-size: 12px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	letter-spacing: 1px;
+	opacity: 0;
+	background: rgba(0, 0, 0, 0.65);
+	color: white;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: -1em;
+	white-space: nowrap;
+	bottom: auto;
+	float: none;
+
+}
+.rickshaw_graph .detail .item .date{
+	font-weight: normal;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+.rickshaw_graph .detail .item.left {
+	left: 0;
+}
+.rickshaw_graph .detail .item.right {
+	right: 0;
+}
+.rickshaw_graph .detail .item.active {
+	opacity: 1;
+	background: rgba(0, 0, 0, 0.8);
+}
+.rickshaw_graph .detail .item:after {
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+
+	content: "";
+
+	border: 5px solid transparent;
+}
+.rickshaw_graph .detail .item.left:after {
+	top: 1em;
+	left: -5px;
+	margin-top: -5px;
+	border-right-color: rgba(0, 0, 0, 0.8);
+	border-left-width: 0;
+}
+.rickshaw_graph .detail .item.right:after {
+	top: 1em;
+	right: -5px;
+	margin-top: -5px;
+	border-left-color: rgba(0, 0, 0, 0.8);
+	border-right-width: 0;
+}
+.rickshaw_graph .detail .dot {
+	width: 6px;
+	height: 6px;
+	margin-left: -4px;
+	margin-top: -4px;
+	border-radius: 15px;
+	position: absolute;
+	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.75);
+	background: #F2F3E5;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #2c2c29;
+	display: none;
+	background-clip: padding-box;
+}
+.rickshaw_graph .detail .dot.active {
+	display: block;
+}

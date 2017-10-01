@@ -1,0 +1,512 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Move - Executive Dashboard</title>
+<link rel="icon" type="image/png" href="favicon.ico">
+<link href='css/graph.css' rel='stylesheet' type='text/css'>
+<link href='css/detail.css' rel='stylesheet' type='text/css'>
+<link href='css/legend.css' rel='stylesheet' type='text/css'>
+<link href='css/move.css' rel='stylesheet' type='text/css'>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="js/rickshaw.js"></script>
+<script type="text/javascript" src="js/pie.js"></script>
+<script type="text/javascript" src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+
+<!-- TOGGLE SHOW/HIDE FUNCTIONALITY ON HEADERS -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#section1").click(function(){
+    $(".section1").toggle(200);
+  });
+});
+$(document).ready(function(){
+  $("#section2").click(function(){
+    $(".section2").toggle(200);
+  });
+});
+$(document).ready(function(){
+  $("#section3").click(function(){
+    $(".section3").toggle(200);
+  });
+});
+$(document).ready(function(){
+  $("#section4").click(function(){
+    $(".section4").toggle(200);
+  });
+});
+</script>
+
+<!-- SHOW/HIDE TOGGLE CLASS -->
+
+<script>
+    $(document).ready(function(){
+        $("#section1").click(function(){
+            $("#section1").toggleClass("active");
+        });
+        $("#section2").click(function(){
+            $("#section2").toggleClass("active");
+        });
+        $("#section3").click(function(){
+            $("#section3").toggleClass("active");
+        });
+        $("#section4").click(function(){
+            $("#section4").toggleClass("active");
+        });
+    });
+</script>
+
+<!-- FADE IN TRANSITION ON LOAD -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("body").css("display", "none");
+    $("body").fadeIn(1500);
+});
+</script>
+
+</head>
+<body>
+<div id="header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="#">
+                <img src="images/move-logo.png" alt="Move - Executive Dashboard" /> 
+            </a>
+        </div>
+        <div class="date-text">
+            <p>Executive Dashboard</p>
+            <h4 class="date">
+                November 9, 2014 &mdash; November 15, 2014
+            </h4>
+        </div>
+    </div>
+</div>
+<div id="main-container">
+    <!-- TOP SECTION - SECTION 1 -->
+    <div class="section-container">
+        <h1 id="section1" class="section-header">Audience KPI<span style="text-transform: lowercase;">s</span></h1>
+        <!-- Total Web Time Series Chart -->
+        <div class="section1 widget-container transp full">
+            <div class="left half top">
+                <div class="widget left number-square black web full">
+                    <h2 class="label"><i class="fa fa-user"></i> Unique Users</h2>
+                    <div class="one-fourth left">
+                        <h5 class="label">Total</h5>
+                        <h4>7,679,939</h4>
+                    </div>
+                    <div class="one-fourth left">
+                        <h5 class="label">Web</h5>
+                        <h4>5,228,146</h4>
+                    </div>
+                    <div class="one-fourth left">
+                        <h5 class="label">App</h5>
+                        <h4>662,160</h4>
+                    </div>
+                    <div class="one-fourth left">
+                        <h5 class="label"><span style="text-transform: lowercase;">m</span>DOT</h5>
+                        <h4>1,789,633</h4>
+                    </div>
+                </div>
+                <div class="chart-container left full">
+                    <h2 class="label">Unique Users</h2>
+                    <div id="y_axis_chart_unique_users" class="y-container"></div>
+                    <div id="x_axis_chart_unique_users" class="x-container"></div>
+                    <div id="chart_unique_users" class="chart small-chart"></div>
+                    <div class="chart-name">Last 10 Weeks</div>
+                    <div id="chart_unique_users_legend" class="legend"></div>
+                </div>
+            </div>
+            <div class="right half top">
+                <div class="widget left number-square black web full">
+                    <h2 class="label"><i class="fa fa-map-marker"></i> Visits</h2>
+                    <div class="one-fourth left">
+                        <h5 class="label">Total</h5>
+                        <h4>16,232,821</h4>
+                    </div>
+                    <div class="one-fourth left">
+                        <h5 class="label">Web</h5>
+                        <h4>8,128,646</h4>
+                    </div>
+                    <div class="one-fourth left">
+                        <h5 class="label">App</h5>
+                        <h4>4,562,818</h4>
+                    </div>
+                    <div class="one-fourth left">
+                        <h5 class="label"><span style="text-transform: lowercase;">m</span>DOT</h5>
+                        <h4>3,541,357</h4>
+                    </div>
+                </div>
+                <div class="chart-container left full">
+                    <h2 class="label">Visits</h2>
+                    <div id="y_axis_chart_visits" class="y-container"></div>
+                    <div id="x_axis_chart_visits" class="x-container"></div>
+                    <div id="chart_visits" class="chart small-chart"></div>
+                    <div class="chart-name">Last 10 Weeks</div>
+                    <div id="chart_visits_legend" class="legend"></div>
+                </div>
+            </div>
+            <div class="full">
+            <div class="left half top">
+                <div class="widget left number-square black web full">
+                    <h2 class="label"><i class="fa fa-eye"></i> Page Views (SRP &amp; LDP)</h2>
+                    <div class="one-fourth left" style="padding: 0px; width: 15.75%;">
+                        <h5 class="label" style="padding: 20px 0px 7px 0px; border-bottom: 1px solid #333;">SRP</h5>
+                        <h5 class="label" style="padding: 0px 0px 9px 0px; border-bottom: 1px solid #333;">LDP</h5>
+                        <h5 class="label">Total</h5>
+                        <!--<h4>185,436,541</h4>-->
+                    </div>
+                    <div class="one-fourth left" style="padding: 0px; width: 27.5%;">
+                        <h5 class="label">Web</h5>
+                        <h4 style="padding-bottom: 2px; margin-bottom: 5px;border-bottom: 1px solid #333;">49,822,419</h4>
+                        <h4 style="padding-bottom: 2px; margin-bottom: 5px;border-bottom: 1px solid #333;">28,985,510</h4>
+                        <h4>78,807,929</h4>
+                    </div>
+                    <div class="one-fourth left" style="padding: 0px; width: 27.5%;">
+                        <h5 class="label">App</h5>
+                        <h4 style="padding-bottom: 2px; margin-bottom: 5px;border-bottom: 1px solid #333;">50,477,979</h4>
+                        <h4 style="padding-bottom: 2px; margin-bottom: 5px;border-bottom: 1px solid #333;">28,457,121</h4>
+                        <h4>78,935,100</h4>
+                    </div>
+                    <div class="one-fourth left" style="padding: 0px; width: 27.5%;">
+                        <h5 class="label"><span style="text-transform: lowercase;">m</span>DOT</h5>
+                        <h4 style="padding-bottom: 2px; margin-bottom: 5px;border-bottom: 1px solid #333;">11,090,089</h4>
+                        <h4 style="padding-bottom: 2px; margin-bottom: 5px;border-bottom: 1px solid #333;">10,559,167</h4>
+                        <h4>21,649,256</h4>
+                    </div>
+                </div>
+                <div class="chart-container left full">
+                    <h2 class="label">Page Views (SRP &amp; LDP)</h2>
+                    <div id="y_axis_chart_pageviews_srp_ldp" class="y-container"></div>
+                    <div id="x_axis_chart_pageviews_srp_ldp" class="x-container"></div>
+                    <div id="chart_pageviews_srp_ldp" class="chart small-chart"></div>
+                    <div class="chart-name">Last 10 Weeks</div>
+                    <div id="chart_pageviews_srp_ldp_legend" class="legend"></div>
+                </div>
+            </div>
+            <div class="right half top">
+                <div class="widget left number-square black web full">
+                    <h2 class="label"><i class="fa fa-list-ul"></i> Total Listings Leads (Showcase &amp; Co-Broke)</h2>
+                    <div class="one-fourth left" style="padding: 0px; width: 23.5%;">
+                        <h5 class="label" style="padding: 20px 0px 7px 0px; border-bottom: 1px solid #333;">Showcase</h5>
+                        <h5 class="label" style="padding: 0px 0px 9px 0px; border-bottom: 1px solid #333;">Co-Broke</h5>
+                        <h5 class="label">Total</h5>
+                    </div>
+                    <div class="one-fourth left" style="padding: 0px; width: 25%;">
+                        <h5 class="label">Web</h5>
+                        <h4 style="padding-bottom: 2px; margin-bottom: 5px;border-bottom: 1px solid #333;">64,715</h4>
+                        <h4 style="padding-bottom: 2px; margin-bottom: 5px;border-bottom: 1px solid #333;">37,997</h4>
+                        <h4>102,712</h4>
+                    </div>
+                    <div class="one-fourth left" style="padding: 0px; width: 25%;">
+                        <h5 class="label">App</h5>
+                        <h4 style="padding-bottom: 2px; margin-bottom: 5px;border-bottom: 1px solid #333;">24,409</h4>
+                        <h4 style="padding-bottom: 2px; margin-bottom: 5px;border-bottom: 1px solid #333;">13,722</h4>
+                        <h4>38,131</h4>
+                    </div>
+                    <div class="one-fourth left" style="padding: 0px; width: 25%;">
+                        <h5 class="label"><span style="text-transform: lowercase;">m</span>DOT</h5>
+                        <h4 style="padding-bottom: 2px; margin-bottom: 5px;border-bottom: 1px solid #333;">12,749</h4>
+                        <h4 style="padding-bottom: 2px; margin-bottom: 5px;border-bottom: 1px solid #333;">6,123</h4>
+                        <h4>18,872</h4>
+                    </div>
+                </div>
+                <div class="chart-container left full">
+                    <h2 class="label">Total Listings Leads<br/>(SC &amp; CB)</h2>
+                    <div id="y_axis_chart_listings_total" class="y-container"></div>
+                    <div id="x_axis_chart_listings_total" class="x-container"></div>
+                    <div id="chart_listings_total" class="chart small-chart"></div>
+                    <div class="chart-name">Last 10 Weeks</div>
+                    <div id="chart_listings_total_legend" class="legend"></div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- MIDDLE SECTION - SECTION 2 -->
+    <div class="section-container">
+        <h1 id="section2" class="section-header">Audience Metrics</h1>
+        <!-- Total Web Time Series Chart -->
+        <div class="section2 widget-container transp full">
+            <div class="widget left number-square black web one-third">
+                <h2 class="label"><i class="fa fa-eye"></i> Page Views Per Visit</h2>
+                <div class="one-fourth left">
+                    <h5 class="label">Average</h5>
+                    <h4>11.07</h4>
+                </div>
+                <div class="one-fourth left">
+                    <h5 class="label">Web</h5>
+                    <h4>9.70</h4>
+                </div>
+                <div class="one-fourth left">
+                    <h5 class="label">App</h5>
+                    <h4>17.30</h4>
+                </div>
+                <div class="one-fourth left">
+                    <h5 class="label"><span style="text-transform: lowercase;">m</span>DOT</h5>
+                    <h4>6.11</h4>
+                </div>
+            </div>
+            <div class="widget left number-square black web one-third">
+                <h2 class="label"><i class="fa fa-list-ul"></i> Listing Leads Per 1K Visits</h2>
+                <div class="one-fourth left">
+                    <h5 class="label">Average</h5>
+                    <h4>10.06</h4>
+                </div>
+                <div class="one-fourth left">
+                    <h5 class="label">Web</h5>
+                    <h4>12.64</h4>
+                </div>
+                <div class="one-fourth left">
+                    <h5 class="label">App</h5>
+                    <h4>8.36</h4>
+                </div>
+                <div class="one-fourth left">
+                    <h5 class="label"><span style="text-transform: lowercase;">m</span>DOT</h5>
+                    <h4>5.33</h4>
+                </div>
+            </div>
+            <div class="widget left number-square black web one-third">
+                <h2 class="label"><i class="fa fa-map-marker"></i> Visits Per Unique User</h2>
+                <div class="one-fourth left">
+                    <h5 class="label">Average</h5>
+                    <h4>2.10</h4>
+                </div>
+                <div class="one-fourth left">
+                    <h5 class="label">Web</h5>
+                    <h4>1.64</h4>
+                </div>
+                <div class="one-fourth left">
+                    <h5 class="label">App</h5>
+                    <h4>6.89</h4>
+                </div>
+                <div class="one-fourth left">
+                    <h5 class="label"><span style="text-transform: lowercase;">m</span>DOT</h5>
+                    <h4>1.98</h4>
+                </div>
+            </div>
+            <div class="widget-container transp full">
+                <div class="chart-container one-third left">
+                    <h2 class="label">Page Views Per Visit</h2>
+                    <div id="y_axis_chart_pageviews_visit" class="y-container"></div>
+                    <div id="x_axis_chart_pageviews_visit" class="x-container"></div>
+                    <div id="chart_pageviews_visit" class="chart small-chart"></div>
+                    <div class="chart-name">Last 10 Weeks</div>
+                    <div id="chart_pageviews_visit_legend" class="legend"></div>
+                </div>
+                <div class="chart-container one-third left">
+                    <h2 class="label">Listing Leads Per 1K Visits</h2>
+                    <div id="y_axis_chart_listings_1k" class="y-container"></div>
+                    <div id="x_axis_chart_listings_1k" class="x-container"></div>
+                    <div id="chart_listings_1k" class="chart small-chart"></div>
+                    <div class="chart-name">Last 10 Weeks</div>
+                    <div id="chart_listings_1k_legend" class="legend"></div>
+                </div>
+                <div class="chart-container one-third left">
+                    <h2 class="label">Visits Per Unique User</h2>
+                    <div id="y_axis_chart_visits_unique" class="y-container"></div>
+                    <div id="x_axis_chart_visits_unique" class="x-container"></div>
+                    <div id="chart_visits_unique" class="chart small-chart"></div>
+                    <div class="chart-name">Last 10 Weeks</div>
+                    <div id="chart_visits_unique_legend" class="legend"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BOTTOM SECTION -->
+    <div class="section-container">
+        <!-- LISTING COUNT - SECTION 3 LEFT -->
+        <div class="one-third left">
+            <h1 id="section3" class="section-header">RDC Listing Counts &amp; Metrics (end of period)</h1>
+            <div class="section3 widget-container full transp">
+                <!-- Current Listing Count -->
+                <div class="number-square full black revenues" style="position: relative; height: 97px; margin-bottom: 20px;">
+                    <h2 class="label"><i class="fa fa-list-ol"></i> Current Listing Count: All U.S. listings on RDC</h2>
+                    <h5 class="label" style="margin-top: 24px;">Total</h5>
+                    <div style="margin: 0px auto; width: 115px;">
+                        <h4 style="text-align: left;">3,295,088 <span class="percentage down"><i class="fa fa-caret-down"></i>1.52%</span></h4>
+                    </div>
+                </div>
+                <div class="black revenues">
+                    <h2 class="label"><i class="fa fa-pie-chart"></i> Current Listing Count (Week-on-Week)</h2>
+                    <!-- LISTING COUNT PIE CHARTS -->
+                    <div class="widget-container transp pie-container">
+                        <!-- Chart Titles -->
+                        <div class="revenue-title left" style="padding-top: 50px;">
+                            <h5 class="label">For Sale, Property Type</h5>
+                            <div style="margin: 0px auto; width: 115px;">
+                                <h4 style="text-align: left;">2,900,174 <span class="percentage down"><i class="fa fa-caret-down"></i>2.18%</span></h4></h4>
+                            </div>
+                        </div>
+                        <div class="revenue-title right" style="padding-top: 50px;">
+                            <h5 class="label">For Sale, Residential Only</h5>
+                            <div style="margin: 0px auto; width: 115px;">
+                                <h4 style="text-align: left;">2,050,231 <span class="percentage down"><i class="fa fa-caret-down"></i>1.08%</span></h4></h4>
+                            </div>
+                        </div>
+                        <!-- For Sale, Property Type (Left) -->
+                        <div class="widget top left half transp" style="top: 125px !important;">
+                            <div id="for_sale_property" class="pie-chart left">
+                            </div>
+                            <div class="pie-chart-numbers right">
+                                <h4 class="showcase">Showcase</h4>
+                                <h3 id="for_sale_property_showcase">1,214,697 <span class="percentage down"><i class="fa fa-caret-down"></i>1.31%</span></h3>
+                                <h4 class="cobroke">Co-Broke</h4>
+                                <h3 id="for_sale_property_cobroke">1,359,772 <span class="percentage down"><i class="fa fa-caret-down"></i>2.29%</span></h3>
+                                <h4 class="basic">Basic</h4>
+                                <h3 id="for_sale_property_basic">439,263 <span class="percentage up"><i class="fa fa-caret-up"></i>5.67%</span></h3>
+                            </div>
+                        </div>
+                        <div class="divider-line lime-bg"></div>
+                        <!-- For Sale, Residential Only (Right) -->
+                        <div class="widget top right half transp" style="top: 125px !important;">
+                            <div id="for_sale_residential" class="pie-chart left">
+                            </div>
+                            <div class="pie-chart-numbers right">
+                                <h4 class="showcase">Showcase</h4>
+                                <h3 id="for_sale_residential_showcase"><span class="percentage down"><i class="fa fa-caret-down"></i>1.62%</span> 861,809</h3>
+                                <h4 class="cobroke">Co-Broke</h4>
+                                <h3 id="for_sale_residential_cobroke"><span class="percentage down"><i class="fa fa-caret-down"></i>0.60%</span> 922,870</h3>
+                                <h4 class="basic">Basic</h4>
+                                <h3 id="for_sale_residential_basic"><span class="percentage down"><i class="fa fa-caret-down"></i>1.85%</span> 87,964</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TRAFFIC - SECTION 4 RIGHT -->
+        <div class="two-thirds">
+            <h1 id="section4" class="section-header">Traffic</h1>
+            <div class="section4 widget-container full transp">
+                <!-- WSJ.com -->
+                <div class="number-square one-fourth left black revenues">
+                    <h2 class="logo-sm label wsj"><img src="images/wsj-logo.png" alt="WSJ.com" title="WSJ.com"></h2>
+                    <div class="half left">
+                        <h5 class="label">Unique Users</h5>
+                        <h4 id="traffic_wsj_unique_users">123,456</h4>
+                    </div>
+                    <div class="half left">
+                        <h5 class="label">Page Views</h5>
+                        <h4 id="traffic_wsj_page_views">123,456</h4>
+                    </div>
+                </div>
+                <!-- NYPOST.com -->
+                <div class="number-square one-fourth left black revenues">
+                    <h2 class="logo-sm label nypost"><img src="images/nypost-logo.png" alt="NYPost.com" title="NYPost.com"></h2>
+                    <div class="half left">
+                        <h5 class="label">Unique Users</h5>
+                        <h4 id="traffic_nypost_unique_users">123,456</h4>
+                    </div>
+                    <div class="half left">
+                        <h5 class="label">Page Views</h5>
+                        <h4 id="traffic_nypost_page_views">123,456</h4>
+                    </div>
+                </div>
+                <!-- MARKETWATCH.com -->
+                <div class="number-square one-fourth left black revenues">
+                    <h2 class="logo-sm label marketwatch"><img src="images/marketwatch-logo.png" alt="Marketwatch.com" title="Marketwatch.com"></h2>
+                    <div class="half left">
+                        <h5 class="label">Unique Users</h5>
+                        <h4 id="traffic_marketwatch_unique_users">123,456</h4>
+                    </div>
+                    <div class="half left">
+                        <h5 class="label">Page Views</h5>
+                        <h4 id="traffic_marketwatch_page_views">123,456</h4>
+                    </div>
+                </div>
+                <!-- BARRONS.com -->
+                <div class="number-square one-fourth left black revenues">
+                    <h2 class="logo-sm label barrons"><img src="images/barrons-logo.png" alt="Barrons.com" title="Barrons.com"></h2>
+                    <div class="half left">
+                        <h5 class="label">Unique Users</h5>
+                        <h4 id="traffic_barrons_unique_users">123,456</h4>
+                    </div>
+                    <div class="half left">
+                        <h5 class="label">Page Views</h5>
+                        <h4 id="traffic_barrons_page_views">123,456</h4>
+                    </div>
+                </div>
+                <div class="black revenues full">
+                    <h2 class="label"><i class="fa fa-pie-chart"></i> Traffic Percentage</h2>
+                    <!-- TRAFFIC PIE CHARTS -->
+                    <div class="widget-container transp pie-container">
+                        <!-- Chart Titles -->
+                        <div class="revenue-title left">
+                            <h5 class="label">Unique Users</h5>
+                        </div>
+                        <div class="revenue-title right">
+                            <h5 class="label">Page Views</h5>
+                        </div>
+                        <!-- Unique Users Donut Chart (Left) -->
+                        <div class="widget top left half transp">
+                            <div id="traffic_unique_users" class="pie-chart left">
+                            </div>
+                            <div class="pie-chart-numbers right">
+                                <h4 class="traffic-paid">Paid Search</h4>
+                                <h3 id="traffic_percentage_unique_paid">1,214,697 <span class="percentage down"><i class="fa fa-caret-down"></i>1.31%</span></h3>
+                                <h4 class="traffic-organic">Organic Search</h4>
+                                <h3 id="traffic_percentage_unique_organic">1,359,772 <span class="percentage down"><i class="fa fa-caret-down"></i>2.29%</span></h3>
+                                <h4 class="traffic-direct">Direct</h4>
+                                <h3 id="traffic_percentage_unique_direct">439,263 <span class="percentage up"><i class="fa fa-caret-up"></i>5.67%</span></h3>
+                                <h4 class="traffic-social">Social</h4>
+                                <h3 id="traffic_percentage_unique_social">439,263 <span class="percentage up"><i class="fa fa-caret-up"></i>5.67%</span></h3>
+                                <h4 class="traffic-referral">Referral</h4>
+                                <h3 id="traffic_percentage_unique_referral">439,263 <span class="percentage up"><i class="fa fa-caret-up"></i>5.67%</span></h3>
+                                <h4 class="traffic-other">Other</h4>
+                                <h3 id="traffic_percentage_unique_other">439,263 <span class="percentage up"><i class="fa fa-caret-up"></i>5.67%</span></h3>
+                            </div>
+                        </div>
+                        <div class="divider-line"></div>
+                        <!-- Page Views Donut Chart (Right) -->
+                        <div class="widget top right half transp" style="top: 60px !important;">
+                            <div id="traffic_page_views" class="pie-chart left">
+                            </div>
+                            <div class="pie-chart-numbers right">
+                                <h4 class="traffic-paid">Paid Search</h4>
+                                <h3 id="traffic_percentage_pageviews_paid">1,214,697 <span class="percentage down"><i class="fa fa-caret-down"></i>1.31%</span></h3>
+                                <h4 class="traffic-organic">Organic Search</h4>
+                                <h3 id="traffic_percentage_pageviews_organic">1,359,772 <span class="percentage down"><i class="fa fa-caret-down"></i>2.29%</span></h3>
+                                <h4 class="traffic-direct">Direct</h4>
+                                <h3 id="traffic_percentage_pageviews_direct">439,263 <span class="percentage up"><i class="fa fa-caret-up"></i>5.67%</span></h3>
+                                <h4 class="traffic-social">Social</h4>
+                                <h3 id="traffic_percentage_pageviews_social">439,263 <span class="percentage up"><i class="fa fa-caret-up"></i>5.67%</span></h3>
+                                <h4 class="traffic-referral">Referral</h4>
+                                <h3 id="traffic_percentage_pageviews_referral">439,263 <span class="percentage up"><i class="fa fa-caret-up"></i>5.67%</span></h3>
+                                <h4 class="traffic-other">Other</h4>
+                                <h3 id="traffic_percentage_pageviews_other">439,263 <span class="percentage up"><i class="fa fa-caret-up"></i>5.67%</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PIE CHARTS -->
+<script type="text/javascript">
+        drawPie("Pie1", dataSet1, "#for_sale_property", "colorScale1", 0, 40, 20, 0);
+        drawPie("Pie2", dataSet2, "#for_sale_residential", "colorScale1", 0, 40, 20, 0);
+        drawPie("PieTraffic1", dataSet3, "#traffic_unique_users", "colorScale2", 0, 70, 30, 0);
+        drawPie("PieTraffic2", dataSet4, "#traffic_page_views", "colorScale2", 0, 70, 30, 0);
+</script>
+
+<!-- LOAD INDIVIDUAL TIME SERIES CHARTS -->
+<script type="text/javascript" src="js/chart_unique_users.js"></script>
+<script type="text/javascript" src="js/chart_visits.js"></script>
+<script type="text/javascript" src="js/chart_pageviews_srp_ldp.js"></script>
+<script type="text/javascript" src="js/chart_listings_total.js"></script>
+<script type="text/javascript" src="js/chart_pageviews_visit.js"></script>
+<script type="text/javascript" src="js/chart_listings_1k.js"></script>
+<script type="text/javascript" src="js/chart_visits_unique.js"></script>
+
+</body>
+</html>

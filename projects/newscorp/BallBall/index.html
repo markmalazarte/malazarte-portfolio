@@ -1,0 +1,750 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BallBall Dashboard</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link href='css/graph.css' rel='stylesheet' type='text/css'>
+<link href='css/detail.css' rel='stylesheet' type='text/css'>
+<link href='css/legend.css' rel='stylesheet' type='text/css'>
+<link href='css/ballball.css' rel='stylesheet' type='text/css'>
+<link href='css/dropit.css' rel='stylesheet' type='text/css'>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href='css/print.css' rel='stylesheet' type='text/css' media='print'>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+<!--<script src='js/keys.js'></script>-->
+<!--<script src='js/gspreadsheet.js'></script>-->
+
+<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="js/rickshaw.js"></script>
+<script type="text/javascript" src="js/pie.js"></script>
+<script type="text/javascript" src="js/dropit.js"></script>
+<script type="text/javascript" src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+
+
+<!-- TOGGLE SHOW/HIDE FUNCTIONALITY ON HEADERS -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#section1L").click(function(){
+    $(".section1L").toggle(200);
+  });
+});
+$(document).ready(function(){
+  $("#section1R").click(function(){
+    $(".section1R").toggle(200);
+  });
+});
+$(document).ready(function(){
+  $("#section2L").click(function(){
+    $(".section2L").toggle(200);
+  });
+});
+$(document).ready(function(){
+  $("#section2R").click(function(){
+    $(".section2R").toggle(200);
+  });
+});
+$(document).ready(function(){
+  $("#section3L").click(function(){
+    $(".section3L").toggle(200);
+  });
+});
+$(document).ready(function(){
+  $("#section3R").click(function(){
+    $(".section3R").toggle(200);
+  });
+});
+</script>
+
+<!-- SHOW/HIDE TOGGLE CLASS -->
+
+<script>
+    $(document).ready(function(){
+        $("#section1L").click(function(){
+            $("#section1L").toggleClass("active");
+        });
+        $("#section2L").click(function(){
+            $("#section2L").toggleClass("active");
+        });
+        $("#section1R").click(function(){
+            $("#section1R").toggleClass("active");
+        });
+        $("#section2R").click(function(){
+            $("#section2R").toggleClass("active");
+        });
+        $("#section3R").click(function(){
+            $("#section3R").toggleClass("active");
+        });
+        $(".japan a").click(function(){
+            $(".japan a").toggleClass("active");
+        });
+        $(".vietnam a").click(function(){
+            $(".vietnam a").toggleClass("active");
+        });
+        $(".indonesia a").click(function(){
+            $(".indonesia a").toggleClass("active");
+        });
+    });
+</script>
+
+<!-- AUTO REFRESH WHEN BROWSER RESIZED -->
+
+<script>
+function checkSize() {
+    if ($(window).width() > 500) {
+        resizeRefresh();
+    } else {
+        $('#cycle').fadeOut().cycle('stop');
+    }
+}
+
+D3scale = [];
+function resizeRefresh() {
+    $(window).bind('resize', function (e) {
+        var i, graph;
+        for (i = 0; i < D3scale.length; i++) {
+            graph = D3scale[i];
+            graph.setSize();
+            graph.render();
+        }
+    });
+}
+
+checkSize();
+
+$(window).resize(function () {
+    checkSize();
+});
+</script>
+
+<!-- FADE IN TRANSITION ON LOAD -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("body").css("display", "none");
+    $("body").fadeIn(1500);
+});
+</script>
+
+<!-- JQUERY DROPDOWN -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.menu').dropit();
+});
+</script>
+
+</head>
+<body>
+    <button id='authButton'>Login</button>
+    <div id="print-container">
+    <div id="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/ballball-logo.png" alt="BallBall Dashboard" /> 
+                </a>
+            </div>
+            <div class="date-text">
+                <p>Week 30</p>
+                <h4 class="date">
+                    January 18 &mdash; January 25
+                    <span id="date_range"></span>
+                    <!-- CHANGE DATE DYNAMICALLY EVERY FRIDAY -->
+                    <!--<script type="text/javascript">
+                        (function () {
+                            var now, last_monday, next_monday, offset, fmt;
+                            offset = 2;
+                            fmt = "MMMM D, YYYY";
+                            now = new Date();
+                            start = new Date(new Date().setDate(now.getDate() - ((now.getDay() + offset) % 7) - 7));
+                            end = new Date(new Date().setDate(now.getDate() + (6 - (now.getDay() + offset) % 7) - 7));
+                            $('#date_range').html(moment(start).format(fmt) + " \u2014 " + moment(end).format(fmt));
+                        })();
+                    </script>-->
+                </h4>
+            </div>
+            <div class="top-bar">
+                <!--<ul class="choose-country">
+                    <li class="japan"><a href="#" title="Japan (COMING SOON)"><img src="images/japan.png" alt="Japan" />JP</a></li>
+                    <li class="vietnam"><a href="#" title="Vietnam (COMING SOON)"><img src="images/vietnam.png" alt="Vietnam" />VN</a></li>
+                    <li class="indonesia"><a href="#" title="Indonesia (COMING SOON)"><img src="images/indonesia.png" alt="Indonesia" />ID</a></li>
+                </ul>-->
+                <ul class="download-buttons menu">
+                    <li><a href="images/01-25-2015-BallBallDashboard.png" target="_blank">Download JPG</a></li>
+                    <li><a href="#">Archives <span class="arrow-down"></a>
+                        <ul>
+                            <li>Last 3:</li>
+                            <li>N/A</li>
+                            <li>N/A</li>
+                            <li>N/A</li>
+                        </ul>
+                        <!--<ul>
+                            <li>Last 3:</li>
+                            <li><a href="images/11-21-2014-BallBallDashboard.jpg" target="_blank">11-21-2014 Dashboard</a></li>
+                            <li><a href="images/11-14-2014-BallBallDashboard.jpg" target="_blank">11-14-2014 Dashboard</a></li>
+                            <li><a href="images/11-07-2014-BallBallDashboard.jpg" target="_blank">11-07-2014 Dashboard</a></li>
+                        </ul>-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main-container">
+        <!--LEFT COLUMN -->
+        <div class="left-column">
+            <h1 id="section1L" class="section-header">Revenues</h1>
+            <!-- REVENUES SECTION -->
+            <div class="section1L" data-isotope-options='{ "layoutMode": "fitRows", "itemSelector": ".widget-container" }'>
+                <div class="widget-container transp">
+                    <!-- Ad Revenue Totals -->
+                    <div class="widget one-third left top number-square black revenues">
+                        <h2 class="label">Ad Revenue</h2>
+                        <h4 class="month-label">January/February</h4>
+                        <h4 class="">Projected</h4>
+                        <h3 id="ad_rev_total_projected">$25,000</h3>
+                        <h4 class="">Booked</h4>
+                        <h3 id="ad_rev_total_booked">$0</h3>
+                        <h4 class="">Forecasted</h4>
+                        <h3 id="ad_rev_total_forecasted">$25,000</h3>
+                    </div>
+                    <!-- Partnership Revenue Totals -->
+                    <div class="widget one-third right top number-square black revenues">
+                        <h2 class="label">Partnership Revenue</h2>
+                        <h4 class="month-label">January/February</h4>
+                        <h4 class="">Projected</h4>
+                        <h3 id="partner_rev_total_projected">$20,007</h3>
+                        <h4 class="">Booked</h4>
+                        <h3 id="partner_rev_total_booked">$12,507</h3>
+                        <h4 class="">Forecasted</h4>
+                        <h3 id="partner_rev_total_forecasted">$7,500</h3>
+                    </div>
+                    <!-- Total Revenue Box (Ad Revenue + Partnership Projected and Booked) -->
+                    <div class="widget one-third top number-square black revenues total">
+                        <h2 class="label">Total Projected and Booked Revenue</h2>
+                        <h3 id="total_revenue" class="green">$57,514</h3>
+                    </div>
+                    <!-- REVENUE PIE CHARTS -->
+                    <div class="widget-container middle transp pie-container">
+                        <!-- Chart Titles -->
+                        <h4 class="revenue-title left">Ad Revenue</h4>
+                        <h4 class="revenue-title right">Partnership Revenue</h4>
+                        <!-- Ad Revenue Current Month -->
+                        <div class="widget top left half transp">
+                            <div id="ad_rev_current_month" class="pie-chart left">
+                                <h4 id="current_month" class="pie-month">Jan</h4>
+                            </div>
+                            <div class="pie-chart-numbers right">
+                                <h4 class="booked"><i class="fa fa-circle"></i>Booked</h4>
+                                <h3 id="ad_rev_current_booked">$0</h3>
+                                <h4 class="ad-exchange"><i class="fa fa-circle"></i>Ad Exchange</h4>
+                                <h3 id="ad_rev_current_exchange">$5,000</h3>
+                                <h4 class="target"><i class="fa fa-circle"></i>Target</h4>
+                                <h3 id="ad_rev_current_target">$50,000</h3>
+                            </div>
+                        </div>
+                        <!-- Ad Revenue Next Month -->
+                        <div class="widget left bottom half transp">
+                            <div id="ad_rev_next_month" class="pie-chart left">
+                                <h4 id="next_month" class="pie-month">Feb</h4>
+                            </div>
+                            <div class="pie-chart-numbers right">
+                                <h4 class="booked"><i class="fa fa-circle"></i>Booked</h4>
+                                <h3 id="ad_rev_next_booked">$0</h3>
+                                <h4 class="forecasted"><i class="fa fa-circle"></i>Forecasted</h4>
+                                <h3 id="ad_rev_next_forecasted">$20,000</h3>
+                                <h4 class="target"><i class="fa fa-circle"></i>Target</h4>
+                                <h3 id="ad_rev_next_target">$50,000</h3>
+                            </div>
+                        </div>
+                        <div class="divider-line lime-bg"></div>
+                        <!-- Partnership Revenue Current Month -->
+                        <div class="widget top right half transp">
+                            <div id="partnership_current_month" class="pie-chart right">
+                                <h4 id="current_month" class="pie-month">Jan</h4>
+                            </div>
+                            <div class="pie-chart-numbers left">
+                                <h4 class="booked">Booked<i class="fa fa-circle"></i></h4>
+                                <h3 class="partner_rev_current_booked">$6,673</h3>
+                                <h4 class="forecasted">Forecasted<i class="fa fa-circle"></i></h4>
+                                <h3 id="partner_rev_current_forecasted">$2,500</h3>
+                                <h4 class="target">Target<i class="fa fa-circle"></i></h4>
+                                <h3 class="partner_rev_current_target">$375,000</h3>
+                            </div>
+                        </div>
+                        <!-- Partnership Revenue Next Month -->
+                        <div class="widget bottom right half transp">
+                            <div id="partnership_next_month" class="pie-chart right">
+                                <h4 id="next_month" class="pie-month">Feb</h4>
+                            </div>
+                            <div class="pie-chart-numbers left">
+                                <h4 class="booked">Booked<i class="fa fa-circle"></i></h4>
+                                <h3 class="partner_rev_next_booked">$5,833</h3>
+                                <h4 class="forecasted">Forecasted<i class="fa fa-circle"></i></h4>
+                                <h3 class="partner_rev_next_forecasted">$5,000</h3>
+                                <h4 class="target">Target<i class="fa fa-circle"></i></h4>
+                                <h3 class="partner_rev_next_target">$375,000</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 id="section2L" class="section-header">Web</h1>
+            <!-- WEB SECTION -->
+            <div class="js-isotope section2L" data-isotope-options='{ "layoutMode": "fitRows", "itemSelector": ".widget-container" }'>
+                <div class="widget-container full transp">
+                    <!-- Total Page Views, Video Views, Uniques -->
+                    <div class="widget one-third top left number-square black web">
+                        <h2 class="label">Web Totals</h2>
+                        <h4 class="page-views"><i class="fa fa-eye"></i> Page Views</h4>
+                        <h3 id="web_total_page_views">629,294</h3>
+                        <h4 class="video-views"><i class="fa fa-video-camera"></i> Video Views</h4>
+                        <h3 id="web_total_video">1,200,189</h3>
+                        <h4 class="uniques"><i class="fa fa-user"></i> Uniques</h4>
+                        <h3 id="web_total_uniques">409,097</h3>
+                    </div>
+                    <!-- Total Web Time Series Chart -->
+                    <div class="chart-container top right two-thirds">
+                        <h2 class="label">Total Web</h2>
+                        <div id="y_axis_total_web" class="y-container"></div>
+                        <div id="x_axis_total_web" class="x-container"></div>
+                        <div id="total_web" class="chart"></div>
+                        <div class="chart-name">Last 4 Weeks</div>
+                        <div id="total_web_legend" class="legend"></div>
+                    </div>
+                    <!-- Average Visit Duration -->
+                    <div class="widget one-third left bottom transp">
+                        <div class="number-square black">
+                            <h2 class="label">Avg. Visit Duration</h2>
+                            <h3 id="web_average_visit"><i class="fa fa-clock-o"></i> 01:21</h3>
+                        </div>
+                    </div>
+                    <!-- Pages Per Visit -->
+                    <div class="widget two-thirds right bottom transp">
+                        <div class="number-square half left black" style="width: 30%;">
+                            <h2 class="label">Pages Per Visit</h2>
+                            <h3 id="web_pages_per_visit"><i class="fa fa-files-o"></i> 1.52</h3>
+                        </div>
+                        <!-- NEW VS. RETURNING USERS -->
+                        <div class="number-square half right bottom black" style="width: 67%;">
+                            <h2 class="label">New Vs. Returning Users</h2>
+                            <!-- New Users -->
+                            <div class="new-users one-third left">
+                                <h4><i class="fa fa-user"></i> New Users</h4>
+                                <h3 id="web_new_users">133,237</h3>
+                            </div>
+                            <!--<div id="y_axis_new_vs_returning" class="y-container"></div>
+                            <div id="x_axis_new_vs_returning" class="x-container"></div>-->
+                            <!-- New Users vs. Returning Users Bar Percentage -->
+                            <div id="new_vs_returning" class="bar-chart">
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="height:0px;width:0px">
+                                <defs>
+                                    <linearGradient id="New_Users" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+                                        <stop offset="0%" stop-color="#57B138" stop-opacity="1" />
+                                        <stop offset="100%" stop-color="#57B138" stop-opacity="1" />
+                                    </linearGradient>
+                                    <linearGradient id="Returning_Users" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+                                        <stop offset="0%" stop-color="#C9DA2B" stop-opacity="1" />
+                                        <stop offset="100%" stop-color="#C9DA2B" stop-opacity="1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <!-- Returning Users -->
+                            <div class="returning-users one-third right">
+                                <h4><i class="fa fa-rotate-left"></i> Returning</h4>
+                                <h3 id="web_returning_users">91,542</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- RIGHT COLUMN -->
+        <div class="right-column">
+            <!-- DEAL PIPELINE -->
+            <h1 id="section1R" class="section-header">Deal Pipeline</h1>
+            <div class="js-isotope section1R" data-isotope-options='{ "layoutMode": "fitRows", "itemSelector": ".widget-container" }'>
+                <div class="widget-container notes">
+                    <strong>Distribution:</strong>
+                    <ul>
+                        <li class="deal"><em>Vietnam:</em> 24H we are working hard to integrate our player onto as many articles as possible.</li>
+                        <li class="deal"><em>Indonesia:</em> Partnership with Telkomsel to begin next week with launch of feature phone app. Multiple video player distribution conversations progressing quickly to add scale on the pre roll inventory. Check <a href="http://www.bola.net/" target="_blank">www.bola.net</a> as a key partner.</li>
+                        <li class="deal"><em>Japan:</em> Yahoo video syndication deal in Japan finalising the terms and content requirement.</li>
+                    </ul>
+                    <strong>Advertising:</strong>
+                    <ul>
+                        <li class="deal"><em>Indonesia:</em> Indonesia TVN have taken inventory on a non-guaranteed basis at $6 cpm delivering slower than expected.</li>
+                        <li class="deal"><em>Japan:</em> EA Sports campaign has started well. Have Tubemogul lined up to by the remaining pre roll inventory at $10usd cpm.</li>
+                        <li class="deal">Proposals out for Nissin Noodles,  Coca Cola, Clear for Men, Pizza Hut, K Plus and Tiger Beer</li>
+                        <li class="deal">Tying up SSP for video partners (like Rubicon but for video). Agreed terms today with one and the next to follow in the week.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- APP SECTION -->
+            <h1 id="section2R" class="section-header">App</h1>
+            <div class="js-isotope section2R" data-isotope-options='{ "layoutMode": "fitRows", "itemSelector": ".widget-container" }'>
+                <div class="widget-container full transp">
+                    <!-- App Current Installs -->
+                    <div class="number-square one-third left black">
+                        <h2 class="label">Current Installs</h2>
+                        <h3 id="app_total_installs">7,723</h3>
+                        <span id="app_total_installs_percentage" class="percentage down"><i class="fa fa-caret-down"></i>-1.21%</span>
+                    </div>
+                    <!-- App Page Views -->
+                    <div class="number-square one-third black">
+                        <h2 class="label">Page Views</h2>
+                        <h3 id="app_total_page_views">15,317</h3>
+                        <span id="app_total_page_views_percentage" class="percentage down"><i class="fa fa-caret-down"></i>-25.35%</span>
+                    </div>
+                    <!-- App Video Views -->
+                    <div class="number-square one-third right black">
+                        <h2 class="label">Video Views</h2>
+                        <h3 id="app_total_video_views">26,154</h3>
+                        <span id="app_total_video_views_percentage" class="percentage up"><i class="fa fa-caret-up"></i>80.84%</span>
+                    </div>
+                </div>
+            </div>
+            <!-- SOCIAL SECTION -->
+            <h1 id="section3R" class="section-header">Social</h1>
+            <div class="js-isotope section3R" data-isotope-options='{ "layoutMode": "fitRows", "itemSelector": ".widget-container" }'>
+                <div class="widget-container full transp">
+                    <!-- Total Twitter -->
+                    <div class="number-square half left black">
+                        <h2 class="label">Twitter Followers</h2>
+                        <h3 id="social_total_twitter"><i class="fa fa-twitter"></i> 178,153</h3>
+                    </div>
+                    <!-- Total Facebook -->
+                    <div class="number-square half right black">
+                        <h2 class="label">Facebook Followers</h2>
+                        <h3 id="social_total_facebook"><i class="fa fa-facebook-square"></i> 658,790</h3>
+                    </div>
+                </div>
+                <!-- Total Social Followers Time Series Chart -->
+                <div class="widget-container transp chart-container">
+                    <h2 class="label">Total Followers</h2>
+                    <div id="y_axis_total_social" class="y-container"></div>
+                    <div id="x_axis_total_social" class="x-container"></div>
+                    <div id="total_social" class="chart"></div>
+                    <div class="chart-name">Last 4 Weeks</div>
+                    <div id="total_social_legend" class="legend"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PIE CHARTS -->
+
+<script type="text/javascript">
+        drawPie("Pie1", dataSet1, "#ad_rev_current_month", "colorScale1", 0, 50, 28, 0);
+        drawPie("Pie2", dataSet2, "#ad_rev_next_month", "colorScale2", 0, 50, 28, 0);
+        drawPie("Pie3", dataSet3, "#partnership_current_month", "colorScale2", 0, 50, 28, 0);
+        drawPie("Pie4", dataSet4, "#partnership_next_month", "colorScale2", 0, 50, 28, 0);
+</script>
+
+<!-- TOTAL WEB CHART -->
+
+<script>
+
+var totalWeb = new Rickshaw.Graph( {
+    element: document.getElementById("total_web"),
+    height: 132,
+    renderer: 'line',
+    padding: {top: 0.05},
+    series: [
+        {
+            color: "#DA5656",
+            data: [ 
+                    { x: 1, y: 266538 },
+                    { x: 2, y: 475599 },
+                    { x: 3, y: 342424 },
+                    { x: 4, y: 629294 }
+                    ],
+            name: 'Page Views'
+        }, {
+            color: "#56BCEB",
+            data: [ 
+                    { x: 1, y: 692145 },
+                    { x: 2, y: 814846 },
+                    { x: 3, y: 903556 },
+                    { x: 4, y: 1200189 }
+                    ],
+            name: 'Video Views'
+        }, {
+            color: "#B356DA",
+            data: [ 
+                    { x: 1, y: 151514 },
+                    { x: 2, y: 297978 },
+                    { x: 3, y: 224779 },
+                    { x: 4, y: 409097 }
+                    ],
+            name: 'Uniques'
+        }
+    ]
+});
+
+D3scale.push(totalWeb);
+
+totalWeb.render();
+
+var hoverDetail = new Rickshaw.Graph.HoverDetail( {
+    graph: totalWeb,
+    xFormatter: function(x) { return null }
+} );
+
+var legend = new Rickshaw.Graph.Legend( {
+    graph: totalWeb,
+    element: document.getElementById("total_web_legend")
+
+} );
+
+var shelving = new Rickshaw.Graph.Behavior.Series.Toggle( {
+    graph: totalWeb,
+    legend: legend
+} );
+
+var format = function(n) {
+
+    var map = {
+        0: 'zero',
+        1: '1/4/14',
+        2: '1/11/14',
+        3: '1/18/14',
+        4: '1/25/14'
+    };
+
+    return map[n];
+}
+
+
+var xAxis = new Rickshaw.Graph.Axis.X({
+        graph: totalWeb,
+        tickFormat: format,
+        element: document.getElementById("x_axis_total_web")
+        });
+
+        xAxis.render();
+
+var yAxis = new Rickshaw.Graph.Axis.Y( {
+    graph: totalWeb,
+    tickFormat: d3.format("s"),
+    element: document.getElementById("y_axis_total_web")
+});
+
+yAxis.render();
+
+</script>
+
+<!-- TOTAL TWITTER CHART -->
+
+<script>
+
+var totalSocial = new Rickshaw.Graph( {
+    element: document.getElementById("total_social"),
+    height: 132,
+    renderer: 'line',
+    padding: {top: 0.05},
+    series: [
+        {
+            color: "#4099FF",
+            data: [ 
+                    { x: 1, y: 178431 },
+                    { x: 2, y: 178243 },
+                    { x: 3, y: 178279 },
+                    { x: 4, y: 178153 }
+                    ],
+            name: 'Twitter'
+        }, {
+            color: "#3B5998",
+            data: [ 
+                    { x: 1, y: 600891 },
+                    { x: 2, y: 625725 },
+                    { x: 3, y: 642835 },
+                    { x: 4, y: 658790 }
+                    ],
+            name: 'Facebook'
+        }
+    ]
+});
+ 
+D3scale.push(totalSocial);
+
+totalSocial.render();
+
+var hoverDetail2 = new Rickshaw.Graph.HoverDetail( {
+    graph: totalSocial,
+    xFormatter: function(x) { return null }
+} );
+
+var legend2 = new Rickshaw.Graph.Legend( {
+    graph: totalSocial,
+    element: document.getElementById("total_social_legend")
+
+} );
+
+var shelving2 = new Rickshaw.Graph.Behavior.Series.Toggle( {
+    graph: totalSocial,
+    legend: legend2
+} );
+
+
+var format2 = function(n) {
+
+    var map2 = {
+        0: 'zero',
+        1: '1/4/14',
+        2: '1/11/14',
+        3: '1/18/14',
+        4: '1/25/14'
+    };
+
+    return map2[n];
+}
+
+
+var xAxis2 = new Rickshaw.Graph.Axis.X({
+        graph: totalSocial,
+        tickFormat: format2,
+        element: document.getElementById("x_axis_total_social")
+        });
+
+        xAxis2.render();
+
+var yAxis2 = new Rickshaw.Graph.Axis.Y( {
+    graph: totalSocial,
+    tickFormat: d3.format("s"),
+    element: document.getElementById("y_axis_total_social")
+});
+
+yAxis2.render();
+
+</script>
+
+<!-- NEW VS. RETURNING BAR CHART -->
+
+<script>
+
+//Linear gauge
+//The way to implement it would be: 
+// - To take a stacked bar graph as a basis
+// - Ignore all the graph related attributes (like: axis, ticks and so on)
+// - Define a single set of data 
+// - Swap the x and y axis values
+var margins = {
+    top: 13,
+    left: 0,
+    right: 0,
+    bottom: 0
+},
+width = 140 - margins.left - margins.right
+    height = 32,
+    dataset = [{
+        data: [{
+            barId: '1',
+            percent: 59.27,
+            severity: 'New_Users'
+        }]
+    }, {
+        data: [{
+            barId: '1',
+            percent: 40.73,
+            severity: 'Returning_Users'
+        }]
+    }],
+    dataset = dataset.map(function (d) {
+        return d.data.map(function (o, i) {
+            // Structure it so that your numeric
+            // axis (the stacked amount) is y
+            return {
+                y: o.percent,
+                x: o.barId,
+                severity:o.severity
+            };
+        });
+    }),
+    stack = d3.layout.stack();
+
+D3scale.push(stack);
+
+stack(dataset);
+
+var dataset = dataset.map(function (group) {
+    return group.map(function (d) {
+        // Invert the x and y values, and y0 becomes x0
+        return {
+            x: d.y,
+            y: d.x,
+            x0: d.y0,
+            severity:d.severity
+            
+        };
+    });
+}),
+    svg = d3.select('#new_vs_returning')
+        .append('svg')
+        .attr('width', width + margins.left + margins.right)
+        .attr('height', height + margins.top + margins.bottom)
+        .append('g')
+        .attr('transform', 'translate(' + margins.left + ',' + margins.top + ')'),
+    xMax = d3.max(dataset, function (group) {
+        return d3.max(group, function (d) {
+            return d.x + d.x0;
+        });
+    }),
+    xScale = d3.scale.linear()
+        .domain([0, xMax])
+        .range([0, width]),
+    yValue = dataset[0].map(function (d) {
+        return d.y;
+    }),
+    yScale = d3.scale.ordinal()
+        .domain(yValue)
+        .rangeRoundBands([0, height], .1),
+    // this color funciton referencing the linearGradient defind in the HTML part by id 
+    color = function (index) {
+        console.log(dataset[index][0])
+        return "url(#" + dataset[index][0].severity + ")";
+    },
+    groups = svg.selectAll('g')
+        .data(dataset)
+        .enter()
+        .append('g')
+        .style('fill', function (d, i) {
+        return color(i);
+    });
+    var rects = groups.selectAll('rect')
+        .data(function (d) {
+        return d;
+    }).enter();
+    rects.append('rect')
+        .attr('x', function (d) {
+        return xScale(d.x0);
+    })
+        .attr('y', function (d, i) {
+        return yScale(d.y);
+    })
+        .attr('height', function (d) {
+        return yScale.rangeBand();
+    })
+        .attr('width', function (d) {
+        return xScale(d.x);
+    });
+// locate a label with percentage above each section of the gauge    
+rects.append("text")
+      .text(function(d,i) { return (d.x * 1.000) + '%' })
+      .attr("x", function(d) { return xScale(d.x0); })
+
+</script>
+
+<script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+</body>
+</html>
