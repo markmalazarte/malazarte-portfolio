@@ -5,7 +5,7 @@
 /* GENERAL */
 
 html {
-  background-color: @white;
+  background-color: @red;
 }
 
 body {
@@ -109,12 +109,14 @@ input[type="submit"] {
     h1, a, a:visited {
       color: @red;
       &:hover {
-          color: @blue;
+          color: @red;
+          text-decoration: underline;
         }
       & .back i {
         color: @red;
         &:hover {
-          color: @blue;
+          //color: @blue;
+          opacity: 0.25;
         }
       }
     }
@@ -140,7 +142,7 @@ header {
     padding: 0;
     .back i {
       font-size: 3.5em !important;
-      color: @red;
+      color: @white;
       margin-top: -5px;
       display: static !important;
       transition: all 0.15s ease-in-out;
@@ -148,7 +150,8 @@ header {
       -moz-transition: all 0.15s ease-in-out;
       -o-transition: all 0.15s ease-in-out;
       &:hover {
-        color: @blue;
+        //color: @blue;
+        opacity: .25;
       }
     }
     &.smile {
@@ -158,6 +161,9 @@ header {
       transform: rotate(-45deg);
       & i {
         font-weight: bold;
+      }
+      &:hover {
+        opacity: .25;
       }
     }
     &.title {
@@ -174,14 +180,15 @@ header {
 
   a, a:visited {
     padding: 20px;
-    color: @red;
+    color: @white;
     text-decoration: none;
     transition: all 0.15s ease-in-out;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
     &:hover {
-      color: @blue;
+      color: @white;
+      text-decoration: underline;
       transition: all 0.15s ease-in-out;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
@@ -254,7 +261,7 @@ header {
       //width: 780px;
     }
 
-    .view-btn {
+    & .view-btn {
       position: absolute;
       background: @blue;
       border: 2px solid @blue;
@@ -270,9 +277,13 @@ header {
       top: 30px;
       right: -60px;
       &:hover {
-        background: @red;
-        //color: @red;
-        border-color: @red;
+        //background: @red;
+        color: @red;
+        //border-color: @white;
+        & i {
+          margin-right: -.5px;
+          margin-left: 6px;
+        }
       }
       & i {
         margin-right: 5px;
@@ -280,28 +291,23 @@ header {
       }
     }
     
-    .content-block {
+    & .content-block {
       //width: 195px;
       //margin: 0 15px 40px 15px;
       height: 90px;
-      & .content-block--text {
-        //width: calc(~"100% - 30px");
-        //height: calc(~"100% - 20px");
-        background: @red;
-        z-index: 80;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        //padding: 10px 15px;
-        -webkit-transition: background-color .15s ease-out;
-  -moz-transition: background-color .15s ease-out;
-  -o-transition: background-color .15s ease-out;
-  transition: background-color .15s ease-out;
-        &:hover {
-          border-color: @blue;
-          h1 {
-            color: @red;
-            animation: 0.5s jiggle ease-out;
+      border-color: @red;
+      &.white {
+        //opacity: .10;
+        border-color: @red;
+        & .content-block--text {
+          border-color: @red;
+          & h1 {
+            color: @blue;
+          }
+          &:hover {
+            & h1 {
+              color: @red;
+            }
           }
         }
       }
@@ -313,8 +319,8 @@ header {
         display: inline-block;
         border: 2px solid @red;
         position: absolute;
-        left: -14px;
-        bottom: 14px;
+        left: -8px;
+        bottom: 4px;
       }
       & h1 {
         font-size: 1.15em;
@@ -334,7 +340,7 @@ header {
     width: 190px;
     height: 190px;
     padding: 10px 15px;
-    margin: 0 20px 40px 20px; 
+    margin: 0 18px 40px 18px; 
     display: inline-block;
     //background: linear-gradient(25deg, #0025FF, #0025FF, #F3112C, #F3112C, #0025FF, #0025FF);
     //-webkit-animation: gradient 30s ease infinite;
@@ -342,9 +348,9 @@ header {
     //animation: gradient 30s ease infinite;
     //background-repeat: no-repeat;
     //background-size: 600% 600%;
-    background-color: @red;
+    background-color: @white;
     //box-shadow: -7px 7px 0px @blue;
-    //border: 2px solid @blue;
+    border: 2px solid @blue;
     vertical-align: top;
     text-align: left;
     position: relative;
@@ -358,9 +364,9 @@ header {
       //background: @red;
       z-index: 80;
       position: absolute;
-      bottom: 0;
-      left: 0;
-      border: 2px solid @red;
+      bottom: 11px;
+      left: -16px;
+      border: 2px solid @blue;
       padding: 10px 15px;
       transition: all 0.15s ease-in-out;
       -webkit-transition: all 0.15s ease-in-out;
@@ -375,21 +381,23 @@ header {
       //height: calc(~"100% - 20px");
       //padding: 10px 15px;
       display: inline-block;
-      border: 2px solid @red;
+      border: 2px solid @blue;
       position: absolute;
-      left: -14px;
-      bottom: 14px;
+      left: -8px;
+      bottom: 4px;
     }
     &.white {
         position: relative;
         &:hover {
-          border-color: @blue;
+          border: 2px solid @red;
+          background-color: @white;
           -webkit-transition: background-color .15s ease-out;
   -moz-transition: background-color .15s ease-out;
   -o-transition: background-color .15s ease-out;
   transition: background-color .15s ease-out;
           &:after {
-            border-color: @blue;
+            border-color: @red;
+            background-color: @white;
               //left: -6px;
               //bottom: -6px;
               //border-color: white;
@@ -398,12 +406,19 @@ header {
         }
         & a.content-block--text {
           background-color: @white;
-          color: @blue;
+          color: @red;
           &:hover {
-            border-color: @blue;
+            border-color: @red;
             cursor: pointer;
+            color: @blue;
             & h1 {
-              //color: @red;
+              color: @blue;
+            }
+            & h3 {
+              color: @red;
+            }
+            & p {
+              color: @blue;
             }
             & .content-cover {
               //background: @blue;
@@ -444,7 +459,7 @@ header {
             }
           }
           & h1, p {
-            color: @blue;
+            color: @red;
           }
           & h3 {
             color: @blue;
@@ -517,6 +532,7 @@ header {
       width: 710px;
     }
     &.project {
+      border-color: @red;
       width: 710px;
       //float: left;
       //margin: 0 20px 40px 10px;
@@ -535,8 +551,12 @@ header {
       &.height-lrg {
         height: 370px;
       }
+      & .content-block--text {
+          border-color: @red;
+        }
       &:after {
         background: @white;
+        border-color: @red;
       }
       &:hover {
         & .content-block--text {
@@ -754,14 +774,21 @@ footer {
       padding: 0 !important; 
       min-height: 280px !important;
       width: 100% !important;
-      background: transparent;     
+      background: transparent;
+      border: 0px;     
       & .content-block--text {
         border: none;
         box-shadow: none;
         padding: 0;
+        position: relative;
+        top: inherit;
+        left: inherit;
         & * {
           padding: 0;
         }
+      }
+      &:hover {
+        border: 0px;
       }
       &:after {
         border: none !important;
@@ -780,7 +807,7 @@ footer {
     padding: 20px;
     & iframe {
       animation-duration: 6.5s; 
-  -webkit-animation-duration: 6.5s;
+      -webkit-animation-duration: 6.5s;
     }
     & h3 {
       margin: 20px 0 10px;
