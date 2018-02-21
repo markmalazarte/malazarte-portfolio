@@ -1,0 +1,27 @@
+/*
+Font: 		Greycliff CF
+Style: 		Medium
+URL: 		https://www.youworkforthem.com/font/T6406/greycliff-cf
+Foundry: 	Connary Fagen
+Foundry: 	https://www.youworkforthem.com/designer/479/connary-fagen
+Copyright:	© 2016 Connary Fagen
+Version: 	17
+Created:	December 22, 2016
+License: 	https://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'GreycliffCF-Medium';
+	src: url('greycliff-cf-medium.eot');
+	src: url('greycliff-cf-medium.eot?#iefix') format('embedded-opentype'),
+             url('greycliff-cf-medium.woff2') format('woff2'),
+	     url('greycliff-cf-medium.woff') format('woff'),
+	     url('greycliff-cf-medium.ttf') format('truetype'),
+	     url('greycliff-cf-medium.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
