@@ -20,7 +20,7 @@ body {
   //padding: 5%;
   line-height: 1em;
   transition: all 0.25s ease-in-out;
-  background: $white;
+  background: $pink;
   //height: 100%;
 }
 
@@ -84,8 +84,8 @@ input[type="submit"] {
       & .back i {
         color: $red;
         &:hover {
-          //color: $blue;
-          opacity: 0.25;
+          color: $blue;
+          //opacity: 0.25;
         }
       }
     }
@@ -110,10 +110,9 @@ header {
     margin: 0;
     padding: 0;
     .back i {
-      font-size: 3.5em !important;
+      font-size: 2.15em !important;
       color: $red;
-      margin-top: -5px;
-      display: static !important;
+      margin-top: -10px;
       transition: all 0.15s ease-in-out;
       -webkit-transition: all 0.15s ease-in-out;
       -moz-transition: all 0.15s ease-in-out;
@@ -198,7 +197,7 @@ header {
   align-items: stretch;
   padding: 50px 50px 50px 50px;
   //max-width: 1370px;
-  max-width: 1226px;
+  max-width: 1230px;
   margin: 0 auto;
   transition: all 0.25s ease-out;
   -webkit-transition: all 0.25s ease-out;
@@ -252,12 +251,13 @@ header {
       //width: 195px;
       //margin: 0 15px 40px 15px;
       height: 90px;
-      border-color: $red;
+      //border-color: $red;
       &.white {
         //opacity: .10;
-        border-color: $red;
+        //border-color: $red;
+        border: none;
         & .content-block--text {
-          border-color: $red;
+          //border-color: $red;
           & h1 {
             color: $blue;
           }
@@ -273,11 +273,11 @@ header {
         //width: calc(~"100% - 30px");
         //height: calc(~"100% - 20px");
         //padding: 12px 15px;
-        display: inline-block;
+        display: none;
         border: 2px solid $red;
         position: absolute;
-        left: -8px;
-        bottom: 4px;
+        left: -11px;
+        bottom: 11px;
       }
       & h1 {
         font-size: 1.15em;
@@ -321,8 +321,8 @@ header {
       //background: $red;
       z-index: 80;
       position: absolute;
-      bottom: -11px;
-      left: 11px;
+      bottom: -10px;
+      left: 9px;
       border: 2px solid $blue;
       padding: 10px 15px;
       transition: all 0.15s ease-in-out;
@@ -337,8 +337,9 @@ header {
       display: inline-block;
       border: 2px solid $blue;
       position: absolute;
-      left: 4px;
+      left: 3px;
       bottom: -6px;
+      background-color: $light-grey;
     }
     &.white {
         position: relative;
