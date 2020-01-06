@@ -251,12 +251,11 @@ header {
     & .content-block {
       //width: 195px;
       //margin: 0 15px 40px 15px;
-      height: 90px;
+      min-height: 100px;
       //border-color: $red;
       &.white {
         //opacity: .10;
         //border-color: $red;
-        border: none;
         & .content-block--text {
           //border-color: $red;
           & h1 {
@@ -344,6 +343,9 @@ header {
     }
     &.white {
         position: relative;
+        border: 2px solid $red;
+        min-height: 125px;
+        margin: 0 0 25px 25px;
         &:hover {
           border: 2px solid $blue;
           background-color: $red;
@@ -361,6 +363,10 @@ header {
             }
         }
         & a.content-block--text {
+          bottom: -7px;
+          left: 6px;
+          width: 101%;
+          height: 101%;
           background-color: $white;
           color: $red;
           &:hover {
@@ -500,7 +506,7 @@ header {
       width: 644px;
     }
     &.project {
-      border-color: $red;
+      border: none;
       width: 710px;
       //float: left;
       //margin: 0 20px 40px 10px;
@@ -520,15 +526,15 @@ header {
         height: 420px;
       }
       & .content-block--text {
-          border-color: $red;
+          border: none;
         }
       &:after {
         background: $white;
-        border-color: $red;
+        border: none;
       }
       &:hover {
         & .content-block--text {
-          border-color: $red;
+          border: none;
         }
         & h1 {
           color: $blue !important;
@@ -549,7 +555,8 @@ header {
           position: relative;
           &:hover {
             cursor: text;
-            border-color: $red;
+            //border-color: $red;
+            background-color: transparent;
           }
           & .content-block--text {
             background-color: $white;
@@ -737,10 +744,10 @@ footer {
   display: table;
   & .page {
     max-width: 1024px;
+    padding: 25px !important;
     & .full {
       max-width: 1024px !important;
-      padding: 0 !important; 
-      min-height: 280px !important;
+      padding: 25px 25px 50px 25px !important; 
       width: 100% !important;
       background: transparent;
       border: 0px;  
@@ -784,7 +791,11 @@ footer {
             }
           }
         } 
-      }  
+      } 
+      & .content-block {
+        border-color: $red;
+        background-color: $pink;
+      } 
       & .content-block--text {
         border: none;
         box-shadow: none;
