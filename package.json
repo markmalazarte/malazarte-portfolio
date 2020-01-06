@@ -1,31 +1,71 @@
 {
-  "name": "scotchy",
-  "version": "1.0.1",
-  "description": "Gulp Starter with Less",
-  "main": " ",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "gulp"
+  "private": true,
+  "engines": {
+    "node": ">=4"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/scotch-io/gulp-and-less-starter-kit"
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "modernizr": "^3.7.1",
+    "popper.js": "^1.15.0"
   },
-  "author": "Nicholas Cerminara",
-  "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.8.10",
-    "gulp-autoprefixer": "^2.1.0",
-    "gulp-concat": "^2.4.3",
-    "gulp-cssmin": "^0.1.6",
-    "gulp-jshint": "^1.9.2",
-    "gulp-less": "^3.0.1",
-    "gulp-load-plugins": "^0.8.0",
-    "gulp-plumber": "^0.6.6",
-    "gulp-rename": "^1.2.0",
-    "gulp-uglify": "^1.1.0",
-    "gulp-util": "^3.0.3",
-    "jshint-stylish": "^1.0.0",
-    "gulp-live-server": "^0.0.29"
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "autoprefixer": "^9.5.1",
+    "browser-sync": "^2.26.5",
+    "chai": "^4.2.0",
+    "cross-env": "^5.2.0",
+    "cssnano": "^4.1.10",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-filter": "^6.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-load-plugins": "^1.6.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-size": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^3.1.6",
+    "mkdirp": "^0.5.1",
+    "mocha": "^6.2.2",
+    "yargs": "13.2.4"
+  },
+  "scripts": {
+    "serve:test": "cross-env NODE_ENV=test gulp serve",
+    "serve:dist": "cross-env NODE_ENV=production gulp serve",
+    "start": "gulp serve",
+    "build": "cross-env NODE_ENV=production gulp",
+    "test": "npm run serve:test",
+    "tasks": "gulp --tasks"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "Firefox ESR"
+  ],
+  "eslintConfig": {
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true,
+      "jquery": true
+    },
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ]
+    }
   }
 }
