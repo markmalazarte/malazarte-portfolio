@@ -8,6 +8,7 @@ html {
   //background-color: $red;
   //filter: blur(.25px);
   transition: all 0.25s ease-in-out;
+  filter: blur(.26px);
 }
 
 body {
@@ -305,9 +306,9 @@ header {
     //animation: gradient 30s ease infinite;
     //background-repeat: no-repeat;
     //background-size: 600% 600%;
-    background-color: $white;
+    background-color: $pink;
     //box-shadow: -7px 7px 0px $blue;
-    border: 2px solid $blue;
+    border: 2px solid $red;
     vertical-align: top;
     text-align: left;
     position: relative;
@@ -318,12 +319,12 @@ header {
     & .content-block--text {
       width: 101%;
       height: 100%;
-      //background: $red;
+      background-color: $white;
       z-index: 80;
       position: absolute;
       bottom: -10px;
-      left: 9px;
-      border: 2px solid $blue;
+      left: 10px;
+      border: 2px solid $red;
       padding: 10px 15px;
       transition: all 0.15s ease-in-out;
       -webkit-transition: all 0.15s ease-in-out;
@@ -335,24 +336,24 @@ header {
       width: 101%;
       height: 101%;
       display: inline-block;
-      border: 2px solid $blue;
+      border: 2px solid $red;
       position: absolute;
-      left: 3px;
+      left: 4px;
       bottom: -6px;
-      background-color: $light-grey;
+      background-color: $pink !important;
     }
     &.white {
         position: relative;
         &:hover {
-          border: 2px solid $red;
-          background-color: $white;
+          border: 2px solid $blue;
+          background-color: $red;
           -webkit-transition: background-color .15s ease-out;
-  -moz-transition: background-color .15s ease-out;
-  -o-transition: background-color .15s ease-out;
-  transition: background-color .15s ease-out;
+          -moz-transition: background-color .15s ease-out;
+          -o-transition: background-color .15s ease-out;
+          transition: background-color .15s ease-out;
           &:after {
-            border-color: $red;
-            background-color: $white;
+            border-color: $blue;
+            background-color: $pink !important;
               //left: -6px;
               //bottom: -6px;
               //border-color: white;
@@ -363,14 +364,14 @@ header {
           background-color: $white;
           color: $red;
           &:hover {
-            border-color: $red;
+            border-color: $blue;
             cursor: pointer;
             color: $blue;
             & h1 {
               color: $blue;
             }
             & h3 {
-              color: $red;
+              color: $blue;
             }
             & p {
               color: $blue;
@@ -425,11 +426,11 @@ header {
             color: $red;
           }
           & h3 {
-            color: $blue;
+            color: $red;
             //font-family: 'GreycliffCF-ExtraBold'
           }
           & p {
-            color: $blue;
+            color: $red;
           }
           & .dates {
               color: $red;
@@ -450,6 +451,7 @@ header {
         & div.content-block--text {
           background-color: $white;
           color: $blue;
+          border-color: $red;
           & .dates {
               color: $red;
               //font-weight: bold;
@@ -624,8 +626,8 @@ header {
         font-size: .90em;
         //color: rgba(61,61,76,.75);
         color: $blue;
-        border-bottom: 2px solid $blue;
-        padding-bottom: 2px;
+        border-bottom: 4px solid $pink;
+        padding-bottom: 1px;
         &:hover {
           color: $red;
           border-bottom: 1px solid transparent;
