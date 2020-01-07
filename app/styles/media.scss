@@ -102,23 +102,47 @@
   body {
     .content.page {
       padding: 30px;
-      margin-left: 10px;
+      margin-left: 0px;
     }
     header a, header a:visited {
       padding: 20px 0 20px 20px;
       & i {
-        margin-top: 15px;
+        margin-top: 10px;
       }
     }
     .content-block {
-      width: 93% !important;
-      margin: 0 0 30px 0 !important;
+      width: 90% !important;
+      margin: 15px auto !important;
       zoom: 1.25;
+      margin-right: 25px !important;
+      z-index: 10;
+    }
+    .profile-photo {
+      display: block;
+      width: 106%;
+      margin: 30px 0 125px !important;
+      position: relative !important;
+      top: 0px;
+      left: 0px;
+      & p.caption {
+        position: absolute !important;
+        bottom: -85px;
+        left: 0px;
+        font-size: .85em !important;
+        width: 100%;
+      }
     }
     .example {
+      & .content-block {
+        width: 84% !important;
+        margin: 15px auto !important;
+        zoom: 1.25;
+        margin-right: 36px !important;
+        z-index: 10;
+      }
     }
     .example .page {
-      padding: 0;
+      padding: 0px 0px 20px 0px !important;
     }
     .example .content .content-block.project {
       height: auto !important;
@@ -178,7 +202,7 @@
     .content-block {
       //width: 93% !important;
       //margin: 0 0 30px 0 !important;
-      zoom: .95;
+      //zoom: .95;
     }
     .example {
     }

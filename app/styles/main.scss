@@ -103,7 +103,7 @@ header, footer {
   //max-width: 795px;
   margin: 0 auto;
   //text-align: center;
-  //background-color: $red;
+  background-color: $pink;
   color: $red;
   //width: 100%;
   z-index: 500;
@@ -151,7 +151,7 @@ header, footer {
   }
 
   a, a:visited {
-    padding: a0px;
+    padding: 0px !important;
     color: $red;
     text-decoration: none;
     transition: all 0.15s ease-in-out;
