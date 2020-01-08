@@ -14,7 +14,7 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: 'GreycliffCF-Bold';
+  font-family: 'Greycliff CF';
   font-size: 14px;
   letter-spacing: .25px;
   //background-color: $red;
@@ -103,7 +103,6 @@ header, footer {
   //max-width: 795px;
   margin: 0 auto;
   //text-align: center;
-  background-color: $pink;
   color: $red;
   //width: 100%;
   z-index: 500;
@@ -142,7 +141,8 @@ header, footer {
       font-size: 1.35em;
       margin-top: 5px;
       letter-spacing: 0.15px;
-      font-family: 'GreycliffCF-ExtraBold';
+      font-family: 'Greycliff CF';
+      font-weight: 900;
       //transform: rotate(-90deg);
       //position: absolute;
       //left: -30px;
@@ -226,7 +226,7 @@ header, footer {
       text-transform: uppercase;
       font-size: 1em;
       letter-spacing: .5px;
-      font-family: 'GreycliffCF-ExtraBold';
+      font-family: 'Greycliff CF';
       color: $white;
       //transform: rotate(90deg);
       z-index: 100; 
@@ -446,7 +446,7 @@ header, footer {
           & .dates {
               color: $red;
               //font-weight: bold;
-              font-family: 'GreycliffCF-ExtraBold';
+              font-family: 'Greycliff CF';
               position: absolute;
               //bottom: 10px;
               //margin-bottom: 12px;
@@ -466,7 +466,7 @@ header, footer {
           & .dates {
               color: $red;
               //font-weight: bold;
-              font-family: 'GreycliffCF-ExtraBold';
+              font-family: 'Greycliff CF';
               position: absolute;
               //bottom: 10px;
               //margin-bottom: 12px;
@@ -486,7 +486,7 @@ header, footer {
           }
           & h3 {
             color: $red;
-            font-family: 'GreycliffCF-ExtraBold'
+            font-family: 'Greycliff CF';
           }
         }
         &:after {
@@ -576,7 +576,7 @@ header, footer {
             & .dates {
               color: $red;
               //font-weight: bold;
-              font-family: 'GreycliffCF-ExtraBold';
+              font-family: 'Greycliff CF';
               position: absolute;
               //bottom: 10px;
               //margin-bottom: 12px;
@@ -602,7 +602,6 @@ header, footer {
         font-size: 2.65em;
         margin-bottom: 15px;
         padding: 10px 20px 0 20px;
-        font-weight: 100;
         line-height: 1.20em;
         color: $white;
       }
@@ -695,7 +694,7 @@ header, footer {
       }
     h1 {
       //font-family: 'kulturista-web';
-      font-family: 'GreycliffCF-ExtraBold';
+      font-family: 'Greycliff CF';
       font-size: 1.25em;
       letter-spacing: -0.5px;
       text-align: left;
@@ -750,12 +749,113 @@ header, footer {
   background-color: $white;
   color: $blue;
   display: table;
+  /* About Page */
+  &.about {
+    background: url('../images/mark_malazarte_RD1_landscape.jpg');
+    background-size: 136%;
+    background-repeat: no-repeat;
+    background-position: left 90%;
+    background-attachment: fixed;
+    &:before {
+      content: '';
+      background-color: rgba(38, 48, 62, 0.40);
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      bottom: 0;
+      z-index: 1;
+    }
+    & .page {
+      max-width: 750px !important;
+    }
+    & .content-block.links {
+      background-color: transparent !important;
+      border: 3px solid $red !important;
+      z-index: 50;
+      width: 225px;
+      margin: 20px 18px 5px 7px !important;
+      padding: 0 !important;
+      & h3, p {
+        color: $pink !important;
+        font-weight: 500 !important;
+      }
+      &:hover {
+        border-color: $pink !important;
+      }
+      & .content-block--text {
+        background-color: transparent !important;
+        border: 0 !important;
+        bottom: initial !important;
+        left: initial !important;
+        position: static;
+        padding: 10px 15px;
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        &:hover {
+          border-color: $pink !important;
+          & h1, h3, p, strong {
+            color: $pink !important;
+          }
+        }
+      }
+    }
+    & .content-block.project {
+      background: transparent;
+      border: none !important;
+      padding: 0px !important;
+      &:hover {
+        h1, h3, p {
+          color: $white !important;
+        }
+      }
+      & h1 {
+        margin-left: -2px;
+      }
+      & h3 strong {
+        font-weight: 800 !important; 
+      }
+      & p strong {
+        color: $pink !important;
+        font-weight: 800 !important;
+      }
+      & .content-block--text {
+        background-color: transparent !important;
+        border: none !important;
+      }
+    }
+    & p.caption {
+      color: $pink !important;
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+      line-height: 1.35em;
+      font-size: .85em;
+      & em {
+        margin-bottom: 5px;
+        display: inline-block;
+      }
+    }
+    & h1, h3, p {
+      color: $white !important;
+      z-index: 50;
+    }
+    & p a {
+      color: $pink !important;
+      font-weight: 800;
+      border-bottom: 3px solid $red !important;
+      &:hover {
+        border-color: $pink !important;
+      }
+    }
+  }
   & .page {
-    max-width: 800px;
+    //max-width: 800px;
     padding: 0px !important;
-    margin-left: 500px;
-    margin-top: -30px;
-    float: left;
+    //margin-left: 500px;
+    //margin-top: -30px;
+    //float: left;
+    margin: 0 auto;
     & .full {
       max-width: 1024px !important;
       padding: 25px !important; 
@@ -777,7 +877,7 @@ header, footer {
             text-transform: uppercase;
             font-size: 1em;
             letter-spacing: .5px;
-            font-family: 'GreycliffCF-ExtraBold';
+            font-family: 'Greycliff CF';
             color: $white;
             //transform: rotate(90deg);
             z-index: 100; 
@@ -848,7 +948,7 @@ header, footer {
       margin: 20px 0 30px;
       color: $red;
       font-size: 1.15em;
-      font-family: 'GreycliffCF-ExtraBold';
+      font-family: 'Greycliff CF';
     }
     &.posters {
       & ul.inline {

@@ -1,63 +1,122 @@
 @import './variables.scss';
 
-/* Vampiro One*/
-@import url('https://fonts.googleapis.com/css?family=Vampiro+One');
+/* Greycliff CF Regular */
 
-/*Arbutus Slab*/
-@import url('https://fonts.googleapis.com/css?family=Arbutus+Slab');
-
-/* Roboto Slab */
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
-
-/* Roboto */
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
-
-/* Code Snippet Monospace Font */
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
-
-/* Utility */
 @font-face {
-  font-family: 'Utility';
-  src: url('../assets/fonts/UTILITY-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../assets/fonts/UTILITY-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-     url('../assets/fonts/UTILITY-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-     url('../assets/fonts/UTILITY-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-     url('../assets/fonts/UTILITY-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-     url('../assets/fonts/UTILITY-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Greycliff CF';
+    src: url('../fonts/greycliff-cf-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/greycliff-cf-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/greycliff-cf-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/greycliff-cf-regular.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/greycliff-cf-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/greycliff-cf-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* Winner */
+/* Greycliff CF Light */
+
 @font-face {
-  font-family: 'Winner';
-  src: url('../assets/fonts/winner.woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Greycliff CF';
+    src: url('../fonts/greycliff-cf-light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/greycliff-cf-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/greycliff-cf-light.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/greycliff-cf-light.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/greycliff-cf-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/greycliff-cf-light.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: 100;
+    font-style: normal;
 }
 
+/* Greycliff CF Medium */
+
+@font-face {
+    font-family: 'Greycliff CF';
+    src: url('../fonts/greycliff-cf-medium.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/greycliff-cf-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/greycliff-cf-medium.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/greycliff-cf-medium.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/greycliff-cf-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/greycliff-cf-medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Greycliff CF Demi Bold */
+
+@font-face {
+    font-family: 'Greycliff CF';
+    src: url('../fonts/greycliff-cf-demi-bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/greycliff-cf-demi-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/greycliff-cf-demi-bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/greycliff-cf-demi-bold.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/greycliff-cf-demi-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/greycliff-cf-demi-bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Greycliff CF Bold */
+
+@font-face {
+    font-family: 'Greycliff CF';
+    src: url('../fonts/greycliff-cf-bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/greycliff-cf-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/greycliff-cf-bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/greycliff-cf-bold.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/greycliff-cf-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/greycliff-cf-bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Greycliff CF Extra Bold */
+
+@font-face {
+    font-family: 'Greycliff CF';
+    src: url('../fonts/greycliff-cf-extra-bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/greycliff-cf-extra-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/greycliff-cf-extra-bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/greycliff-cf-extra-bold.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/greycliff-cf-extra-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/greycliff-cf-extra-bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: 800;
+    font-style: normal;
+}
+
+/*  Greycliff CF Heavy */
+
+@font-face {
+    font-family: 'Greycliff CF';
+    src: url('../fonts/greycliff-cf-heavy.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/greycliff-cf-heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/greycliff-cf-heavy.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/greycliff-cf-heavy.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/greycliff-cf-heavy.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/greycliff-cf-heavy.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: 900;
+    font-style: normal;
+}
 
 /* Typography Rules */
 
 strong {
-  font-weight: 700;
+  font-weight: 900;
 }
 em {
   font-style: italic;
 }
 .font-thin {
   font-weight: 100;
-  font-family: 'GreycliffCF-Light';
 }
 .font-light {
-  font-weight: 200;
+  font-weight: 400;
 }
 .font-reg {
-  font-weight: normal;
-  font-family: 'GreycliffCF-Medium';
+  font-weight: 500;
 }
 .font-med {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -66,16 +125,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   color: $red;
+  font-weight: 900;
 }
 h3 {
   color: $light-grey;
+  font-weight: 700;
 }
 a, p {
   transition: all 0.15s ease-in-out;
 }
 
 input, textarea {
-  font-family: 'GreycliffCF-Heavy';
+  font-family: 'Greycliff';
 }
 
 .italic {
