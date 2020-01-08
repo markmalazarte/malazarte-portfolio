@@ -15,8 +15,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   font-family: 'Greycliff CF';
-  font-size: 14px;
-  letter-spacing: .25px;
+  font-size: 13.5px;
   //background-color: $red;
   color: $text;
   //padding: 5%;
@@ -72,7 +71,7 @@ input[type="submit"] {
   -o-transition: all 0.15s ease-in-out;
   outline: none;
   border-radius: 0;
-  font-family: 'GreycliffCF-Heavy';
+  font-family: 'Greycliff CF';
   cursor: pointer;
 }
 .example {
@@ -81,7 +80,6 @@ input[type="submit"] {
       color: $red;
       &:hover {
           color: $red;
-          text-decoration: underline;
         }
       & .back i {
         color: $red;
@@ -140,7 +138,6 @@ header, footer {
     &.title {
       font-size: 1.35em;
       margin-top: 5px;
-      letter-spacing: 0.15px;
       font-family: 'Greycliff CF';
       font-weight: 900;
       //transform: rotate(-90deg);
@@ -160,7 +157,6 @@ header, footer {
   -o-transition: all 0.15s ease-in-out;
     &:hover {
       color: $blue;
-      text-decoration: underline;
       transition: all 0.15s ease-in-out;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
@@ -498,7 +494,7 @@ header, footer {
         }
         & strong {
           color: $red;
-          font-weight: normal;
+          font-weight: 500;
         }
       }
     &.double {
@@ -606,7 +602,7 @@ header, footer {
         color: $white;
       }
       h3 {
-        font-family: 'GreycliffCF-DemiBold';
+        font-family: 'Greycliff CF';
         font-size: 1.15em;
         margin: 0 0 15px 0;
         font-style: normal;
@@ -614,7 +610,7 @@ header, footer {
         color: $blue;
       }
       p {
-        font-family: 'GreycliffCF-Medium';
+        font-family: 'Greycliff CF';
         //font-family: 'AddingtonCF-Light';
         font-size: 1.15em;
         padding: 0 20px;
@@ -632,16 +628,16 @@ header, footer {
           margin-bottom: 0px;
         }
         & strong {
-          font-weight: 900 !important;
+          font-weight: 800 !important;
           color: $blue !important;
         }
       }
       a {
         //color: rgba(61,61,76,.75);
         color: $blue;
-        border-bottom: 4px solid $pink;
-        padding-bottom: 1px;
-        font-weight: 900;
+        border-bottom: 3px solid $pink;
+        padding-bottom: 2px;
+        font-weight: 800;
         &:hover {
           color: $red;
           border-bottom: 1px solid transparent;
@@ -695,8 +691,8 @@ header, footer {
     h1 {
       //font-family: 'kulturista-web';
       font-family: 'Greycliff CF';
-      font-size: 1.25em;
-      letter-spacing: -0.5px;
+      font-size: 1.20em;
+      letter-spacing: -1px;
       text-align: left;
       overflow-wrap: break-word;
       margin-top: 5px;
@@ -706,23 +702,24 @@ header, footer {
     h3 {
       font-size: 1em;
       line-height: 1.1em;
-      font-style: normal;
-      letter-spacing: 0px;
+      font-weight: 500;
+      letter-spacing: -.25px;
       margin-top: 5px;
-      font-family: 'GreycliffCF-DemiBold';
+      font-family: 'Greycliff CF';
       //font-family: 'AddingtonCF-DemiBoldItalic';
       color: $blue;
       //opacity: 0.5;
     }
     p {
-      font-family: 'GreycliffCF-DemiBold';
+      font-family: 'Greycliff CF';
       //opacity: 1.0;
       color: $blue;
       position: absolute;
+      font-weight: 500;
       bottom: 2px;
       margin-bottom: 12px;
       font-size: 1em;
-      letter-spacing: -.125px;
+      letter-spacing: -.25px;
       text-align: right;
       right: 15px;
       //color: #F3112C;
@@ -765,8 +762,103 @@ header, footer {
       bottom: 0;
       z-index: 1;
     }
+    & header {
+      & .left {
+        & .back {
+          & a {
+            & i:hover {
+              color: $pink !important;
+            }
+          }
+        }
+      }
+      & .title {
+        & a {
+          &:hover {
+            color: $pink !important;
+          }
+        }
+      }
+    }
     & .page {
       max-width: 750px !important;
+      z-index: 100;
+      & .content-block.project {
+        background: transparent;
+        border: none !important;
+        padding: 0px !important;
+        &:hover {
+          h1, h3, p {
+            color: $white !important;
+          }
+        }
+        & h1 {
+          margin-left: -2px;
+        }
+        & h3 strong {
+          font-weight: 800 !important; 
+        }
+        & p strong {
+          color: $pink !important;
+          font-weight: 800 !important;
+        }
+        & .content-block--text {
+          background-color: transparent !important;
+          border: none !important;
+          position: static;
+          bottom: initial;
+          left: initial;
+          width: auto;
+          height: auto;
+        }
+      }
+      .about--links {
+        display: block;
+        & h3 {
+          font-size: 1.15em;
+          font-weight: 800;
+          margin-top: 40px;
+          margin-bottom: 15px;
+          color: $red;
+          & strong {
+            color: $white;
+          }
+        }
+        & ul {
+          max-width: 400px;
+          & li {
+            margin: 0 10px 15px 0;
+            display: inline-block;
+            & a {
+              display: inline-block;
+              font-size: 1;
+              font-weight: 500;
+              border-radius: 500px;
+              padding: 10px 25px 15px;
+              min-width: 150px;
+              //background-color: $pink;
+              border: 2px solid $red;
+              color: $red !important;
+              text-align: center;
+              vertical-align: middle;
+              & p {
+                margin: 0;
+                padding: 0;
+                color: $pink !important;
+                font-weight: 800;
+                font-size: 1em;
+                letter-spacing: -.5px;
+              }
+              &:hover {
+                border-color: $pink;
+                & p {
+                  color: $red !important;
+                }
+              }
+            }
+          }
+        }
+      }
     }
     & .content-block.links {
       background-color: transparent !important;
@@ -798,30 +890,6 @@ header, footer {
             color: $pink !important;
           }
         }
-      }
-    }
-    & .content-block.project {
-      background: transparent;
-      border: none !important;
-      padding: 0px !important;
-      &:hover {
-        h1, h3, p {
-          color: $white !important;
-        }
-      }
-      & h1 {
-        margin-left: -2px;
-      }
-      & h3 strong {
-        font-weight: 800 !important; 
-      }
-      & p strong {
-        color: $pink !important;
-        font-weight: 800 !important;
-      }
-      & .content-block--text {
-        background-color: transparent !important;
-        border: none !important;
       }
     }
     & p.caption {

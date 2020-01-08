@@ -10,7 +10,7 @@
         url('../fonts/greycliff-cf-regular.woff') format('woff'), /* Pretty Modern Browsers */
         url('../fonts/greycliff-cf-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
         url('../fonts/greycliff-cf-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -122,10 +122,11 @@ em {
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px 0;
   transition: all 0.15s ease-in-out;
+  font-family: 'Greycliff CF';
 }
 h1 {
   color: $red;
-  font-weight: 900;
+  font-weight: 800;
 }
 h3 {
   color: $light-grey;
@@ -133,10 +134,11 @@ h3 {
 }
 a, p {
   transition: all 0.15s ease-in-out;
+  font-family: 'Greycliff CF';
 }
 
 input, textarea {
-  font-family: 'Greycliff';
+  font-family: 'Greycliff CF';
 }
 
 .italic {
