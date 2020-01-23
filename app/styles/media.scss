@@ -1,28 +1,59 @@
-
+@import './variables.scss';
+@import './typography.scss';
 
 /* Responsive (desktop) ----------- */
 
 @media only screen
   and (min-width : 320px)
-  and (max-width : 800px) {
+  and (max-width : 800px)
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
   
+  html {
+    filter: blur(0px) !important;
+  }
+  footer.mobile-only {
+    width: 120% !important;
+    padding: 50px 0px 0px 0px;
+    margin-bottom: -20px;
+    display: block !important;
+    left: -10px;
+    & .right {
+      margin-top: 8px;
+      text-transform: uppercase;
+    }
+  }
   body {
     .content.page {
       padding: 30px;
       margin-left: 0px;
+      position: relative !important;
     }
-    header a, header a:visited {
+    & header {
+      margin-bottom: 15px;
+      padding: 10px 20px !important;
+      & .title a {
+        font-size: .85em !important;
+      }
+      & .title, & .smile {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+      }
+      & i {
+        font-weight: normal !important;
+      }
+    }
+    & header a, & header a:visited {
       padding: 20px 0 20px 20px;
       & i {
         margin-top: 10px;
+        font-weight: normal !important;
       }
     }
     .content-block {
-      width: 90% !important;
-      margin: 15px auto !important;
-      zoom: 1.25;
-      margin-right: 25px !important;
       z-index: 10;
+      width: 77% !important;
     }
     .profile-photo {
       display: block;
@@ -38,18 +69,103 @@
         font-size: .85em !important;
         width: 100%;
       }
-    }
+    }      
     .example {
+      background-color: $pink !important;
+      color: $blue;
+      /* About Page */
+      &.about {
+        height: 100vh !important;
+        background: url('../images/mark_malazarte_RD1_transp.png');
+        background-size: 82%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        //background-attachment: fixed;
+        /*&:before {
+          content: '';
+          background-color: rgba(38, 48, 62, 0.40);
+          width: 100vw;
+          height: 100vh;
+          position: fixed;
+          bottom: 0;
+          z-index: 1;
+        }*/
+        & .content-block--text {
+          & h3 {
+            margin-bottom: 88vh !important;
+          }
+        }
+        & p.caption {
+          top: 103vh;
+          text-align: center;
+          left: 30px;
+          width: 80%;
+          margin: 0px auto !important;
+          font-size: .75em !important;
+        }
+        & header {
+          margin-bottom: 0px;
+          padding: 10px 20px !important;
+          & .left {
+            & .back {
+              & a {
+                font-size: .70em !important;
+                & i:hover {
+                  color: $blue !important;
+                }
+              }
+            }
+          }
+          & .title {
+            margin-right: 0 !important;
+            & a {
+              font-size: .85em !important;
+              text-align: right;
+              &:hover {
+                color: $blue !important;
+              }
+            }
+          }
+        }
+        .about--links {
+          display: block;
+          & h3 {
+            font-size: 1.15em;
+            font-weight: 800;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: $red;
+            & strong {
+              color: $blue;
+            }
+          }
+          & ul {
+            & li {
+              margin: 0 10px 55px 0px;
+              display: inline-block;
+              width: 100%;
+            }
+          }
+        }
+        & .content {
+          &.page {
+            & .content-block {
+              &.project {
+                margin: 0px auto !important;
+              }
+            }
+          }
+        }
+      }
       & .content-block {
-        width: 84% !important;
+        width: 80% !important;
         margin: 15px auto !important;
-        zoom: 1.25;
-        margin-right: 36px !important;
         z-index: 10;
       }
     }
     .example .page {
-      padding: 0px 0px 20px 0px !important;
+      padding: 15px 30px 30px 30px !important;
+      margin: 0px auto !important;
     }
     .example .content .content-block.project {
       height: auto !important;
@@ -78,7 +194,8 @@
         //position: relative;
         //width: 100%;
         & p {
-          font-size: 1.15em;
+          font-size: 1.10em;
+          line-height: 1.75em;
         }
       }
     }

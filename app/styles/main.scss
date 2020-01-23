@@ -8,7 +8,7 @@ html {
   //background-color: $red;
   //filter: blur(.25px);
   transition: all 0.25s ease-in-out;
-  filter: blur(.28px);
+  filter: blur(0.28px);
   opacity: .92;
 }
 
@@ -91,6 +91,9 @@ input[type="submit"] {
     }
   }
 }
+header {
+  margin-bottom: 15px;
+}
 header, footer {
   position: relative;
   display: flex;
@@ -99,7 +102,6 @@ header, footer {
   //top: 0;
   padding: 15px 20px;
   //max-width: 795px;
-  margin: 0 auto;
   //text-align: center;
   color: $red;
   //width: 100%;
@@ -125,14 +127,40 @@ header, footer {
       font-size: 2.25em;
       margin-top: 0px;
       margin-left: 5px;
-      transform: rotate(-45deg);
+      height: 35px;
+      width: 35px;
+      position: relative;
+      //transform: rotate(-45deg);
       color: $red;
       & i {
-        font-weight: bold;
+        //font-weight: bold;
       }
-      &:hover {
+      & a:hover {
         //opacity: .25;
-        color: $blue;
+        color: $red;
+        &:before {
+          content: '\f59c';
+          font-family: 'Font Awesome 5 Free';
+          color: $red;
+          font-weight: 400;
+          z-index: -1;
+          //color: $blue;
+        }
+        &:after {
+          content: '\f8c0';
+          transform: rotate(8deg);
+          position: absolute;
+          top: -17px;
+          left: 0px;
+          font-family: 'Font Awesome 5 Free';
+          color: $blue;
+          font-weight: 900;
+          font-size: .90em;
+          z-index: 10;
+        }
+        & i {
+          opacity: 0.0;
+        }
       }
     }
     &.title {
@@ -295,8 +323,8 @@ header, footer {
     }
   }
   .content-block {
-    width: 196px;
-    min-height: 196px;
+    width: 197px;
+    min-height: 197px;
     padding: 10px 15px;
     margin: 0 15px 30px 15px; 
     display: inline-block;
@@ -363,7 +391,7 @@ header, footer {
               //transition: all 0.15s ease-out;
             }
         }
-        & a.content-block--text {
+        & .content-block--text {
           //bottom: -7px;
           //left: 6px;
           //width: 101%;
@@ -438,6 +466,10 @@ header, footer {
           }
           & p {
             color: $red;
+            position: absolute;
+            bottom: 0;
+            right: 15px;
+            font-weight: 500;
           }
           & .dates {
               color: $red;
@@ -498,13 +530,13 @@ header, footer {
         }
       }
     &.double {
-      width: 416px;
+      width: 415px;
     }
     &.half {
       width: 307px;
     }
     &.full {
-      width: 644px;
+      width: 638px;
     }
     &.project {
       border: none;
@@ -710,23 +742,6 @@ header, footer {
       color: $blue;
       //opacity: 0.5;
     }
-    p {
-      font-family: 'Greycliff CF';
-      //opacity: 1.0;
-      color: $blue;
-      position: absolute;
-      font-weight: 500;
-      bottom: 2px;
-      margin-bottom: 12px;
-      font-size: 1em;
-      letter-spacing: -.25px;
-      text-align: right;
-      right: 15px;
-      //color: #F3112C;
-      //letter-spacing: .25px;
-      //text-transform: uppercase;
-      //font-family: 'AddingtonCF-Light';
-    }
   }
 }
 
@@ -743,17 +758,17 @@ header, footer {
 }*/
 
 .example {
-  background-color: $white;
+  background-color: $pink !important;
   color: $blue;
-  display: table;
   /* About Page */
   &.about {
-    background: url('../images/mark_malazarte_RD1_landscape.jpg');
-    background-size: 136%;
+    height: 100vh;
+    background: url('../images/mark_malazarte_RD1_transp.png');
+    background-size: 34%;
     background-repeat: no-repeat;
-    background-position: left 90%;
-    background-attachment: fixed;
-    &:before {
+    background-position: 94% 100%;
+    //background-attachment: fixed;
+    /*&:before {
       content: '';
       background-color: rgba(38, 48, 62, 0.40);
       width: 100vw;
@@ -761,13 +776,13 @@ header, footer {
       position: fixed;
       bottom: 0;
       z-index: 1;
-    }
+    }*/
     & header {
       & .left {
         & .back {
           & a {
             & i:hover {
-              color: $pink !important;
+              color: $blue !important;
             }
           }
         }
@@ -775,21 +790,25 @@ header, footer {
       & .title {
         & a {
           &:hover {
-            color: $pink !important;
+            color: $blue !important;
           }
         }
       }
     }
     & .page {
-      max-width: 750px !important;
+      max-width: 770px !important;
       z-index: 100;
+      margin: 0 0 0 10%;
+      & footer {
+        display: none;
+      }
       & .content-block.project {
         background: transparent;
         border: none !important;
         padding: 0px !important;
         &:hover {
           h1, h3, p {
-            color: $white !important;
+            color: $blue !important;
           }
         }
         & h1 {
@@ -799,7 +818,7 @@ header, footer {
           font-weight: 800 !important; 
         }
         & p strong {
-          color: $pink !important;
+          color: $blue !important;
           font-weight: 800 !important;
         }
         & .content-block--text {
@@ -810,6 +829,7 @@ header, footer {
           left: initial;
           width: auto;
           height: auto;
+          cursor: text !important;
         }
       }
       .about--links {
@@ -821,36 +841,66 @@ header, footer {
           margin-bottom: 15px;
           color: $red;
           & strong {
-            color: $white;
+            color: $blue;
           }
         }
         & ul {
-          max-width: 400px;
+          max-width: 640px;
+          margin-top: 35px;
           & li {
-            margin: 0 10px 15px 0;
+            margin: 0 30px 30px 0px;
             display: inline-block;
+            position: relative;
+            &:before {
+              content: '\f186';
+              color: $red;
+              font-size: 1.5em;
+              vertical-align: middle;
+              font-family: 'Font Awesome 5 Free';
+            }
+            &:hover {
+              &:before {
+                color: $blue !important;
+              }
+              &:after {
+                content: '\f186';
+                font-size: 1.5em;
+                font-weight: 900;
+                vertical-align: middle;
+                font-family: 'Font Awesome 5 Free';
+                color: $white;
+                position: absolute;
+                top: 3px;
+                left: 2px;
+                z-index: -1;
+              }
+            }
             & a {
               display: inline-block;
-              font-size: 1;
+              font-size: 1.15em;
               font-weight: 500;
-              border-radius: 500px;
-              padding: 10px 25px 15px;
+              //border-radius: 500px;
+              //box-shadow: -4px -4px 0px $red;
+              //padding: 11px 25px 15px;
               min-width: 150px;
-              //background-color: $pink;
-              border: 2px solid $red;
+              //background-color: $white;
+              //border: 2px solid $red;
+              //border-left: 4px solid $red;
+              padding-left: 10px;
               color: $red !important;
-              text-align: center;
-              vertical-align: middle;
+              text-align: left;
+              vertical-align: top;
               & p {
                 margin: 0;
                 padding: 0;
-                color: $pink !important;
+                color: $blue !important;
+                //text-shadow: 2px 2px 0px $white;
                 font-weight: 800;
                 font-size: 1em;
                 letter-spacing: -.5px;
               }
               &:hover {
-                border-color: $pink;
+                border-color: $blue;
                 & p {
                   color: $red !important;
                 }
@@ -868,11 +918,11 @@ header, footer {
       margin: 20px 18px 5px 7px !important;
       padding: 0 !important;
       & h3, p {
-        color: $pink !important;
+        color: $blue !important;
         font-weight: 500 !important;
       }
       &:hover {
-        border-color: $pink !important;
+        border-color: $blue !important;
       }
       & .content-block--text {
         background-color: transparent !important;
@@ -893,9 +943,9 @@ header, footer {
       }
     }
     & p.caption {
-      color: $pink !important;
+      color: $blue !important;
       position: absolute;
-      bottom: 20px;
+      bottom: 15px;
       left: 30px;
       line-height: 1.35em;
       font-size: .85em;
@@ -905,15 +955,16 @@ header, footer {
       }
     }
     & h1, h3, p {
-      color: $white !important;
+      color: $blue !important;
       z-index: 50;
     }
     & p a {
-      color: $pink !important;
+      //color: $blue !important;
       font-weight: 800;
-      border-bottom: 3px solid $red !important;
+      border-bottom: 2px solid $red !important;
       &:hover {
-        border-color: $pink !important;
+        color: $red;
+        border-color: $blue !important;
       }
     }
   }
