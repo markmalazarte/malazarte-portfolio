@@ -14,14 +14,13 @@
     filter: blur(0px) !important;
   }
   footer.mobile-only {
-    width: 120% !important;
-    padding: 50px 0px 0px 0px;
-    margin-bottom: -20px;
+    margin: 0 auto !important;
+    text-align: center !important;
+    padding: 50px !important;
     display: block !important;
-    left: -10px;
-    & .right {
-      margin-top: 8px;
-      text-transform: uppercase;
+    & a {
+      text-transform: uppercase !important;
+      color: $red;
     }
   }
   body {
@@ -107,9 +106,9 @@
           margin-bottom: 0px;
           padding: 10px 20px !important;
           & .left {
+            margin-top: 15px !important;
             & .back {
               & a {
-                font-size: .70em !important;
                 & i:hover {
                   color: $blue !important;
                 }
