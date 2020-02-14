@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="2100px" viewBox="0 0 1024 2100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>Professional Programs</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.0252451883 244.999592 0.0252451883 244.999592 246 0 246"></polygon>
+        <polygon id="path-3" points="-0.000544444444 0.242686111 122.499862 0.242686111 122.499862 212.333333 -0.000544444444 212.333333"></polygon>
+        <polygon id="path-5" points="0 0.000408333333 152.134928 0.000408333333 152.134928 245 0 245"></polygon>
+    </defs>
+    <g id="Professional-Programs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1024" height="2100"></rect>
+        <g id="Professional_Programs_job_seekers_JCT1" transform="translate(209.000000, 86.000000)">
+            <g id="2017" transform="translate(0.000000, 114.000000)">
+                <g id="Bar_Horizontal" fill="#424242">
+                    <g id="BAR">
+                        <g id="Bar-Label">
+                            <text id="n-=-42" font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400" letter-spacing="0.5">
+                                <tspan x="42" y="14">n = 50</tspan>
+                            </text>
+                            <text id="2016" font-family="DINOT-Bold, DIN OT" font-size="13" font-weight="bold" letter-spacing="1">
+                                <tspan x="0" y="14">2017</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Seekers" transform="translate(0.000000, 24.000000)">
+                    <g id="Seekers">
+                        <rect fill="#FF5001" x="0" y="0" width="396" height="32"></rect>
+                        <text id="66%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="185.396" y="12">66</tspan>
+                            <tspan x="200.428" y="12">%</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Founders" transform="translate(399.000000, 24.000000)">
+                    <g id="Founders">
+                        <rect fill="#002855" x="0" y="0" width="60" height="32"></rect>
+                        <text id="10%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="17.396" y="12">10</tspan>
+                            <tspan x="32.428" y="12">%</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Other" transform="translate(462.000000, 24.000000)">
+                    <g id="Other">
+                        <rect fill="#A6BBC8" x="0" y="0" width="144" height="32"></rect>
+                        <text id="24%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="59.396" y="12">24</tspan>
+                            <tspan x="74.428" y="12">%</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g id="2016" transform="translate(0.000000, 190.000000)">
+                <g id="Bar_Horizontal" fill="#424242">
+                    <g id="BAR">
+                        <g id="Bar-Label">
+                            <text id="n-=-42" font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400" letter-spacing="0.5">
+                                <tspan x="42" y="14">n = 42</tspan>
+                            </text>
+                            <text id="2016" font-family="DINOT-Bold, DIN OT" font-size="13" font-weight="bold" letter-spacing="1">
+                                <tspan x="0" y="14">201</tspan>
+                                <tspan x="24.177" y="14">6</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Seekers" transform="translate(0.000000, 24.000000)">
+                    <g id="Seekers">
+                        <rect fill="#FF5001" x="0" y="0" width="384" height="32"></rect>
+                        <text id="66%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="178.896" y="12">64%</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Founders" transform="translate(387.000000, 24.000000)">
+                    <g id="Founders">
+                        <rect fill="#002855" x="0" y="0" width="102" height="32"></rect>
+                        <text id="10%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="37.896" y="12">17%</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Other" transform="translate(492.000000, 24.000000)">
+                    <g id="Other">
+                        <rect fill="#A6BBC8" x="0" y="0" width="114" height="32"></rect>
+                        <text id="24%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="43.896" y="12">19%</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g id="2015" transform="translate(0.000000, 266.000000)">
+                <g id="Bar_Horizontal" fill="#424242">
+                    <g id="BAR">
+                        <g id="Bar-Label">
+                            <text id="n-=-42" font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400" letter-spacing="0.5">
+                                <tspan x="42" y="14">n = 39</tspan>
+                            </text>
+                            <text id="2016" font-family="DINOT-Bold, DIN OT" font-size="13" font-weight="bold" letter-spacing="1">
+                                <tspan x="0" y="14">2015</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Seekers" transform="translate(0.000000, 24.000000)">
+                    <g id="Seekers">
+                        <rect fill="#FF5001" x="0" y="0" width="402" height="32"></rect>
+                        <text id="66%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="187.896" y="12">67%</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Founders" transform="translate(405.000000, 24.000000)">
+                    <g id="Founders">
+                        <rect fill="#002855" x="0" y="0" width="78" height="32"></rect>
+                        <text id="10%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="25.896" y="12">13%</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Other" transform="translate(486.000000, 24.000000)">
+                    <g id="Other">
+                        <rect fill="#A6BBC8" x="0" y="0" width="120" height="32"></rect>
+                        <text id="24%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="46.896" y="12">20%</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g id="2018" transform="translate(0.000000, 38.000000)">
+                <g id="Bar_Horizontal" fill="#424242">
+                    <g id="BAR">
+                        <g id="Bar-Label">
+                            <text id="n-=-42" font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400" letter-spacing="0.5">
+                                <tspan x="42" y="14">n = 62</tspan>
+                            </text>
+                            <text id="2016" font-family="DINOT-Bold, DIN OT" font-size="13" font-weight="bold" letter-spacing="1">
+                                <tspan x="0" y="14">2018</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Seekers" transform="translate(0.000000, 24.000000)">
+                    <g id="Seekers">
+                        <rect fill="#FF5001" x="0" y="0" width="396" height="32"></rect>
+                        <text id="66%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="184.896" y="12">66%</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Founders" transform="translate(399.000000, 24.000000)">
+                    <g id="Founders">
+                        <rect fill="#002855" x="0" y="0" width="90" height="32"></rect>
+                        <text id="10%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="31.896" y="12">15%</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Other" transform="translate(492.000000, 24.000000)">
+                    <g id="Other">
+                        <rect fill="#A6BBC8" x="0" y="0" width="114" height="32"></rect>
+                        <text id="24%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="43.896" y="12">19%</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g id="Title" transform="translate(132.000000, 0.000000)" font-family="DINOT-Bold, DIN OT" font-weight="bold">
+                <text id="JOB-SEEKERS-Copy" font-size="14" letter-spacing="1" fill="#FF5001">
+                    <tspan x="0" y="15">JOB SEEKER</tspan>
+                    <tspan x="90.78" y="15">S</tspan>
+                </text>
+                <text id="vs.-copy-2" font-size="12" letter-spacing="1.2" fill="#A7A8AA">
+                    <tspan x="106.531454" y="15">vs</tspan>
+                    <tspan x="120.739454" y="15" letter-spacing="1.309091">.</tspan>
+                </text>
+                <text id="vs.-copy-3" font-size="12" letter-spacing="1.2" fill="#A7A8AA">
+                    <tspan x="218.531454" y="15">vs</tspan>
+                    <tspan x="232.739454" y="15" letter-spacing="1.309091">.</tspan>
+                </text>
+                <text id="FOUNDERS-Copy" font-size="14" letter-spacing="1" fill="#002855">
+                    <tspan x="131" y="15">FOUNDER</tspan>
+                    <tspan x="201.154" y="15">S</tspan>
+                </text>
+                <text id="OTHER-PATHS-Copy" font-size="14" letter-spacing="1" fill="#A6BBC8">
+                    <tspan x="243" y="15">OTHER PATH</tspan>
+                    <tspan x="333.822" y="15">S</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Professional_Programs_job_seekers_JCT1-Copy" transform="translate(207.000000, 1025.000000)">
+            <g id="2017" transform="translate(2.000000, 114.000000)">
+                <g id="Bar_Horizontal" fill="#424242">
+                    <g id="BAR">
+                        <g id="Bar-Label">
+                            <text id="n-=-42" font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400" letter-spacing="0.5">
+                                <tspan x="42" y="14">n = 50</tspan>
+                            </text>
+                            <text id="2016" font-family="DINOT-Bold, DIN OT" font-size="13" font-weight="bold" letter-spacing="1">
+                                <tspan x="0" y="14">2017</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Seekers" transform="translate(0.000000, 24.000000)">
+                    <g id="Seekers">
+                        <rect fill="#FF5001" x="0" y="0" width="315" height="32"></rect>
+                        <text id="66%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="144.396" y="12">74%</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Other" transform="translate(318.000000, 24.000000)">
+                    <g id="Other">
+                        <rect fill="#A6BBC8" x="0" y="0" width="111" height="32"></rect>
+                        <text id="24%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="42.396" y="12">26%</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g id="2016" transform="translate(2.000000, 190.000000)">
+                <g id="Bar_Horizontal" fill="#424242">
+                    <g id="BAR">
+                        <g id="Bar-Label">
+                            <text id="n-=-42" font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400" letter-spacing="0.5">
+                                <tspan x="42" y="14">n = 42</tspan>
+                            </text>
+                            <text id="2016" font-family="DINOT-Bold, DIN OT" font-size="13" font-weight="bold" letter-spacing="1">
+                                <tspan x="0" y="14">201</tspan>
+                                <tspan x="24.177" y="14">6</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Seekers" transform="translate(0.000000, 24.000000)">
+                    <g id="Seekers">
+                        <rect fill="#FF5001" x="0" y="0" width="241" height="32"></rect>
+                        <text id="66%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="107.396" y="12">67%</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Other" transform="translate(244.000000, 24.000000)">
+                    <g id="Other">
+                        <rect fill="#A6BBC8" x="0" y="0" width="119" height="32"></rect>
+                        <text id="24%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="46.396" y="12">33%</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g id="2015" transform="translate(2.000000, 266.000000)">
+                <g id="Bar_Horizontal" fill="#424242">
+                    <g id="BAR">
+                        <g id="Bar-Label">
+                            <text id="n-=-42" font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400" letter-spacing="0.5">
+                                <tspan x="42" y="14">n = 39</tspan>
+                            </text>
+                            <text id="2016" font-family="DINOT-Bold, DIN OT" font-size="13" font-weight="bold" letter-spacing="1">
+                                <tspan x="0" y="14">2015</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Seekers" transform="translate(0.000000, 24.000000)">
+                    <g id="Seekers">
+                        <rect fill="#FF5001" x="0" y="0" width="220" height="32"></rect>
+                        <text id="66%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="96.896" y="12">65%</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Other" transform="translate(223.000000, 24.000000)">
+                    <g id="Other">
+                        <rect fill="#A6BBC8" x="0" y="0" width="118" height="32"></rect>
+                        <text id="24%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="45.896" y="12">35%</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g id="2018" transform="translate(2.000000, 38.000000)">
+                <g id="Bar_Horizontal" fill="#424242">
+                    <g id="BAR">
+                        <g id="Bar-Label">
+                            <text id="n-=-42" font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400" letter-spacing="0.5">
+                                <tspan x="42" y="14">n = 62</tspan>
+                            </text>
+                            <text id="2016" font-family="DINOT-Bold, DIN OT" font-size="13" font-weight="bold" letter-spacing="1">
+                                <tspan x="0" y="14">2018</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Seekers" transform="translate(0.000000, 24.000000)">
+                    <g id="Seekers">
+                        <rect fill="#FF5001" x="0" y="0" width="363" height="32"></rect>
+                        <text id="66%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="168.396" y="12">68%</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Bar_Horizontal_Other" transform="translate(366.000000, 24.000000)">
+                    <g id="Other">
+                        <rect fill="#A6BBC8" x="0" y="0" width="170" height="32"></rect>
+                        <text id="24%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="71.896" y="12">32%</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g id="Title" transform="translate(129.000000, 0.000000)" font-family="DINOT-Bold, DIN OT" font-weight="bold">
+                <g id="Group-2">
+                    <text id="Working-in-NYC" font-size="14" letter-spacing="1" fill="#FF5001">
+                        <tspan x="0" y="15">WORKING IN NYC</tspan>
+                    </text>
+                    <text id="vs.-copy-3" font-size="12" letter-spacing="1.2" fill="#A7A8AA">
+                        <tspan x="130.531454" y="15">vs</tspan>
+                        <tspan x="144.739454" y="15" letter-spacing="1.309091">.</tspan>
+                    </text>
+                    <text id="Working-Outside-of-N" font-size="14" letter-spacing="1" fill="#A6BBC8">
+                        <tspan x="155" y="15">WORKING OUTSIDE OF NYC</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="X-axis" transform="translate(0.000000, 339.000000)">
+                <line x1="2" y1="20.5" x2="602" y2="20.5" id="Line-2" stroke="#424242"></line>
+                <g id="Group-4" transform="translate(0.000000, 20.000000)">
+                    <path d="M2.5,11 L2.5,0.342773438 L2.5,11 Z" id="Line-2" stroke="#424242" stroke-linecap="square"></path>
+                    <text id="0" font-family="DINOT, DIN OT" font-size="13" font-weight="normal" fill="#424242">
+                        <tspan x="0" y="25.5">0</tspan>
+                    </text>
+                </g>
+                <g id="Group-4-Copy" transform="translate(81.000000, 20.000000)">
+                    <path d="M6.5,11 L6.5,0.342773438 L6.5,11 Z" id="Line-2" stroke="#424242" stroke-linecap="square"></path>
+                    <text id="10" font-family="DINOT, DIN OT" font-size="13" font-weight="normal" fill="#424242">
+                        <tspan x="0.5" y="29">10</tspan>
+                    </text>
+                </g>
+                <g id="Group-4-Copy-2" transform="translate(167.000000, 20.000000)">
+                    <path d="M6.5,11 L6.5,0.342773438 L6.5,11 Z" id="Line-2" stroke="#424242" stroke-linecap="square"></path>
+                    <text id="20" font-family="DINOT, DIN OT" font-size="13" font-weight="normal" fill="#424242">
+                        <tspan x="0.5" y="29">20</tspan>
+                    </text>
+                </g>
+                <g id="Group-4-Copy-3" transform="translate(253.000000, 20.000000)">
+                    <path d="M6.5,11 L6.5,0.342773438 L6.5,11 Z" id="Line-2" stroke="#424242" stroke-linecap="square"></path>
+                    <text id="30" font-family="DINOT, DIN OT" font-size="13" font-weight="normal" fill="#424242">
+                        <tspan x="0.5" y="29">30</tspan>
+                    </text>
+                </g>
+                <g id="Group-4-Copy-4" transform="translate(338.000000, 20.000000)">
+                    <path d="M6.5,11 L6.5,0.342773438 L6.5,11 Z" id="Line-2" stroke="#424242" stroke-linecap="square"></path>
+                    <text id="40" font-family="DINOT, DIN OT" font-size="13" font-weight="normal" fill="#424242">
+                        <tspan x="0.5" y="29">40</tspan>
+                    </text>
+                </g>
+                <g id="Group-4-Copy-5" transform="translate(595.000000, 20.000000)">
+                    <path d="M6.5,11 L6.5,0.342773438 L6.5,11 Z" id="Line-2" stroke="#424242" stroke-linecap="square"></path>
+                    <text id="70" font-family="DINOT, DIN OT" font-size="13" font-weight="normal" fill="#424242">
+                        <tspan x="0.5" y="29">70</tspan>
+                    </text>
+                </g>
+                <g id="Group-4-Copy-6" transform="translate(424.000000, 20.000000)">
+                    <path d="M6.5,10.6572266 L6.5,0 L6.5,10.6572266 Z" id="Line-2" stroke="#424242" stroke-linecap="square"></path>
+                    <text id="50" font-family="DINOT, DIN OT" font-size="13" font-weight="normal" fill="#424242">
+                        <tspan x="0.5" y="29">50</tspan>
+                    </text>
+                </g>
+                <g id="Group-4-Copy-7" transform="translate(510.000000, 20.000000)">
+                    <path d="M6.5,11 L6.5,0.342773438 L6.5,11 Z" id="Line-2" stroke="#424242" stroke-linecap="square"></path>
+                    <text id="60" font-family="DINOT, DIN OT" font-size="13" font-weight="normal" fill="#424242">
+                        <tspan x="0.5" y="29">60</tspan>
+                    </text>
+                </g>
+                <text id="Number-of-students" font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400" letter-spacing="0.5" fill="#424242">
+                    <tspan x="2" y="10">Number of students</tspan>
+                </text>
+            </g>
+        </g>
+        <text id="Post-CT-Location-201" font-family="DINOT-Medium, DIN OT" font-size="14" font-weight="400" letter-spacing="1" fill="#424242">
+            <tspan x="404.454" y="1013">POST CT LOCATION 2015-2018</tspan>
+        </text>
+        <g id="Group" transform="translate(209.000000, 518.000000)">
+            <g id="Group-9" transform="translate(7.000000, 42.000000)">
+                <g id="Group-8">
+                    <path d="M122.500272,123.182593 L156.266717,5.12205193 C177.076744,11.1060022 193.812967,20.9887315 209.121383,36.3368475 L122.500272,123.182593 Z" id="Fill-1" fill="#002855"></path>
+                    <g id="Group-5">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-4"></g>
+                        <path d="M122.50034,123.157348 L209.121451,36.3116023 C256.959063,84.2746355 256.959063,162.038696 209.121451,210.003094 C161.281118,257.966127 83.7195625,257.966127 35.8792292,210.003094 C-11.9597431,162.038696 -11.9597431,84.2746355 35.8792292,36.3116023 C68.4111458,3.6966852 112.041563,-7.61618773 156.266785,5.09680675 L122.50034,123.157348 Z" id="Fill-3" fill="#FF5001" mask="url(#mask-2)"></path>
+                    </g>
+                    <path d="M179.512725,180.173681 C148.024781,211.743283 96.9735861,211.743283 65.4870028,180.173681 C33.9990583,148.604079 33.9990583,97.4204934 65.4870028,65.8522558 C96.9735861,34.2826536 148.024781,34.2826536 179.512725,65.8522558 C211.000669,97.4204934 211.000669,148.604079 179.512725,180.173681" id="Fill-6" fill="#FFFFFF"></path>
+                </g>
+                <text id="8%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="165.654" y="30">8%</tspan>
+                </text>
+                <text id="92%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="110.896" y="216">92%</tspan>
+                </text>
+            </g>
+            <text id="Jobs-Accepted-By-Ind" font-family="DINOT-Medium, DIN OT" font-size="14" font-weight="400" letter-spacing="1" fill="#424242">
+                <tspan x="0.386" y="15">JOBS ACCEPTED BY INDUSTRY 2018</tspan>
+            </text>
+            <text id="92%-Technology" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" fill="#FF5001">
+                <tspan x="23.6792734" y="311">92% Technology</tspan>
+            </text>
+            <text id="8%-Consulting" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" fill="#002F6C">
+                <tspan x="150.827273" y="311">8% Consulting</tspan>
+            </text>
+            <line x1="129" y1="302.5" x2="129" y2="332.5" id="Line" stroke-opacity="0.35" stroke="#968C83" stroke-linecap="square"></line>
+        </g>
+        <g id="Group-Copy" transform="translate(515.000000, 518.000000)">
+            <g id="Group-9" transform="translate(28.000000, 43.000000)">
+                <g id="Group-8">
+                    <g id="Group-11">
+                        <g id="Group-3" transform="translate(122.500000, 32.666667)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M-0.000544444444,89.8337417 L83.5444556,0.242686111 C133.023567,46.3829917 135.730817,123.898269 89.5905111,173.377381 C65.5968444,199.107825 35.1800944,212.333742 -0.000544444444,212.333742 L-0.000544444444,89.8337417 Z" id="Fill-1" fill="#A6BBC8" mask="url(#mask-4)"></path>
+                        </g>
+                        <path d="M122.499456,122.500408 L152.134928,3.63865833 C173.140956,8.87621389 190.21065,18.1453806 206.044456,32.9093528 L122.499456,122.500408 Z" id="Fill-4" fill="#002855"></path>
+                        <g id="Group-8">
+                            <mask id="mask-6" fill="white">
+                                <use xlink:href="#path-5"></use>
+                            </mask>
+                            <g id="Clip-7"></g>
+                            <path d="M122.499456,122.500408 L122.499456,245.000408 C54.8454278,245.000408 -0.000544444444,190.155797 -0.000544444444,122.500408 C-0.000544444444,54.8450194 54.8454278,0.000408333333 122.499456,0.000408333333 C133.324372,0.000408333333 141.632594,1.02124167 152.134928,3.63865833 L122.499456,122.500408 Z" id="Fill-6" fill="#FF5001" mask="url(#mask-6)"></path>
+                        </g>
+                        <path d="M179.513269,179.344083 C148.025325,210.832028 96.9741306,210.832028 65.4875472,179.344083 C33.9996028,147.856139 33.9996028,96.8049444 65.4875472,65.3183611 C96.9741306,33.8304167 148.025325,33.8304167 179.513269,65.3183611 C211.001214,96.8049444 211.001214,147.856139 179.513269,179.344083" id="Fill-9" fill="#FFFFFF"></path>
+                    </g>
+                    <path d="M179.512725,179.173681 C148.024781,210.743283 96.9735861,210.743283 65.4870028,179.173681 C33.9990583,147.604079 33.9990583,96.4204934 65.4870028,64.8522558 C96.9735861,33.2826536 148.024781,33.2826536 179.512725,64.8522558 C211.000669,96.4204934 211.000669,147.604079 179.512725,179.173681" id="Fill-6" fill="#FFFFFF"></path>
+                </g>
+                <text id="8%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="163.654" y="28">8%</tspan>
+                </text>
+                <text id="38%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="202.896" y="162">38%</tspan>
+                </text>
+                <text id="54%" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="9.396" y="113">54%</tspan>
+                </text>
+            </g>
+            <text id="Job-Functions-2018" font-family="DINOT-Medium, DIN OT" font-size="14" font-weight="400" letter-spacing="1" fill="#424242">
+                <tspan x="72.697" y="15">JOB FUNCTIONS 2018</tspan>
+            </text>
+            <text id="54%-Product-Manager/" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" fill="#FF5001">
+                <tspan x="13.032" y="311">54% Product Manager/Technical Product Manager</tspan>
+            </text>
+            <text id="38%-Digital-Marketin" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" fill="#A6BBC8">
+                <tspan x="11.226" y="342">38% Digital Marketing/Enterprise Sales/Rotational </tspan>
+                <tspan x="85.464" y="357.12">Programs/Data Science</tspan>
+            </text>
+            <text id="8%-Consulting" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" fill="#002F6C">
+                <tspan x="110.922" y="373">8% Consulting</tspan>
+            </text>
+        </g>
+        <g id="Masters_CS_post_location-Copy-2" transform="translate(167.000000, 1549.000000)">
+            <g id="2015" transform="translate(4.000000, 279.000000)">
+                <g id="Jobs-Accepted" transform="translate(0.000000, 23.000000)">
+                    <g id="Bar_Horizontal_Color_1" transform="translate(90.000000, 1.000000)">
+                        <g id="Tech">
+                            <rect fill="#002855" x="0" y="0" width="207" height="20"></rect>
+                            <text id="24" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="95.984" y="12">25</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Bar_Horizontal_Color_2" transform="translate(299.000000, 1.000000)">
+                        <g id="Non-Tech">
+                            <rect fill="#A6BBC8" x="0" y="0" width="27" height="20"></rect>
+                            <text id="24" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="9.742" y="12">3</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <text id="Jobs-Accepted-by-Ind" font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400" line-spacing="10" letter-spacing="0.5" fill="#424242">
+                        <tspan x="3.19" y="9">Jobs Accepted </tspan>
+                        <tspan x="18.58" y="19">by Industry</tspan>
+                    </text>
+                </g>
+                <g id="Job-Functions" transform="translate(0.000000, 51.000000)">
+                    <g id="Bar_Horizontal_Color_3" transform="translate(90.000000, 0.000000)">
+                        <g id="Software">
+                            <rect fill="#FF5001" x="0" y="0" width="207" height="20"></rect>
+                            <text id="24" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="95.984" y="12">25</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Bar_Horizontal_Color_4" transform="translate(299.000000, 0.000000)">
+                        <g id="Data-Science">
+                            <rect fill="#C4D600" x="0" y="0" width="17" height="20"></rect>
+                            <text id="24" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="4.742" y="12">2</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Bar_Horizontal_Color_5" transform="translate(318.000000, 0.000000)">
+                        <g id="PM">
+                            <rect fill="#968C83" x="0" y="0" width="8" height="20"></rect>
+                            <text id="24" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="0.242" y="12">1</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <text font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400" letter-spacing="0.5" fill="#424242">
+                        <tspan x="6.28" y="10">Job Functions</tspan>
+                    </text>
+                </g>
+                <g id="Bar-Label" transform="translate(90.000000, 0.000000)" fill="#424242" font-family="DINOT-Bold, DIN OT" font-size="13" font-weight="bold" letter-spacing="0.5">
+                    <text id="2015-n-=-28">
+                        <tspan x="0" y="14">2015  </tspan>
+                        <tspan x="37.268" y="14" font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400">n = 28</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="2016" transform="translate(4.000000, 186.000000)">
+                <g id="Jobs-Accepted" transform="translate(0.000000, 23.000000)">
+                    <g id="Bar_Horizontal_Color_1" transform="translate(90.000000, 1.000000)">
+                        <g id="Tech">
+                            <rect fill="#002855" x="0" y="0" width="241" height="20"></rect>
+                            <text id="24" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="112.984" y="12">29</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Bar_Horizontal_Color_2" transform="translate(333.000000, 1.000000)">
+                        <g id="Non-Tech">
+                            <rect fill="#A6BBC8" x="0" y="0" width="34" height="20"></rect>
+                            <text id="24" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="13.242" y="12">4</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <text id="Jobs-Accepted-by-Ind" font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400" line-spacing="10" letter-spacing="0.5" fill="#424242">
+                        <tspan x="3.19" y="9">Jobs Accepted </tspan>
+                        <tspan x="18.58" y="19">by Industry</tspan>
+                    </text>
+                </g>
+                <g id="Job-Functions" transform="translate(0.000000, 51.000000)">
+                    <g id="Bar_Horizontal_Color_3" transform="translate(90.000000, 0.000000)">
+                        <g id="Software">
+                            <rect fill="#FF5001" x="0" y="0" width="277" height="20"></rect>
+                            <text id="24" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="130.984" y="12">33</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <text font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400" letter-spacing="0.5" fill="#424242">
+                        <tspan x="6.28" y="10">Job Functions</tspan>
+                    </text>
+                </g>
+                <g id="Bar-Label" transform="translate(90.000000, 0.000000)" fill="#424242" font-family="DINOT-Bold, DIN OT" font-size="13" font-weight="bold" letter-spacing="0.5">
+                    <text id="2016-n-=-33">
+                        <tspan x="0" y="14">2016  </tspan>
+                        <tspan x="37.268" y="14" font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400">n = 3</tspan>
+                        <tspan x="60.908" y="14" font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400" letter-spacing="1">3</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="2016-copy" transform="translate(4.000000, 93.000000)">
+                <g id="Jobs-Accepted" transform="translate(0.000000, 23.000000)">
+                    <g id="Bar_Horizontal_Color_1" transform="translate(90.000000, 1.000000)">
+                        <g id="Tech">
+                            <rect fill="#002855" x="0" y="0" width="200" height="20"></rect>
+                            <text id="24" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="92.484" y="12">24</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Bar_Horizontal_Color_2" transform="translate(292.000000, 1.000000)">
+                        <g id="Non-Tech">
+                            <rect fill="#A6BBC8" x="0" y="0" width="34" height="20"></rect>
+                            <text id="24" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="13.242" y="12">4</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <text id="Jobs-Accepted-by-Ind" font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400" line-spacing="10" letter-spacing="0.5" fill="#424242">
+                        <tspan x="3.19" y="9">Jobs Accepted </tspan>
+                        <tspan x="18.58" y="19">by Industry</tspan>
+                    </text>
+                </g>
+                <g id="Job-Functions" transform="translate(0.000000, 51.000000)">
+                    <g id="Bar_Horizontal_Color_3" transform="translate(90.000000, 0.000000)">
+                        <g id="Software">
+                            <rect fill="#FF5001" x="0" y="0" width="200" height="20"></rect>
+                            <text id="24" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="92.484" y="12">24</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Bar_Horizontal_Color_4" transform="translate(292.000000, 0.000000)">
+                        <g id="Data-Science">
+                            <rect fill="#C4D600" x="0" y="0" width="16" height="20"></rect>
+                            <text id="24" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="4.242" y="12">2</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Bar_Horizontal_Color_5" transform="translate(310.000000, 0.000000)">
+                        <g id="PM">
+                            <rect fill="#968C83" x="0" y="0" width="16" height="20"></rect>
+                            <text id="24" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="4.242" y="12">2</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <text font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400" letter-spacing="0.5" fill="#424242">
+                        <tspan x="6.28" y="10">Job Functions</tspan>
+                    </text>
+                </g>
+                <g id="Bar-Label" transform="translate(90.000000, 0.000000)" fill="#424242" font-family="DINOT-Bold, DIN OT" font-size="13" font-weight="bold" letter-spacing="0.5">
+                    <text id="2017-n-=-28">
+                        <tspan x="0" y="14">2017  </tspan>
+                        <tspan x="37.268" y="14" font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400">n = 28</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="2016-copy-2" transform="translate(4.000000, 0.000000)">
+                <g id="Jobs-Accepted" transform="translate(0.000000, 23.000000)">
+                    <g id="Bar_Horizontal_Color_1" transform="translate(90.000000, 1.000000)">
+                        <g id="Tech">
+                            <rect fill="#002855" x="0" y="0" width="455" height="20"></rect>
+                            <text id="24" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="219.984" y="12">52</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Bar_Horizontal_Color_2" transform="translate(547.000000, 1.000000)">
+                        <g id="Non-Tech">
+                            <rect fill="#A6BBC8" x="0" y="0" width="50" height="20"></rect>
+                            <text id="24" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="21.242" y="12">7</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <text id="Jobs-Accepted-by-Ind" font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400" line-spacing="10" letter-spacing="0.5" fill="#424242">
+                        <tspan x="3.19" y="9">Jobs Accepted </tspan>
+                        <tspan x="18.58" y="19">by Industry</tspan>
+                    </text>
+                </g>
+                <g id="Job-Functions" transform="translate(0.000000, 51.000000)">
+                    <g id="Bar_Horizontal_Color_3" transform="translate(90.000000, 0.000000)">
+                        <g id="Software">
+                            <rect fill="#FF5001" x="0" y="0" width="435" height="20"></rect>
+                            <text id="24" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="209.984" y="12">51</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Quant" transform="translate(571.000000, 0.000000)">
+                        <rect id="Data-Science" fill="#FFC72C" x="0" y="0" width="16" height="20"></rect>
+                        <text id="24" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="4.242" y="12">2</tspan>
+                        </text>
+                    </g>
+                    <g id="Consultant" transform="translate(527.000000, 0.000000)">
+                        <rect id="Data-Science" fill="#AA142D" x="0" y="0" width="42" height="20"></rect>
+                        <text id="5" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="17.242" y="12">5</tspan>
+                        </text>
+                    </g>
+                    <g id="Bar_Horizontal_Color_5" transform="translate(589.000000, 0.000000)">
+                        <g id="PM">
+                            <rect fill="#968C83" x="0" y="0" width="8" height="20"></rect>
+                            <text id="24" font-family="DINOT-Bold, DIN OT" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="0.242" y="12">1</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <text font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400" letter-spacing="0.5" fill="#424242">
+                        <tspan x="6.28" y="10">Job Functions</tspan>
+                    </text>
+                </g>
+                <g id="Bar-Label" transform="translate(90.000000, 0.000000)" fill="#424242" font-family="DINOT-Bold, DIN OT" font-size="13" font-weight="bold" letter-spacing="0.5">
+                    <text id="2018-n-=-59">
+                        <tspan x="0" y="14">2018  </tspan>
+                        <tspan x="37.268" y="14" font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400">n = 59</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Title" transform="translate(0.000000, 448.000000)">
+                <g id="LEGEND">
+                    <g id="Legend-Group">
+                        <text id="Tech-Companies" font-family="DINOT-Medium, DIN OT" font-size="9" font-weight="400" line-spacing="9" letter-spacing="0.25" fill="#424242">
+                            <tspan x="22" y="9">Tech </tspan>
+                            <tspan x="22" y="18">Companie</tspan>
+                            <tspan x="64.464" y="18">s</tspan>
+                        </text>
+                        <rect id="Rectangle" fill="#002855" x="0" y="1" width="15" height="15"></rect>
+                    </g>
+                    <g id="Legend-Group-Copy-3" transform="translate(228.000000, 0.000000)">
+                        <text id="Software-Development" font-family="DINOT-Medium, DIN OT" font-size="9" font-weight="400" line-spacing="9" letter-spacing="0.25" fill="#424242">
+                            <tspan x="22" y="9">Software </tspan>
+                            <tspan x="22" y="18">Developmen</tspan>
+                            <tspan x="74.63" y="18">t</tspan>
+                        </text>
+                        <rect id="Rectangle" fill="#FF5001" x="0" y="1" width="15" height="15"></rect>
+                    </g>
+                    <g id="Legend-Group-Copy-4" transform="translate(381.000000, 0.000000)">
+                        <text id="Product-or-Program-M" font-family="DINOT-Medium, DIN OT" font-size="9" font-weight="400" line-spacing="9" letter-spacing="0.25" fill="#424242">
+                            <tspan x="22" y="9">Product or </tspan>
+                            <tspan x="22" y="18">Program Mgmt</tspan>
+                            <tspan x="86.029" y="18">.</tspan>
+                        </text>
+                        <rect id="Rectangle" fill="#968C83" x="0" y="1" width="15" height="15"></rect>
+                    </g>
+                    <g id="Legend-Group-Copy-5" transform="translate(480.000000, 0.000000)">
+                        <text id="Investment-&amp;-Quant-A" font-family="DINOT-Medium, DIN OT" font-size="9" font-weight="400" line-spacing="9" letter-spacing="0.25" fill="#424242">
+                            <tspan x="22" y="9">Investment &amp; </tspan>
+                            <tspan x="22" y="18">Quant Analys</tspan>
+                            <tspan x="77.695" y="18">t</tspan>
+                        </text>
+                        <rect id="Rectangle" fill="#FFC72C" x="0" y="1" width="15" height="15"></rect>
+                    </g>
+                    <g id="Legend-Group-Copy-6" transform="translate(571.000000, 0.000000)">
+                        <text id="Consultant-&amp;-Deploym" font-family="DINOT-Medium, DIN OT" font-size="9" font-weight="400" line-spacing="9" letter-spacing="0.25" fill="#424242">
+                            <tspan x="22" y="9">Consultant &amp;</tspan>
+                            <tspan x="22" y="18">Deployment Strategis</tspan>
+                            <tspan x="114.291" y="18">t</tspan>
+                        </text>
+                        <rect id="Rectangle" fill="#AA142D" x="0" y="1" width="15" height="15"></rect>
+                    </g>
+                    <g id="Legend-Group-Copy-2" transform="translate(316.000000, 0.000000)">
+                        <text id="Data-Science" font-family="DINOT-Medium, DIN OT" font-size="9" font-weight="400" line-spacing="9" letter-spacing="0.25" fill="#424242">
+                            <tspan x="22" y="9">Data </tspan>
+                            <tspan x="22" y="18">Scienc</tspan>
+                            <tspan x="49.879" y="18">e</tspan>
+                        </text>
+                        <rect id="Rectangle" fill="#C4D600" x="0" y="1" width="15" height="15"></rect>
+                    </g>
+                    <g id="Legend-Group-Copy" transform="translate(79.000000, 0.000000)">
+                        <text id="Non-Tech-Companies-(" font-family="DINOT-Medium, DIN OT" font-size="9" font-weight="400" line-spacing="9" letter-spacing="0.25" fill="#424242">
+                            <tspan x="22" y="9">Non-Tech Companies</tspan>
+                            <tspan x="22" y="18">(media, consultancies, etc.</tspan>
+                            <tspan x="136.012" y="18">)</tspan>
+                        </text>
+                        <rect id="Rectangle" fill="#A6BBC8" x="0" y="1" width="15" height="15"></rect>
+                    </g>
+                </g>
+            </g>
+            <g id="Axis-Label" transform="translate(92.000000, 375.000000)">
+                <g id="Number-X-Axis">
+                    <line x1="2" y1="20" x2="516" y2="20" id="Line-2" stroke="#424242"></line>
+                    <g id="Group-4" transform="translate(0.000000, 20.000000)">
+                        <path d="M2.5,11 L2.5,0.342773438 L2.5,11 Z" id="Line-2" stroke="#424242" stroke-linecap="square"></path>
+                        <text id="0" font-family="DINOT, DIN OT" font-size="13" font-weight="normal" fill="#424242">
+                            <tspan x="0" y="25.5">0</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-4-Copy" transform="translate(78.000000, 20.000000)">
+                        <path d="M6.5,11 L6.5,0.342773438 L6.5,11 Z" id="Line-2" stroke="#424242" stroke-linecap="square"></path>
+                        <text id="10" font-family="DINOT, DIN OT" font-size="13" font-weight="normal" fill="#424242">
+                            <tspan x="0.5" y="29">10</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-4-Copy-2" transform="translate(164.000000, 20.000000)">
+                        <path d="M6.5,11 L6.5,0.342773438 L6.5,11 Z" id="Line-2" stroke="#424242" stroke-linecap="square"></path>
+                        <text id="20" font-family="DINOT, DIN OT" font-size="13" font-weight="normal" fill="#424242">
+                            <tspan x="0.5" y="29">20</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-4-Copy-3" transform="translate(250.000000, 20.000000)">
+                        <path d="M6.5,11 L6.5,0.342773438 L6.5,11 Z" id="Line-2" stroke="#424242" stroke-linecap="square"></path>
+                        <text id="30" font-family="DINOT, DIN OT" font-size="13" font-weight="normal" fill="#424242">
+                            <tspan x="0.5" y="29">30</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-4-Copy-4" transform="translate(337.000000, 20.000000)">
+                        <path d="M6.5,11 L6.5,0.342773438 L6.5,11 Z" id="Line-2" stroke="#424242" stroke-linecap="square"></path>
+                        <text id="40" font-family="DINOT, DIN OT" font-size="13" font-weight="normal" fill="#424242">
+                            <tspan x="0.5" y="29">40</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-4-Copy-6" transform="translate(423.000000, 20.000000)">
+                        <path d="M6.5,10.6572266 L6.5,0 L6.5,10.6572266 Z" id="Line-2" stroke="#424242" stroke-linecap="square"></path>
+                        <text id="50" font-family="DINOT, DIN OT" font-size="13" font-weight="normal" fill="#424242">
+                            <tspan x="0.5" y="29">50</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-4-Copy-7" transform="translate(509.000000, 20.000000)">
+                        <path d="M6.5,11 L6.5,0.342773438 L6.5,11 Z" id="Line-2" stroke="#424242" stroke-linecap="square"></path>
+                        <text id="60" font-family="DINOT, DIN OT" font-size="13" font-weight="normal" fill="#424242">
+                            <tspan x="0.5" y="29">60</tspan>
+                        </text>
+                    </g>
+                    <text id="Number-of-jobs-accep" font-family="DINOT-Medium, DIN OT" font-size="10" font-weight="400" letter-spacing="0.5" fill="#424242">
+                        <tspan x="2" y="10">Number of jobs accepted</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+        <text id="Master-in-Computer-S" font-family="DINOT-Medium, DIN OT" font-size="14" font-weight="400" letter-spacing="1" fill="#424242">
+            <tspan x="186.512" y="1513">MASTER IN COMPUTER SCIENCE - ACCEPTED FULL-TIME JOBS BY INDUSTRY AND FUNCTION</tspan>
+        </text>
+    </g>
+</svg>

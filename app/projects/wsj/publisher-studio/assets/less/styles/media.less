@@ -1,0 +1,226 @@
+/* iPhone 5 (portrait and landscape) ----------- */
+
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-height : 736px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  
+  body {
+    font-size: 17px !important;
+    .body-container {
+    }
+    header {
+      text-align: center;
+      h1 {
+        clear: both;
+        display: block;
+        a {
+          padding: 0 0 15px 0;
+        }
+        .back 
+          a {
+              display: inline-block;
+              padding: 0 0 20px 0;
+              height: 40px;
+              margin-top: -15px;
+              i {
+                margin: 0 auto;
+                padding: 0;
+                text-align: center;
+                font-size: 1em !important;
+              }
+            }
+        &.left {
+          display: none;
+          float: none;
+          text-align: center;
+          font-size: 4em;
+          padding: 10px 20px 15px;
+        }
+        &.title {
+          text-align: center;
+          position: static;
+          float: none;
+          font-size: 1.5em;
+          line-height: 1.15em;
+          width: 100%;
+          margin: 10px auto;
+          a {
+            padding: 0;
+          }
+        }
+      }
+    }
+    .content {
+      padding: 30px;
+      margin-left: -10px;
+      &.page {
+        padding: 30px;
+        //margin: 0;
+      }
+      .content-block {
+        h1 {
+            font-size: 1.30em !important;
+            line-height: 1em;
+          }
+        p {
+          font-size: .80em;
+        }
+        &.project {
+          a {
+            font-size: .85em;
+            margin-bottom: 10px;
+          }
+          h1 {
+            padding: 5px 5px 0;
+            line-height: 1.1em !important;
+            font-size: 1.5em !important;
+          }
+          h3 {
+            padding: 0 5px;
+            font-size: 1.25em;
+            margin-bottom: 15px;
+          }
+          p {
+            padding: 0 5px;
+            font-size: 1.15em;
+            line-height: 1.35em;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Responsive (desktop) ----------- */
+
+@media only screen
+  and (min-width : 320px)
+  and (max-width : 800px) {
+  
+  body {
+    .content.page {
+      padding: 30px;
+      margin-left: 10px;
+    }
+    header a, header a:visited {
+      padding: 20px 0 20px 20px;
+      & i {
+        margin-top: 15px;
+      }
+    }
+    .content-block {
+      width: 93% !important;
+      margin: 0 0 30px 0 !important;
+      zoom: 1.25;
+    }
+    .example {
+    }
+    .example .page {
+      padding: 0;
+    }
+    .example .content .content-block.project {
+      height: auto !important;
+      width: auto !important;
+      padding: 0 20px !important;
+      & .content-block--text {
+        position: relative;
+        width: 100%;
+      }
+    }
+    .example .prototype {
+      width: auto;
+      padding: 0;
+      background: transparent;
+      margin-bottom: 10px;
+    }
+    .example iframe {
+      transform: scale(0.75) !important;
+      margin-left: -10px;
+      margin-top: -100px;
+      //width: auto;
+    }
+    .content .content-block.project {
+      height: 520px;
+      & .content-block--text {
+        //position: relative;
+        //width: 100%;
+        & p {
+          font-size: 1.15em;
+        }
+      }
+    }
+    header h1.title {
+      margin-top: 10px;
+      font-size: 1.5em;
+      margin-right: 20px;
+    }
+    .content .content-block.project h1 {
+      font-size: 2em;
+      line-height: 1em;
+    }
+    .content .content-block.project h3 {
+      line-height: 1em;
+    }
+    .content .content-block.project p {
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+  }
+}
+
+@media only screen
+  and (min-width : 0px)
+  and (max-width : 500px) {
+
+  body {
+    .content-block {
+      //width: 93% !important;
+      //margin: 0 0 30px 0 !important;
+      zoom: .95;
+    }
+    .example {
+    }
+    .example .page {
+      padding: 0;
+    }
+    .example .content .content-block.project {
+      height: auto !important;
+      padding: 0 20px !important;
+      width: auto !important;
+      & .content-block--text {
+        position: relative;
+        width: 100%;
+      }
+    }
+    .example .prototype {
+      width: auto;
+      padding: 0;
+      background: transparent;
+      margin-bottom: 10px;
+    }
+    .example iframe {
+      transform: scale(0.90);
+    }
+    .content .content-block.project {
+      height: 700px;
+    }
+  }
+}
+
+@media only screen
+  and (min-width : 800px)
+  and (max-width : 875px) {
+    .content .content-block.project {
+      width: 650px !important;
+    }
+}
+
+/*@media only screen
+  and (min-width : 880px)
+  and (max-width : 1280px) {
+    .content {
+      width: 781px !important;
+    }
+}*/
