@@ -15,6 +15,7 @@
   }
   footer.mobile-only {
     display: block !important;
+    margin-bottom: 50px;
   }
   body {
     .content.page {
@@ -194,9 +195,12 @@
     }
     .example iframe {
       transform: scale(0.75) !important;
-      margin-left: -10px;
-      margin-top: -100px;
-      //width: auto;
+      //margin-left: -10px;
+      //margin-top: -100px;
+      width: 100%;
+    }
+    .example .prototype ul.mobile li {
+      width: 100% !important;
     }
     .content .content-block.project {
       height: 520px;
@@ -265,11 +269,14 @@
       padding: 0;
       background: transparent;
       margin-bottom: 10px;
-      & ul.full, & ul.inline {
+      & ul.full, & ul.inline, & ul.half {
         padding: 25px 0 !important;
         width: 100% !important;
+        & li {
+          width: 100% !important;
+        }
       }
-      & img {
+      & img, & svg, & iframe {
         width: 100% !important;
       }
     }
@@ -278,6 +285,9 @@
     }
     .content .content-block.project {
       height: 700px;
+    }
+    footer.mobile-only {
+      margin-bottom: 50px;
     }
   }
 }
