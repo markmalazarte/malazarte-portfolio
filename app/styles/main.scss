@@ -1,6 +1,7 @@
 @import './variables.scss';
 @import './typography.scss';
 @import './media.scss';
+@import './animations.css';
 
 /* GENERAL */
 
@@ -21,11 +22,12 @@ body {
   line-height: 1em;
   transition: all 0.20s ease-in-out;
   background: $pink;
+  animation: fadeInUp 1s ease-in-out;
   //height: 100%;
 }
 
 svg, img {
-  //animation: 1.25s expandOpen ease-out;
+  //animation: 1.25s expandOpen ease-in-out;
 }
 
 a {
@@ -85,6 +87,7 @@ header, footer {
   color: $red;
   //width: 100%;
   z-index: 500;
+  animation: fadeInDown 1.15s ease-in-out;
   &.mobile-only {
     display: none;
   }
@@ -101,7 +104,8 @@ header, footer {
       -moz-transition: all 0.15s ease-in-out;
       -o-transition: all 0.15s ease-in-out;
       &:hover {
-        color: $blue;
+        color: $red;
+        animation: 2s infinite heartBeat ease-in-out;
         //opacity: .25;
       }
     }
@@ -118,6 +122,7 @@ header, footer {
         //font-weight: bold;
       }
       & a:hover {
+        animation: 1s pulse ease-in-out;
         //opacity: .25;
         color: $red;
         &:before {
@@ -193,10 +198,10 @@ header, footer {
   //animation: gradient 30s ease infinite;
   //background-repeat: no-repeat;
   //background-size: 500% 500%;
-  transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 .content {
   display: flex;
@@ -207,10 +212,10 @@ header, footer {
   //max-width: 1370px;
   max-width: 1210px;
   margin: 0 auto;
-  transition: all 0.25s ease-out;
-  -webkit-transition: all 0.25s ease-out;
-  -moz-transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
   //border: 200px solid white;
   &.page {
     //max-width: 1167px;
@@ -355,17 +360,17 @@ header, footer {
       &:hover, &.current {
         border: 2px solid $blue;
         background-color: $red;
-        -webkit-transition: background-color .15s ease-out;
-        -moz-transition: background-color .15s ease-out;
-        -o-transition: background-color .15s ease-out;
-        transition: background-color .15s ease-out;
+        -webkit-transition: background-color .15s ease-in-out;
+        -moz-transition: background-color .15s ease-in-out;
+        -o-transition: background-color .15s ease-in-out;
+        transition: background-color .15s ease-in-out;
         &:after {
           border-color: $blue;
           background-color: $pink !important;
             //left: -6px;
             //bottom: -6px;
             //border-color: white;
-            //transition: all 0.15s ease-out;
+            //transition: all 0.15s ease-in-out;
           }
         }
         & .content-block--text {
@@ -394,7 +399,6 @@ header, footer {
               transition: all 0.20s ease-in-out;
               //opacity: 1.0;
               //margin-bottom: 8px;
-              animation: 0.5s jiggle ease-out;
               & svg g, & svg path {
                 fill: $red;
               }
@@ -496,10 +500,10 @@ header, footer {
         }
         &:after {
           background: $pink;
-          -webkit-transition: background-color .25s ease-out;
-  -moz-transition: background-color .25s ease-out;
-  -o-transition: background-color .25s ease-out;
-  transition: background-color .25s ease-out;
+          -webkit-transition: background-color .25s ease-in-out;
+  -moz-transition: background-color .25s ease-in-out;
+  -o-transition: background-color .25s ease-in-out;
+  transition: background-color .25s ease-in-out;
         }
         & strong {
           color: $red;
@@ -581,6 +585,7 @@ header, footer {
               color: $blue;
               & i {
                 color: $blue;
+                animation: 2s infinite heartBeat ease-in-out;
               }
             }
             & i {
@@ -670,7 +675,7 @@ header, footer {
       h3 {
         font-family: 'Greycliff CF';
         font-size: 1.15em;
-        margin: 0 0 15px 0;
+        margin: -5px 0 30px 0;
         font-style: normal;
         padding: 0 20px;
         color: $blue;
@@ -701,16 +706,17 @@ header, footer {
       a {
         //color: rgba(61,61,76,.75);
         color: $blue;
-        border-bottom: 3px solid $pink;
+        border-bottom: 2px solid $red;
         padding-bottom: 2px;
         font-weight: 800;
         &:hover {
           color: $red;
-          border-bottom: 1px solid transparent;
-          transition: all 0.15s ease-out;
-          -webkit-transition: all 0.15s ease-out;
-          -moz-transition: all 0.15s ease-out;
-          -o-transition: all 0.15s ease-out;
+          border-color: $blue;
+          //border-bottom: 1px solid transparent;
+          transition: all 0.15s ease-in-out;
+          -webkit-transition: all 0.15s ease-in-out;
+          -moz-transition: all 0.15s ease-in-out;
+          -o-transition: all 0.15s ease-in-out;
         }
       }
     }
@@ -778,7 +784,8 @@ header, footer {
       & .project-logo {
         clear: both;
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
+        animation: 0.5s slideInUp ease-in-out;
         & svg, & g, & path, & polygon {
           width: 150px;
           fill: $blue;
@@ -798,7 +805,7 @@ header, footer {
         }
       }
       & .project-nav {
-        margin-bottom: 25px;
+        margin: 15px auto 25px;
         width: 100%;
         & .content-block {
           max-width: 215px;
@@ -1184,6 +1191,7 @@ header, footer {
         width: 49.75%;
         margin: 0 0 40px 0;
         vertical-align: top;
+        padding: 0 10px;
         & img {
           border-bottom: 4px solid rgba(0,0,0,0.05);
           box-shadow: 0px -1px 1px rgba(0,0,0,0.05);
