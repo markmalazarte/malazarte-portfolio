@@ -193,12 +193,6 @@
       background: transparent;
       margin-bottom: 10px;
     }
-    .example iframe {
-      transform: scale(0.75) !important;
-      //margin-left: -10px;
-      //margin-top: -100px;
-      width: 100%;
-    }
     .example .prototype ul.mobile li {
       width: 100% !important;
     }
@@ -243,6 +237,24 @@
       //zoom: .95;
     }
     .example {
+      & header {
+        & h1 {
+          & .back {
+            & i {
+              margin-top: -4px;
+            }
+          }
+        }
+      }
+      & footer {
+        & h1 {
+          & .back {
+            & i {
+              margin-top: -11px;
+            }
+          }
+        }
+      }
     }
     .example .page {
       padding: 0;
@@ -270,18 +282,16 @@
       background: transparent;
       margin-bottom: 10px;
       & ul.full, & ul.inline, & ul.half {
-        padding: 25px 0 !important;
+        padding: 0 !important;
         width: 100% !important;
         & li {
           width: 100% !important;
+          margin-bottom: 30px !important;
         }
       }
       & img, & svg, & iframe {
         width: 100% !important;
       }
-    }
-    .example iframe {
-      transform: scale(0.90);
     }
     .content .content-block.project {
       height: 700px;
